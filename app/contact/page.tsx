@@ -6,20 +6,17 @@ const Contact = () => (
   <>
     <AppBar />
     <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
-      <Typography sx={{ marginBottom: '40px' }} variant={'h1'}>
+      <Typography sx={{ mb: '40px' }} component={'h2'} variant={'h1'}>
         Contact
       </Typography>
       <Card sx={{ borderRadius: 2,  height: '800ox', width: '600px' }}>
         <CardMedia
           sx={{
-            height: 240 }}
+            height: 440, filter: 'blur(6px)', marginBottom: 4,}}
           image='https://res.cloudinary.com/willblake01/image/upload/v1538510164/react-portfolio/landing-background.jpg'
           title='Contact'
         />
-        <CardContent sx={{ marginBottom: '60px' }}>
-          <Typography component={'p'}>
-          Phone: 512-560-4385
-          </Typography>
+        <CardContent>
           <Typography component={'p'}>
             Email: willblakebooking@gmail.com
           </Typography>

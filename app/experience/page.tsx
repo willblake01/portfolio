@@ -5,7 +5,7 @@ const Experience = () => (
   <>
     <AppBar />
     <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', width: '100%' }}>
-      <Typography sx={{ marginBottom: '40px' }} variant={'h1'}>Experience</Typography>
+      <Typography sx={{ marginBottom: '40px' }} component={'h2'} variant={'h1'}>Experience</Typography>
       <Box sx={{ justifyContent: 'space-around', display: 'flex', padding: '20px', width: '100%' }}>
         <Card sx={{ borderRadius: 2, color: 'text.secondary', padding: '10px', textAlign: 'center', width: '520px' }}>
           <CardHeader title='Spectrum Trail Racing' sx={{ textAlign: 'center' }} />
