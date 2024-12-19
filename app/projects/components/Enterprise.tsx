@@ -1,4 +1,4 @@
-import { Box, Card, CardHeader, CardMedia, List, ListItem, Typography } from '@mui/material';
+import { Box, Card, CardActionArea, CardHeader, CardMedia, List, ListItem, Typography } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import projects from '../data/projects.json';
 
@@ -10,20 +10,22 @@ const Enterprise = () => (
           projects.enterprise.map((project) => (
             <ListItem key={project.id}>
               <Card sx={{ borderRadius: 2,  width: '27.5rem' }}>
-                <CardMedia
+                <CardActionArea href={project.link} target='_blank'>
+                  <CardMedia
                   sx={{ height: 140 }}
                   image={project.image}
                   title={project.title}
                 />
-                <CardHeader title={project.title} subheader={project.description} sx={{ textAlign: 'center' }} />
-                <CardContent sx={{ color: 'text.secondary', textAlign: 'left' }}>
-                  <List sx={{ listStyleType: 'disc' }}>
-                    {project.contributions.map((item, index) => (
-                      <ListItem key={index} sx={{ display: 'list-item' }}>{item}</ListItem>
-                    ))}
-                  </List>
-                  <Typography component='div'>Technologies: {project.technologies.join(', ')}</Typography>
-                </CardContent>
+                  <CardHeader title={project.title} subheader={project.description} sx={{ textAlign: 'center' }} />
+                  <CardContent sx={{ color: 'text.secondary', textAlign: 'left' }}>
+                    <List sx={{ listStyleType: 'disc' }}>
+                      {project.contributions.map((item, index) => (
+                        <ListItem key={index} sx={{ display: 'list-item' }}>{item}</ListItem>
+                      ))}
+                    </List>
+                    <Typography component='div'>Technologies: {project.technologies.join(', ')}</Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </ListItem>
           ))

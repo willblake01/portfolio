@@ -42,7 +42,7 @@
         "description": "All in one dashboard for users and admins to manage Unity services",
         "contributions": ["item 1"],
         "technologies": ["React", "React Context", "React Query"],
-        "link": "",
+        "link": "https://cloud.unity.com/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png"
       }
     ],
@@ -53,7 +53,7 @@
         "title": "Train Time",
         "description": "Train scheduler I built as a companion when I play Trainz 2019",
         "contributions": ["item 1"],
-        "technologies": ["Next", "React", "Typescript", "MaterialUI", "Jest"],
+        "technologies": ["Next", "React", "Typescript", "MUI", "Jest"],
         "link": "https://train-time-i1818sb62-will-blakes-projects.vercel.app",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png"
       },
@@ -62,7 +62,7 @@
         "title": "Simpsons Memory Challenge",
         "description": "Memory challenge game to see how many Simpsons characters you can name",
         "contributions": ["item 1"],
-        "technologies": ["Next", "React", "Typescript", "MaterialUI", "Jest"],
+        "technologies": ["Next", "React", "Typescript", "MUI", "Jest"],
         "link": "https://willblake01.github.io/simpsons-memory-challenge",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1733191086/simpsons-memory-game.png"
       },

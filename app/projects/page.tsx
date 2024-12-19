@@ -11,13 +11,13 @@ const Projects = () => (
         Projects
       </Typography>
     </Box>
-    <Grid2 container>
-      <Grid2 size={8} spacing={2} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
-        <Typography variant='h5' component='div'>Enterprise</Typography>
+    <Grid2 container sx={{ marginBottom: '2.5rem' }}>
+      <Grid2 size={6} spacing={2} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+        <Typography component='div' sx={{ marginBottom: '2.5rem' }} variant='h5' >Enterprise</Typography>
         <Enterprise />
       </Grid2>
-      <Grid2 size={4} spacing={2} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
-        <Typography variant='h5' component='div'>Toy</Typography>
+      <Grid2 size={6} spacing={2} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+        <Typography component='div' sx={{ marginBottom: '2.5rem' }} variant='h5' >Toy</Typography>
         <Toy />
       </Grid2>
     </Grid2>
