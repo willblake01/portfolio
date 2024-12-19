@@ -12,7 +12,7 @@ const Enterprise = () => (
               <Card sx={{ borderRadius: 2,  width: '27.5rem' }}>
                 <CardActionArea href={project.link} target='_blank'>
                   <CardMedia
-                  sx={{ height: 140 }}
+                  sx={{ height: 280 }}
                   image={project.image}
                   title={project.title}
                 />
@@ -23,7 +23,7 @@ const Enterprise = () => (
                         <ListItem key={index} sx={{ display: 'list-item' }}>{item}</ListItem>
                       ))}
                     </List>
-                    <Typography component='div'>Technologies: {project.technologies.join(', ')}</Typography>
+                    <Typography component='div'>Technologies: <i>{project.technologies.join(', ')}</i></Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>

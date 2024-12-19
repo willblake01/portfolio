@@ -3,8 +3,8 @@
       {
         "id": "1",
         "title": "Jackfruit Challenges Admin",
-        "description": "Under Armour admin tool for creating challenges for MapMy Run",
-        "contributions": ["item 1"],
+        "description": "Under Armour admin tool for creating challenges in MapMy Run",
+        "contributions": ["Add support for workout, distance, and time based challenges", "Added support for challenges with multiple goals"],
         "technologies": ["React", "React Context", "React Query"],
         "link": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png"
@@ -13,25 +13,25 @@
         "id": "2",
         "title": "MapMy Run",
         "description": "Under Armour GPS workout logging and Social Media app",
-        "contributions": ["item 1"],
+        "contributions": ["Added challenges feature support", "Added UI elements to show challenge progress", "Added support for challenges with multiple goals"],
         "technologies": ["React", "Redux"],
-        "link": "",
+        "link": "https://www.mapmyrun.com",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222530/map-my-run.png"
       },
       {
         "id": "3",
         "title": "Seabiscuit",
         "description": "Performance clone for product description pages on underarmour.com",
-        "contributions": ["item 1"],
+        "contributions": ["Ported 1:1 cloned pages to new tech stack", "Added new features to support new product lines"],
         "technologies": ["Next", "React", "React Query", "GraphQL"],
-        "link": "",
+        "link": "https://www.underarmour.com",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222388/under-armour.png"
       },
       {
         "id": "4",
         "title": "OneCommerce Notifications",
         "description": "Unity notification service for new commerce platform",
-        "contributions": ["item 1"],
+        "contributions": ["Standardized translation and versioning processes", "Added templates for Unity Cloud products to support OneCommerce platform"],
         "technologies": ["Go", "HTML", "CSS"],
         "link": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png"
@@ -40,7 +40,7 @@
         "id": "5",
         "title": "Unity Services Dashboard",
         "description": "All in one dashboard for users and admins to manage Unity services",
-        "contributions": ["item 1"],
+        "contributions": ["Added pages to support metered subscriptions with filtered lists and details page", "Refactored Users page with user subscriptions by type", "Refactored payment methods on admin page"],
         "technologies": ["React", "React Context", "React Query"],
         "link": "https://cloud.unity.com/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png"
@@ -53,7 +53,7 @@
         "title": "Train Time",
         "description": "Train scheduler I built as a companion when I play Trainz 2019",
         "contributions": ["item 1"],
-        "technologies": ["Next", "React", "Typescript", "MUI", "Jest"],
+        "technologies": ["Firebase RTD", "Next", "React", "Typescript", "MUI", "Jest"],
         "link": "https://train-time-i1818sb62-will-blakes-projects.vercel.app",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png"
       },
