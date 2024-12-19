@@ -7,7 +7,7 @@ const Projects = () => (
   <>
     <AppBar />
     <Box sx={{ justifyContent: 'center', display: 'flex' }}>
-      <Typography sx={{ marginBottom: '40px' }} variant={'h1'}>
+      <Typography sx={{ marginBottom: '2.5rem' }} variant={'h1'}>
         Projects
       </Typography>
     </Box>

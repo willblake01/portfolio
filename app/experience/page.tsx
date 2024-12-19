@@ -5,9 +5,9 @@ const Experience = () => (
   <>
     <AppBar />
     <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', width: '100%' }}>
-      <Typography sx={{ marginBottom: '40px' }} component={'h2'} variant={'h1'}>Experience</Typography>
-      <Box sx={{ justifyContent: 'space-around', display: 'flex', padding: '20px', width: '100%' }}>
-        <Card sx={{ borderRadius: 2, color: 'text.secondary', padding: '10px', textAlign: 'center', width: '520px' }}>
+      <Typography sx={{ marginBottom: '2.5rem' }} component={'h2'} variant={'h1'}>Experience</Typography>
+      <Box sx={{ justifyContent: 'space-around', display: 'flex', padding: '1.25rem', width: '100%' }}>
+        <Card sx={{ borderRadius: 2, color: 'text.secondary', padding: '0.625rem', textAlign: 'center', width: '32.5rem' }}>
           <CardHeader title='Spectrum Trail Racing' sx={{ textAlign: 'center' }} />
             <CardContent>
               <List sx={{ listStyleType: 'disc' }}>
@@ -29,7 +29,7 @@ const Experience = () => (
               </List>
             </CardContent>
         </Card>
-        <Card sx={{ borderRadius: 2, color: 'text.secondary', padding: '10px', textAlign: 'center', width: '520px' }}>
+        <Card sx={{ borderRadius: 2, color: 'text.secondary', padding: '0.625rem', textAlign: 'center', width: '32.5rem' }}>
           <CardHeader title='Under Armour' sx={{ textAlign: 'center' }} />
           <CardContent>
             <List sx={{ listStyleType: 'disc' }}>
@@ -54,7 +54,7 @@ const Experience = () => (
             </List>
           </CardContent>
         </Card>
-        <Card sx={{ borderRadius: 2, color: 'text.secondary', padding: '10px', textAlign: 'center', width: '520px' }}>
+        <Card sx={{ borderRadius: 2, color: 'text.secondary', padding: '0.625rem', textAlign: 'center', width: '32.5rem' }}>
           <CardHeader title='Unity' sx={{ textAlign: 'center' }} />
           <CardContent>
             <List sx={{ listStyleType: 'disc' }}>

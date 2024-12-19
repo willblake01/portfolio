@@ -11,7 +11,7 @@ const Home = () => (
     <>
       <AppBar />
       <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Box sx={{ display: 'flex', flexDirection: 'column', height: 'max-content', padding: '40px', width: 'max-content' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', height: 'max-content', padding: '2.5rem', width: 'max-content' }}>
           <Typography variant={'h1'}>
             Where there's a Will,
           </Typography>
@@ -19,7 +19,7 @@ const Home = () => (
             there's a way
           </Typography>
         </Box>
-        <Box sx={{ display: 'flex', height: '800px', padding: '40px', width: '600px' }}>
+        <Box sx={{ display: 'flex', height: '50rem', padding: '2.5rem', width: '37.5rem' }}>
           <Canvas
             shadows
             className='canvas'
