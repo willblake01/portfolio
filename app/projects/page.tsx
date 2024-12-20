@@ -12,11 +12,11 @@ const Projects = () => (
       </Typography>
     </Box>
     <Grid2 container sx={{ marginBottom: '2.5rem' }}>
-      <Grid2 size={6} spacing={2} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+      <Grid2 size={6} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
         <Typography component='div' sx={{ marginBottom: '2.5rem' }} variant='h5' >Enterprise</Typography>
         <Enterprise />
       </Grid2>
-      <Grid2 size={6} spacing={2} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+      <Grid2 size={6} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
         <Typography component='div' sx={{ marginBottom: '2.5rem' }} variant='h5' >Toy</Typography>
         <Toy />
       </Grid2>

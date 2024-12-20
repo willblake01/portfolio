@@ -9,10 +9,10 @@ const Enterprise = () => (
         {
           projects.enterprise.map((project) => (
             <ListItem key={project.id}>
-              <Card sx={{ borderRadius: 2,  width: '27.5rem' }}>
+              <Card sx={{ borderRadius: 2,  width: '35rem' }}>
                 <CardActionArea href={project.link} target='_blank'>
                   <CardMedia
-                  sx={{ height: 280 }}
+                  sx={{ height: 300 }}
                   image={project.image}
                   title={project.title}
                 />

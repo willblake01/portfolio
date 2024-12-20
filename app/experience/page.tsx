@@ -18,6 +18,7 @@ const Experience = () => (
                   width: 350,
                   maxHeight: { xs: 233, md: 167 },
                   maxWidth: { xs: 350, md: 250 },
+                  marginTop: 4,
                 }}
                 alt="The house from the offer."
                 src={job.image}
