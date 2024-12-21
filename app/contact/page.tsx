@@ -12,7 +12,7 @@ const Contact = () => (
       <Card sx={{ borderRadius: 2,  height: '800ox', width: '37.5rem' }}>
         <CardMedia
           sx={{
-            height: 440, filter: 'blur(0.375rem)', marginBottom: 4,}}
+            height: 440, marginBottom: 4,}}
           image='https://res.cloudinary.com/willblake01/image/upload/v1538510164/react-portfolio/landing-background.jpg'
           title='Contact'
         />

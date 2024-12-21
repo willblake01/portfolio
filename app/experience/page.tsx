@@ -1,6 +1,7 @@
-import { Box, Card, CardContent, CardHeader, List, ListItem, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import AppBar from '../components/AppBar';
 import experience from './data/experience.json';
+import ExperienceCard from './components/ExperienceCard';
 
 const Experience = () => (
   <>
@@ -10,28 +11,7 @@ const Experience = () => (
       <Box sx={{ justifyContent: 'space-around', display: 'flex', padding: '1.25rem', width: '100%' }}>
         {
           experience.map((job) => (
-            <Card key={job.id} sx={{ borderRadius: 2, color: 'text.secondary', padding: '0.625rem', textAlign: 'center', width: '32.5rem' }}>
-              <Box
-                component="img"
-                sx={{
-                  height: 233,
-                  width: 350,
-                  maxHeight: { xs: 233, md: 167 },
-                  maxWidth: { xs: 350, md: 250 },
-                  marginTop: 4,
-                }}
-                alt="The house from the offer."
-                src={job.image}
-              />
-              <CardHeader subheader={job.team} sx={{ textAlign: 'center' }} />
-              <CardContent>
-                <List sx={{ listStyleType: 'disc' }}>
-                  {job.responsibilities.map((item, index) => (
-                      <ListItem key={index} sx={{ display: 'list-item' }}>{item}</ListItem>
-                    ))}
-                </List>
-              </CardContent>
-            </Card>
+            <ExperienceCard key={job.id} job={job} />
           ))
         }
       </Box>
