@@ -1,18 +1,34 @@
-import { Box, Card, CardContent, CardHeader, List, ListItem } from '@mui/material';
+import {
+  Box,
+  Card,
+  CardContent,
+  CardHeader,
+  List,
+  ListItem,
+} from '@mui/material'
 
 interface Job {
-  id: string;
-  image: string;
-  team: string;
-  responsibilities: string[];
+  id: string
+  image: string
+  team: string
+  responsibilities: string[]
 }
 
 interface ExperienceCardProps {
-  job: Job;
+  job: Job
 }
 
 const ExperienceCard = ({ job }: ExperienceCardProps) => (
-  <Card key={job.id} sx={{ borderRadius: 2, color: 'text.secondary', padding: '0.625rem', textAlign: 'center', width: '32.5rem' }}>
+  <Card
+    key={job.id}
+    sx={{
+      borderRadius: 2,
+      color: 'text.secondary',
+      padding: '0.625rem',
+      textAlign: 'center',
+      width: '32.5rem',
+    }}
+  >
     <Box
       component="img"
       sx={{
@@ -29,8 +45,10 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
     <CardContent>
       <List sx={{ listStyleType: 'disc' }}>
         {job.responsibilities.map((item, index) => (
-            <ListItem key={index} sx={{ display: 'list-item' }}>{item}</ListItem>
-          ))}
+          <ListItem key={index} sx={{ display: 'list-item' }}>
+            {item}
+          </ListItem>
+        ))}
       </List>
     </CardContent>
   </Card>
