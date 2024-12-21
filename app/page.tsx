@@ -26,7 +26,7 @@ const Home = () => (
       <Box
         sx={{
           display: 'flex',
-          height: '50rem',
+          height: '100vh',
           padding: '2.5rem',
           width: '37.5rem',
         }}
