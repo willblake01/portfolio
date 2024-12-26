@@ -35,7 +35,7 @@ const Home = () => (
           shadows
           className="canvas"
           camera={{
-            position: [0, 0, 7],
+            position: [0, 0, 6],
           }}
         >
           <Suspense fallback={null}>
