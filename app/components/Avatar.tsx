@@ -12,8 +12,29 @@ const Avatar = (props: AvatarProps) => {
   const { animations, nodes } = useGLTF(
     '/models/avatar/waving_avatar_Anim.gltf',
   )
-  const { waving_avatar, Hips } = nodes
+  const {
+    waving_avatar,
+    waving_avatar_1,
+    waving_avatar_2,
+    waving_avatar_3,
+    Hips,
+  } = nodes
   const { geometry, material, skeleton } = waving_avatar as THREE.SkinnedMesh
+  const {
+    geometry: mouth_geometry,
+    material: mouth_material,
+    skeleton: mouth_skeleton,
+  } = waving_avatar_1 as THREE.SkinnedMesh
+  const {
+    geometry: eyes_geometry,
+    material: eyes_material,
+    skeleton: eyes_skeleton,
+  } = waving_avatar_2 as THREE.SkinnedMesh
+  const {
+    geometry: waving_avatar_3_geometry,
+    material: waving_avatar_3_material,
+    skeleton: waving_avatar_3_skeleton,
+  } = waving_avatar_3 as THREE.SkinnedMesh
   const { actions } = useAnimations(animations, groupRef)
 
   useEffect(() => {
@@ -30,12 +51,30 @@ const Avatar = (props: AvatarProps) => {
   return (
     <group ref={groupRef} {...props} dispose={null}>
       <group name="scene">
-        <group name="avatar" position={[0, -3.5, 0]} scale={4}>
+        <group name="avatar" position={[0, -3.5, -1]} scale={4}>
           <skinnedMesh
-            name="avatar"
+            name="waving avatar"
             geometry={geometry}
             material={material}
             skeleton={skeleton}
+          />
+          <skinnedMesh
+            name="mouth"
+            geometry={mouth_geometry}
+            material={mouth_material}
+            skeleton={mouth_skeleton}
+          />
+          <skinnedMesh
+            name="eyes"
+            geometry={eyes_geometry}
+            material={eyes_material}
+            skeleton={eyes_skeleton}
+          />
+          <skinnedMesh
+            name="waving avatar 3"
+            geometry={waving_avatar_3_geometry}
+            material={waving_avatar_3_material}
+            skeleton={waving_avatar_3_skeleton}
           />
           <primitive object={Hips} />
         </group>

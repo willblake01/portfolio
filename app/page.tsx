@@ -35,15 +35,15 @@ const Home = () => (
           shadows
           className="canvas"
           camera={{
-            position: [0.5, 0, 7],
+            position: [0, 0, 7],
           }}
         >
           <Suspense fallback={null}>
-            <Light position={[0, 3, 0]} />
+            <Light position={[2, 3, 2]} />
             <Controls />
             <Avatar />
           </Suspense>
-          <ambientLight color={'white'} intensity={4.5} />
+          <ambientLight color={'white'} intensity={4} />
         </Canvas>
       </Box>
     </Box>
