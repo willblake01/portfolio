@@ -27,7 +27,6 @@ const Home = () => (
         sx={{
           display: 'flex',
           height: '100vh',
-          padding: '2.5rem',
           width: '37.5rem',
         }}
       >
@@ -35,7 +34,7 @@ const Home = () => (
           shadows
           className="canvas"
           camera={{
-            position: [0, 0, 6],
+            position: [0, 0, 0],
           }}
         >
           <Suspense fallback={null}>
