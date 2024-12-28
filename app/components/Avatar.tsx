@@ -51,7 +51,7 @@ const Avatar = (props: AvatarProps) => {
   return (
     <group ref={groupRef} {...props} dispose={null}>
       <group name="scene">
-        <group name="avatar" position={[0, -0.9, -1.5]}>
+        <group name="avatar" position={[0, -0.75, 0]}>
           <skinnedMesh
             name="waving avatar"
             geometry={geometry}
