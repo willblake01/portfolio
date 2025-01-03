@@ -62,7 +62,7 @@ const Avatar = (props: AvatarProps) => {
       <group name="scene">
         <group name="avatar" position={[0, -0.75, 0]}>
           <skinnedMesh
-            name="waving avatar"
+            name="body"
             geometry={geometry}
             material={material}
             skeleton={skeleton}
