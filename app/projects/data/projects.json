@@ -61,7 +61,7 @@
         "id": "1",
         "title": "Train Time",
         "description": "Train scheduler I built as a companion when I play Trainz 2019",
-        "contributions": ["item 1"],
+        "contributions": ["Designed UI", "Connected database for real-time updates", "Added Jest tests"],
         "technologies": ["Firebase RTD", "Next", "React", "Typescript", "MUI", "Jest"],
         "link": "https://train-time-i1818sb62-will-blakes-projects.vercel.app",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png"
@@ -70,7 +70,7 @@
         "id": "2",
         "title": "Simpsons Memory Challenge",
         "description": "Memory challenge game to see how many Simpsons characters you can name",
-        "contributions": ["item 1"],
+        "contributions": ["Designed UI", "Validated user input", "Added game logic to track time and score", "Added data to local storage for persistance"],
         "technologies": ["Next", "React", "Typescript", "MUI", "Jest"],
         "link": "https://willblake01.github.io/simpsons-memory-challenge",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1733191086/simpsons-memory-game.png"
@@ -79,7 +79,7 @@
         "id": "3",
         "title": "Range Front",
         "description": "Faux eCommerce app similar to rei.com",
-        "contributions": ["item 1"],
+        "contributions": ["Designed UI", "Created backend for product data", "Added Stripe checkout", "Added Jest tests"],
         "technologies": ["Next", "React", "Typescript", "GraphQL", "Apollo", "Prisma"],
         "link": "https://willblake01.github.io/simpsons-memory-challenge",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1538510166/react-portfolio/range-front.png"
