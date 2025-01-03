@@ -81,7 +81,7 @@
         "description": "Faux eCommerce app similar to rei.com",
         "contributions": ["Designed UI", "Created backend for product data", "Added Stripe checkout", "Added Jest tests"],
         "technologies": ["Next", "React", "Typescript", "GraphQL", "Apollo", "Prisma"],
-        "link": "https://willblake01.github.io/simpsons-memory-challenge",
+        "link": "https://range-front-r4nnmgpzn-will-blakes-projects.vercel.app",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1538510166/react-portfolio/range-front.png"
       }
     ]
