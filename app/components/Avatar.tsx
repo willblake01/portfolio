@@ -12,6 +12,7 @@ const Avatar = (props: AvatarProps) => {
   const { animations, nodes } = useGLTF(
     '/models/avatar/waving_avatar_Anim.gltf',
   )
+
   const {
     waving_avatar,
     waving_avatar_1,
@@ -19,19 +20,24 @@ const Avatar = (props: AvatarProps) => {
     waving_avatar_3,
     Hips,
   } = nodes
+
+  // Body
   const { geometry, material, skeleton } = waving_avatar as THREE.SkinnedMesh
+
   // Mouth
   const {
     geometry: waving_avatar_1_geometry,
     material: waving_avatar_1_material,
     skeleton: waving_avatar_1_skeleton,
   } = waving_avatar_1 as THREE.SkinnedMesh
+
   // Eyes
   const {
     geometry: waving_avatar_2_geometry,
     material: waving_avatar_2_material,
     skeleton: waving_avatar_2_skeleton,
   } = waving_avatar_2 as THREE.SkinnedMesh
+
   // Not sure what part this is
   const {
     geometry: waving_avatar_3_geometry,
