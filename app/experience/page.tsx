@@ -18,6 +18,7 @@ const Experience = () => (
       <Typography
         sx={{ marginBottom: '2.5rem' }}
         component={'h2'}
+        fontFamily="FingerPaint"
         variant={'h1'}
       >
         Experience

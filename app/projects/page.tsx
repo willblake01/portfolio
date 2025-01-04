@@ -7,7 +7,11 @@ const Projects = () => (
   <>
     <AppBar />
     <Box sx={{ justifyContent: 'center', display: 'flex' }}>
-      <Typography sx={{ marginBottom: '2.5rem' }} variant={'h1'}>
+      <Typography
+        fontFamily="FingerPaint"
+        sx={{ marginBottom: '2.5rem' }}
+        variant={'h1'}
+      >
         Projects
       </Typography>
     </Box>

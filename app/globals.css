@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+/* fonts.css */
+@font-face {
+  font-family: 'FingerPaint';
+  src: url('./fonts/FingerPaint-Regular.ttf') format('truetype');
+}
+
 .cardSubHeader {
   text-align: left;
 }

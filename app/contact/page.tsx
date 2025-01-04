@@ -8,7 +8,12 @@ const Contact = () => (
     <Box
       sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}
     >
-      <Typography sx={{ mb: '2.5rem' }} component={'h2'} variant={'h1'}>
+      <Typography
+        fontFamily="FingerPaint"
+        sx={{ mb: '2.5rem' }}
+        component={'h2'}
+        variant={'h1'}
+      >
         Contact
       </Typography>
       <ContactCard />

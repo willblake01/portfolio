@@ -20,8 +20,12 @@ const Home = () => (
           width: 'max-content',
         }}
       >
-        <Typography variant={'h1'}>Where there's a Will,</Typography>
-        <Typography variant={'h1'}>there's a way</Typography>
+        <Typography fontFamily="FingerPaint" variant={'h1'}>
+          Where there's a Will,
+        </Typography>
+        <Typography fontFamily="FingerPaint" variant={'h1'}>
+          there's a way
+        </Typography>
       </Box>
       <Box
         sx={{

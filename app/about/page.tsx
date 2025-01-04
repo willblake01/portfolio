@@ -8,7 +8,11 @@ const About = () => (
     <Box
       sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}
     >
-      <Typography sx={{ marginBottom: '2.5rem' }} variant={'h1'}>
+      <Typography
+        fontFamily="FingerPaint"
+        sx={{ marginBottom: '2.5rem' }}
+        variant={'h1'}
+      >
         About
       </Typography>
     </Box>
