@@ -1,3 +1,4 @@
+'use client'
 import { Box, Typography } from '@mui/material'
 import AppBar from '../components/AppBar'
 import ContactCard from './components/ContactCard'
