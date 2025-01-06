@@ -4,6 +4,7 @@ import Link from 'next/link'
 const ContactCard = () => (
   <Card sx={{ borderRadius: 2, height: '800ox', width: '37.5rem' }}>
     <CardContent>
+      <Typography component={'p'}>Phone: 510-394-5710</Typography>
       <Typography component={'p'}>Email: willblakebooking@gmail.com</Typography>
       <Typography component={'p'}>
         <Link target="blank" href="https://www.linkedin.com/in/william-blake/">
