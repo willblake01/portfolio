@@ -22,8 +22,7 @@ const Home = () => (
       >
         <Typography fontFamily="FingerPaint" variant={'h1'}>
           Where there's a Will,
-        </Typography>
-        <Typography fontFamily="FingerPaint" variant={'h1'}>
+          <br />
           there's a way
         </Typography>
       </Box>
