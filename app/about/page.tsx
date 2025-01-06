@@ -1,6 +1,6 @@
 'use client'
 import { Box, Card, Grid2, Typography } from '@mui/material'
-import AppBar from '../components/AppBar'
+import AppBar from '../components/AppBar/AppBar'
 import about from './data/about.json'
 
 const About = () => (

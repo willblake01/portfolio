@@ -1,6 +1,6 @@
 'use client'
 import { Box, Grid2, Typography } from '@mui/material'
-import AppBar from '../components/AppBar'
+import AppBar from '../components/AppBar/AppBar'
 import Enterprise from './components/Enterprise'
 import Toy from './components/Toy'
 

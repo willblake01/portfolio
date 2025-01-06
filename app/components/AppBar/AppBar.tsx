@@ -1,7 +1,7 @@
 import { Box, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import MobileAppBar from './MobileAppBar'
+import MobileAppBar from './components/MobileAppBar'
 
 const AppBar = () => {
   const theme = useTheme()

@@ -1,11 +1,11 @@
 'use client'
 import { Suspense } from 'react'
 import { Box, Typography } from '@mui/material'
-import AppBar from './components/AppBar'
+import AppBar from './components/AppBar/AppBar'
 import { Canvas } from '@react-three/fiber'
-import Avatar from './components/Avatar'
-import Light from './components/Light'
-import Controls from './components/OrbitControls'
+import Avatar from './components/Avatar/Avatar'
+import Light from './components/Avatar/components/Light'
+import Controls from './components/Avatar/components/OrbitControls'
 
 const Home = () => (
   <>

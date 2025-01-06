@@ -1,6 +1,6 @@
 'use client'
 import { Box, Typography } from '@mui/material'
-import AppBar from '../components/AppBar'
+import AppBar from '../components/AppBar/AppBar'
 import experience from './data/experience.json'
 import ExperienceCard from './components/ExperienceCard'
 
