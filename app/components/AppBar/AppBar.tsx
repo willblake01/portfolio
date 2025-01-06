@@ -5,9 +5,11 @@ import MobileAppBar from './components/MobileAppBar'
 
 const AppBar = () => {
   const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.up('sm'))
+  const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
-  return matches ? (
+  return mobile ? (
+    <MobileAppBar />
+  ) : (
     <Box sx={{ display: 'flex' }}>
       <Button
         component="a"
@@ -65,8 +67,6 @@ const AppBar = () => {
         contact
       </Button>
     </Box>
-  ) : (
-    <MobileAppBar />
   )
 }
 export default AppBar
