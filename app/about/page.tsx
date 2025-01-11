@@ -14,22 +14,18 @@ const About = () => (
         justifyContent: 'center',
       }}
     >
-      <Typography
-        fontFamily="FingerPaint"
-        sx={{ marginBottom: '2.5rem' }}
-        variant={'h1'}
-      >
+      <Typography fontFamily="FingerPaint" sx={{ mb: '2.5rem' }} variant={'h1'}>
         About
       </Typography>
     </Grid2>
     <Grid2
       container
-      size={{ sm: 1, lg: 7 }}
-      spacing={8}
+      size={7}
+      spacing={4}
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        marginBottom: '2.5rem',
+        mb: '2.5rem',
       }}
     >
       <Card

@@ -7,14 +7,14 @@ const Contact = () => (
   <>
     <AppBar />
     <Grid2
-      sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}
+      sx={{
+        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+      }}
     >
-      <Typography
-        fontFamily="FingerPaint"
-        sx={{ mb: '2.5rem' }}
-        component={'h2'}
-        variant={'h1'}
-      >
+      <Typography fontFamily="FingerPaint" sx={{ mb: '2.5rem' }} variant={'h1'}>
         Contact
       </Typography>
       <ContactCard />

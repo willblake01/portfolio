@@ -16,11 +16,11 @@ const Experience = () => (
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        marginBottom: '2.5rem',
+        mb: '2.5rem',
       }}
     >
       <Typography
-        sx={{ marginBottom: '2.5rem' }}
+        sx={{ mb: '2.5rem' }}
         component={'h2'}
         fontFamily="FingerPaint"
         variant={'h1'}
