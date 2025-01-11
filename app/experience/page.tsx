@@ -18,20 +18,20 @@ const Experience = () => (
       <Typography component={'h2'} fontFamily="FingerPaint" variant={'h1'}>
         Experience
       </Typography>
-      <Grid2
-        container
-        spacing={2}
-        sx={{
-          justifyContent: 'space-around',
-          display: 'flex',
-          padding: '1.25rem',
-          width: '100%',
-        }}
-      >
-        {experience.map((job) => (
-          <ExperienceCard key={job.id} job={job} />
-        ))}
-      </Grid2>
+    </Grid2>
+    <Grid2
+      container
+      spacing={2}
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        padding: '1.25rem',
+        width: '100%',
+      }}
+    >
+      {experience.map((job) => (
+        <ExperienceCard key={job.id} job={job} />
+      ))}
     </Grid2>
   </>
 )
