@@ -25,8 +25,7 @@ const Experience = () => (
       sx={{
         display: 'flex',
         justifyContent: 'space-around',
-        padding: '1.25rem',
-        width: '100%',
+        mb: '2.5rem',
       }}
     >
       {experience.map((job) => (
