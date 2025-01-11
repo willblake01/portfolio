@@ -1,6 +1,6 @@
 'use client'
 import * as React from 'react'
-import { AppBar, Box, IconButton, Toolbar } from '@mui/material'
+import { AppBar, Grid2, IconButton, Toolbar } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import DrawerList from './DrawerList'
 
@@ -12,7 +12,7 @@ const MobileAppBar = () => {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Grid2 container sx={{ flexGrow: 1 }}>
       <AppBar
         sx={{
           backgroundColor: 'var(--background)',
@@ -34,7 +34,7 @@ const MobileAppBar = () => {
           <DrawerList open={open} toggleDrawer={toggleDrawer} />
         </Toolbar>
       </AppBar>
-    </Box>
+    </Grid2>
   )
 }
 

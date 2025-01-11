@@ -1,5 +1,5 @@
 'use client'
-import { Box, Grid2, Typography } from '@mui/material'
+import { Grid2, Typography } from '@mui/material'
 import AppBar from '../components/AppBar/AppBar'
 import Enterprise from './components/Enterprise'
 import Toy from './components/Toy'
@@ -7,7 +7,7 @@ import Toy from './components/Toy'
 const Projects = () => (
   <>
     <AppBar />
-    <Box sx={{ justifyContent: 'center', display: 'flex' }}>
+    <Grid2 sx={{ justifyContent: 'center', display: 'flex' }}>
       <Typography
         fontFamily="FingerPaint"
         sx={{ marginBottom: '2.5rem' }}
@@ -15,7 +15,7 @@ const Projects = () => (
       >
         Projects
       </Typography>
-    </Box>
+    </Grid2>
     <Grid2 container sx={{ marginBottom: '2.5rem' }}>
       <Grid2
         size={6}
@@ -28,9 +28,9 @@ const Projects = () => (
         >
           Enterprise
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Grid2 sx={{ display: 'flex', flexDirection: 'column' }}>
           <Enterprise />
-        </Box>
+        </Grid2>
       </Grid2>
       <Grid2
         size={6}
@@ -43,9 +43,9 @@ const Projects = () => (
         >
           Toy
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Grid2 sx={{ display: 'flex', flexDirection: 'column' }}>
           <Toy />
-        </Box>
+        </Grid2>
       </Grid2>
     </Grid2>
   </>

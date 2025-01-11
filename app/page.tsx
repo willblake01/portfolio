@@ -1,6 +1,6 @@
 'use client'
 import { Suspense } from 'react'
-import { Box, Typography } from '@mui/material'
+import { Grid2, Typography } from '@mui/material'
 import { Canvas } from '@react-three/fiber'
 import AppBar from './components/AppBar/AppBar'
 import Avatar from './components/Avatar/Avatar'
@@ -8,10 +8,10 @@ import Light from './components/Avatar/components/Light'
 import Controls from './components/Avatar/components/OrbitControls'
 
 const Home = () => (
-  <>
+  <Grid2 container>
     <AppBar />
-    <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
-      <Box
+    <Grid2 sx={{ display: 'flex', justifyContent: 'space-around' }}>
+      <Grid2
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -25,8 +25,8 @@ const Home = () => (
           <br />
           there's a way
         </Typography>
-      </Box>
-      <Box
+      </Grid2>
+      <Grid2
         sx={{
           display: 'flex',
           height: '100vh',
@@ -47,9 +47,9 @@ const Home = () => (
           </Suspense>
           <ambientLight color={'white'} intensity={4} />
         </Canvas>
-      </Box>
-    </Box>
-  </>
+      </Grid2>
+    </Grid2>
+  </Grid2>
 )
 
 export default Home

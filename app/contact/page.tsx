@@ -1,12 +1,12 @@
 'use client'
-import { Box, Typography } from '@mui/material'
+import { Grid2, Typography } from '@mui/material'
 import AppBar from '../components/AppBar/AppBar'
 import ContactCard from './components/ContactCard'
 
 const Contact = () => (
   <>
     <AppBar />
-    <Box
+    <Grid2
       sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}
     >
       <Typography
@@ -18,7 +18,7 @@ const Contact = () => (
         Contact
       </Typography>
       <ContactCard />
-    </Box>
+    </Grid2>
   </>
 )
 

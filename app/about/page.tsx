@@ -1,13 +1,18 @@
 'use client'
-import { Box, Card, Grid2, Typography } from '@mui/material'
+import { Grid2, Card, Typography } from '@mui/material'
 import AppBar from '../components/AppBar/AppBar'
 import about from './data/about.json'
 
 const About = () => (
   <>
     <AppBar />
-    <Box
-      sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}
+    <Grid2
+      sx={{
+        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+      }}
     >
       <Typography
         fontFamily="FingerPaint"
@@ -16,39 +21,47 @@ const About = () => (
       >
         About
       </Typography>
-    </Box>
-    <Grid2 container sx={{ display: 'flex' }}>
-      <Grid2
-        size={7}
+    </Grid2>
+    <Grid2
+      container
+      size={{ sm: 1, lg: 7 }}
+      spacing={8}
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        marginBottom: '2.5rem',
+      }}
+    >
+      <Card
         sx={{
-          display: 'flex',
+          borderRadius: 2,
+          padding: '1.5rem',
           height: 'max-content',
-          justifyContent: 'center',
+          width: '50rem',
         }}
       >
-        <Card sx={{ borderRadius: 2, padding: '1.5rem', width: '50rem' }}>
-          {about.paragraphs.map((paragraph, index) => (
-            <Typography
-              key={index}
-              component={'p'}
-              dangerouslySetInnerHTML={{ __html: paragraph.text }}
-              sx={{ textIndent: '4em' }}
-            />
-          ))}
-        </Card>
-      </Grid2>
-      <Grid2 size={5} sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Box sx={{ display: 'flex' }}>
-          <img
-            src="https://res.cloudinary.com/willblake01/image/upload/v1732640647/profile-pic.jpg"
-            alt="profile-pic"
-            style={{
-              borderRadius: '8px',
-              height: 'max-content',
-              width: '25rem',
-            }}
+        {about.paragraphs.map((paragraph, index) => (
+          <Typography
+            key={index}
+            component={'p'}
+            dangerouslySetInnerHTML={{ __html: paragraph.text }}
+            sx={{ textIndent: '4em' }}
           />
-        </Box>
+        ))}
+      </Card>
+      <Grid2
+        size={{ sm: 1, lg: 3 }}
+        sx={{ display: 'flex', justifyContent: 'center' }}
+      >
+        <img
+          src="https://res.cloudinary.com/willblake01/image/upload/v1732640647/profile-pic.jpg"
+          alt="profile-pic"
+          style={{
+            borderRadius: '8px',
+            height: 'auto',
+            width: '100%',
+          }}
+        />
       </Grid2>
     </Grid2>
   </>
