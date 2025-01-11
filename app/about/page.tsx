@@ -7,6 +7,7 @@ const About = () => (
   <>
     <AppBar />
     <Grid2
+      container
       sx={{
         display: 'flex',
         justifyContent: 'center',

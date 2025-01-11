@@ -8,9 +8,9 @@ import Light from './components/Avatar/components/Light'
 import Controls from './components/Avatar/components/OrbitControls'
 
 const Home = () => (
-  <Grid2 container>
+  <>
     <AppBar />
-    <Grid2 sx={{ display: 'flex', justifyContent: 'space-around' }}>
+    <Grid2 container sx={{ display: 'flex', justifyContent: 'space-around' }}>
       <Grid2
         sx={{
           display: 'flex',
@@ -27,6 +27,7 @@ const Home = () => (
         </Typography>
       </Grid2>
       <Grid2
+        container
         sx={{
           display: 'flex',
           height: '100vh',
@@ -49,7 +50,7 @@ const Home = () => (
         </Canvas>
       </Grid2>
     </Grid2>
-  </Grid2>
+  </>
 )
 
 export default Home

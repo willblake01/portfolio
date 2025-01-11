@@ -7,7 +7,10 @@ import Toy from './components/Toy'
 const Projects = () => (
   <>
     <AppBar />
-    <Grid2 sx={{ justifyContent: 'center', display: 'flex', mb: '2.5rem' }}>
+    <Grid2
+      container
+      sx={{ display: 'flex', justifyContent: 'center', mb: '2.5rem' }}
+    >
       <Typography fontFamily="FingerPaint" variant={'h1'}>
         Projects
       </Typography>
