@@ -8,15 +8,16 @@ const Contact = () => (
     <AppBar />
     <Grid2
       sx={{
-        alignItems: 'center',
         display: 'flex',
-        flexDirection: 'column',
         justifyContent: 'center',
+        mb: '2.5rem',
       }}
     >
-      <Typography fontFamily="FingerPaint" sx={{ mb: '2.5rem' }} variant={'h1'}>
+      <Typography fontFamily="FingerPaint" variant={'h1'}>
         Contact
       </Typography>
+    </Grid2>
+    <Grid2 container sx={{ display: 'flex', justifyContent: 'center' }}>
       <ContactCard />
     </Grid2>
   </>

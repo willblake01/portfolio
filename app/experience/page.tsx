@@ -3,7 +3,6 @@ import { Grid2, Typography } from '@mui/material'
 import AppBar from '../components/AppBar/AppBar'
 import experience from './data/experience.json'
 import ExperienceCard from './components/ExperienceCard'
-import { Grid } from '@react-three/drei'
 
 const Experience = () => (
   <>
@@ -12,19 +11,13 @@ const Experience = () => (
       container
       spacing={2}
       sx={{
-        alignItems: 'center',
         display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
+        justifyContent: 'center',
         mb: '2.5rem',
+        width: '100%',
       }}
     >
-      <Typography
-        sx={{ mb: '2.5rem' }}
-        component={'h2'}
-        fontFamily="FingerPaint"
-        variant={'h1'}
-      >
+      <Typography component={'h2'} fontFamily="FingerPaint" variant={'h1'}>
         Experience
       </Typography>
       <Grid2
