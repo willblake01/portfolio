@@ -1,13 +1,16 @@
 'use client'
-import { Box, Typography } from '@mui/material'
+import { Grid2, Typography } from '@mui/material'
 import AppBar from '../components/AppBar/AppBar'
 import experience from './data/experience.json'
 import ExperienceCard from './components/ExperienceCard'
+import { Grid } from '@react-three/drei'
 
 const Experience = () => (
   <>
     <AppBar />
-    <Box
+    <Grid2
+      container
+      spacing={2}
       sx={{
         alignItems: 'center',
         display: 'flex',
@@ -24,7 +27,9 @@ const Experience = () => (
       >
         Experience
       </Typography>
-      <Box
+      <Grid2
+        container
+        spacing={2}
         sx={{
           justifyContent: 'space-around',
           display: 'flex',
@@ -35,8 +40,8 @@ const Experience = () => (
         {experience.map((job) => (
           <ExperienceCard key={job.id} job={job} />
         ))}
-      </Box>
-    </Box>
+      </Grid2>
+    </Grid2>
   </>
 )
 

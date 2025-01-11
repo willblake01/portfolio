@@ -1,8 +1,6 @@
 'use client'
 import * as React from 'react'
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
-import { IconButton, Toolbar } from '@mui/material'
+import { AppBar, Box, IconButton, Toolbar } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import DrawerList from './DrawerList'
 
