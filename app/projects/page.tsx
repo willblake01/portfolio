@@ -39,7 +39,6 @@ const Projects = () => (
           sx={{
             display: 'flex',
             justifyContent: 'space-around',
-            padding: '1.25rem',
             width: '100%',
           }}
         >
@@ -61,7 +60,6 @@ const Projects = () => (
           sx={{
             display: 'flex',
             justifyContent: 'space-around',
-            padding: '1.25rem',
             width: '100%',
           }}
         >
