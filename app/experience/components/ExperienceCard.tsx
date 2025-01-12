@@ -42,7 +42,7 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
     />
     <CardHeader subheader={job.team} sx={{ textAlign: 'center' }} />
     <CardContent>
-      <List sx={{ listStyleType: 'disc' }}>
+      <List sx={{ listStyleType: 'disc', padding: '1rem' }}>
         {job.responsibilities.map((item, index) => (
           <ListItem key={index} sx={{ display: 'list-item' }}>
             {item}

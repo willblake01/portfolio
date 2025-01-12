@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
           sx={{ textAlign: 'center' }}
         />
         <CardContent sx={{ color: 'text.secondary' }}>
-          <List sx={{ listStyleType: 'disc' }}>
+          <List sx={{ listStyleType: 'disc', padding: '1rem' }}>
             {project.contributions.map((item, index) => (
               <ListItem key={index} sx={{ display: 'list-item' }}>
                 {item}
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
           sx={{ textAlign: 'center' }}
         />
         <CardContent sx={{ color: 'text.secondary' }}>
-          <List sx={{ listStyleType: 'disc' }}>
+          <List sx={{ listStyleType: 'disc', padding: '1rem' }}>
             {project.contributions.map((item, index) => (
               <ListItem key={index} sx={{ display: 'list-item' }}>
                 {item}
