@@ -24,7 +24,6 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
     sx={{
       borderRadius: 2,
       color: 'text.secondary',
-      padding: '0.625rem',
       textAlign: 'center',
       width: '32.5rem',
     }}
