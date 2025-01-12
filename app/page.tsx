@@ -6,26 +6,13 @@ import AppBar from './components/AppBar/AppBar'
 import Avatar from './components/Avatar/Avatar'
 import Light from './components/Avatar/components/Light'
 import Controls from './components/Avatar/components/OrbitControls'
+import PageHeader from './components/PageHeader'
 
 const Home = () => (
   <>
     <AppBar />
     <Grid2 container sx={{ display: 'flex', justifyContent: 'space-around' }}>
-      <Grid2
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          height: 'max-content',
-          padding: '2.5rem',
-          width: 'max-content',
-        }}
-      >
-        <Typography fontFamily="FingerPaint" variant={'h1'}>
-          Where there's a Will,
-          <br />
-          there's a way
-        </Typography>
-      </Grid2>
+      <PageHeader title="Where there's a Will, <br /> there's a way" />
       <Grid2
         container
         sx={{

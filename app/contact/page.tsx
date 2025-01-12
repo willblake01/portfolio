@@ -2,22 +2,12 @@
 import { Grid2, Typography } from '@mui/material'
 import AppBar from '../components/AppBar/AppBar'
 import ContactCard from './components/ContactCard'
+import PageHeader from '../components/PageHeader'
 
 const Contact = () => (
   <>
     <AppBar />
-    <Grid2
-      container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        mb: '2.5rem',
-      }}
-    >
-      <Typography fontFamily="FingerPaint" variant={'h1'}>
-        Contact
-      </Typography>
-    </Grid2>
+    <PageHeader title="Contact" />
     <Grid2 container sx={{ display: 'flex', justifyContent: 'center' }}>
       <ContactCard />
     </Grid2>

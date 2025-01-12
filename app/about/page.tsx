@@ -2,22 +2,12 @@
 import { Grid2, Card, Typography } from '@mui/material'
 import AppBar from '../components/AppBar/AppBar'
 import about from './data/about.json'
+import PageHeader from '../components/PageHeader'
 
 const About = () => (
   <>
     <AppBar />
-    <Grid2
-      container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        mb: '2.5rem',
-      }}
-    >
-      <Typography fontFamily="FingerPaint" variant={'h1'}>
-        About
-      </Typography>
-    </Grid2>
+    <PageHeader title="About" />
     <Grid2
       container
       size={7}

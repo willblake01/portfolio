@@ -10,7 +10,7 @@ const AppBar = () => {
   return mobile ? (
     <MobileAppBar />
   ) : (
-    <Grid2 container sx={{ display: 'flex' }}>
+    <Grid2 container sx={{ display: 'flex', mb: '2.5rem' }}>
       <Button
         component="a"
         href="/"

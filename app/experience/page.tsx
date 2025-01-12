@@ -1,24 +1,14 @@
 'use client'
-import { Grid2, Typography } from '@mui/material'
-import AppBar from '../components/AppBar/AppBar'
+import { Grid2 } from '@mui/material'
 import experience from './data/experience.json'
+import AppBar from '../components/AppBar/AppBar'
 import ExperienceCard from './components/ExperienceCard'
+import PageHeader from '../components/PageHeader'
 
 const Experience = () => (
   <>
     <AppBar />
-    <Grid2
-      container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        mb: '2.5rem',
-      }}
-    >
-      <Typography component={'h2'} fontFamily="FingerPaint" variant={'h1'}>
-        Experience
-      </Typography>
-    </Grid2>
+    <PageHeader title="Experience" />
     <Grid2
       container
       spacing={2}

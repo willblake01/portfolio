@@ -12,7 +12,7 @@ const MobileAppBar = () => {
   }
 
   return (
-    <Grid2 container sx={{ flexGrow: 1 }}>
+    <Grid2 container sx={{ flexGrow: 1, mb: '1.5rem' }}>
       <AppBar
         sx={{
           backgroundColor: 'var(--background)',

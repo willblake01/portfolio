@@ -3,6 +3,7 @@ import { Grid2, Typography } from '@mui/material'
 import projects from './data/projects.json'
 import AppBar from '../components/AppBar/AppBar'
 import ProjectCard from './components/ProjectCard'
+import PageHeader from '../components/PageHeader'
 
 interface Project {
   id: string
@@ -17,14 +18,7 @@ interface Project {
 const Projects = () => (
   <>
     <AppBar />
-    <Grid2
-      container
-      sx={{ display: 'flex', justifyContent: 'center', mb: '2.5rem' }}
-    >
-      <Typography fontFamily="FingerPaint" variant={'h1'}>
-        Projects
-      </Typography>
-    </Grid2>
+    <PageHeader title="Projects" />
     <Grid2 container sx={{ mb: '2.5rem' }}>
       <Grid2
         size={{ lg: 6 }}
