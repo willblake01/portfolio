@@ -3,7 +3,11 @@
       "id": "1",
       "title": "Spectrum",
       "team": "Solo Developer",
-      "responsibilities": ["Worked under Senior Engineer on Ruby on Rails application utilizing Pivotal Tracker, Haml, Sass, Postgres, Redis, RSpec, Codeship, Heroku, AWS", "Effectively translated client requirements into application designs and system requirements utilizing Scrum framework", "Planned, developed, tested, deployed, and maintained new features from Agile product backlog", "Stabilized application by taking test coverage from 9.22% to 54.49%", "Worked well independently and remotely within a team setting using Slack, Pivotal Tracker, and Google Meet"],
+      "responsibilities": [
+        "Worked under Senior Engineer on Ruby on Rails application utilizing Pivotal Tracker, Haml, Sass, Postgres, Redis, RSpec, Codeship, Heroku, AWS",
+        "Effectively translated client requirements into application design and system requirements utilizing Scrum framework", "Planned, developed, tested, deployed, and maintained new features from Agile product backlog",
+        "Stabilized application by taking test coverage from 9.22% to 54.49%", "Worked well independently and remotely within a team setting using Slack, Pivotal Tracker, and Google Meet"
+      ],
 
       "image": "https://res.cloudinary.com/willblake01/image/upload/v1734651619/spectrum-trail-racing.png"
   },
@@ -11,14 +15,25 @@
     "id": "2",
     "title": "Under Armour",
     "team": "Challenges, Web Team, e-Commerce",
-    "responsibilities": ["Started on an internal tools team and quickly moved up the engineering ladder to work on MapMy Run (10M user base) and Seabiscuit mobile speed team building a GraphQL, Typescript, and NextJS frontend for the e-commerce shopping application focusing on performance", "Primary developer and Product Owner for Jackfruit challenges admin tool", "Created NPM package with unit conversion tables for duration, distance, and time to be used across suite of applications", "Excelled in identifying elegant codebase refactors resulting in faster programs with less lines of code", "Implemented test driven development to maintain clean and manageable code, unit testing with Jest", "Worked with QA and support teammates to diagnose and fix bugs"],
+    "responsibilities": [
+      "Started on internal tools team and quickly moved up the engineering ladder to work on MapMy Run (10M user base) and Seabiscuit (Performance clone for underarmour.com product description pages using GraphQL, TypeScript, and NextJS)",
+      "Primary developer and Product Owner for Jackfruit challenges admin tool",
+      "Implemented test driven development to maintain clean and manageable code, unit testing with Jest",
+      "Worked with QA and support team to diagnose and fix bugs",
+      "Created NPM package with unit conversion tables for duration, distance, and time to be used across suite of applications"
+    ],
     "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png"
   },
   {
     "id": "3",
     "title": "Unity",
     "team": "Commerce Platform",
-    "responsibilities": ["Created TDDs, contributed to PRDs, and drove for alignment to ensure successful completion of team initiatives", "Developed features in admin protected segments of Unity Services Dashboard in agile scrums with product manager for OneCommerce initiative", "Migrated components from Unity One (MUI 4 base) component library to Cloud Foundation design system (MUI 5 base) Storybook components", "Refactored notifications service and email templates to support OneCommerce Unity Cloud launch", "Completed Unity Leadership training and was a Unity “Certified Interviewer” heavily involved in the intern program"],
+    "responsibilities": [
+      "Created technical design documents, contributed to product requirements documents, and drove for alignment to ensure successful completion of team initiatives",
+      "Developed features in admin protected segments of Unity Services Dashboard in agile scrums with product manager for OneCommerce initiative",
+      "Migrated components from Unity One (MUI 4 base) component library to Cloud Foundation design system (MUI 5 base) Storybook components", "Refactored notifications service and implemented email templates to support OneCommerce Unity Cloud launch",
+      "Completed Unity Leadership training and Unity “Certified Interviewer” involved in the intern program"
+    ],
     "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png"
   }
 ]
