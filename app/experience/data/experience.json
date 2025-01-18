@@ -5,7 +5,9 @@
       "team": "Solo Developer",
       "responsibilities": [
         "Worked under Senior Engineer on Ruby on Rails application utilizing Haml, Sass, Postgres, Redis, RSpec, Codeship, Heroku, and AWS",
-        "Effectively translated client requirements into application design and system requirements utilizing Scrum framework", "Planned, developed, tested, deployed, and maintained new features from Agile product backlog",
+        "Effectively translated client requirements into application design and system requirements utilizing Scrum framework",
+        "Created admin protected dashboards for business analytics and capturing lost opportunities",
+        "Migrated race registration pages from Haml to React single page application to solve state management issues with multi-step form",
         "Stabilized application by taking test coverage from 9.22% to 54.49%", "Worked well independently and remotely within a team setting using Slack, Pivotal Tracker, and Google Meet"
       ],
 
