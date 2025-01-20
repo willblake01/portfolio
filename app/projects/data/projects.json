@@ -29,7 +29,7 @@
       {
         "id": 2,
         "title": "Jackfruit Challenges Admin",
-        "description": "Under Armour admin tool for creating challenges in MapMy Run",
+        "description": "Under Armour admin tool for creating challenges in MapMyRun",
         "url": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png",
         "contributions": [
@@ -50,7 +50,7 @@
       },
       {
         "id": 3,
-        "title": "MapMy Run",
+        "title": "MapMyRun",
         "description": "Under Armour GPS workout logging and Social Media app",
         "url": "https://www.mapmyrun.com",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222530/map-my-run.png",
