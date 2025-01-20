@@ -10,10 +10,15 @@ const Projects = () => (
   <>
     <AppBar />
     <PageHeader title="Projects" />
-    <Grid2 container sx={{ mb: '2.5rem' }}>
+    <Grid2 container>
       <Grid2
         size={{ lg: 6 }}
-        sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}
+        sx={{
+          alignItems: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          mb: '2.5rem',
+        }}
       >
         <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
           Enterprise
@@ -34,7 +39,12 @@ const Projects = () => (
       </Grid2>
       <Grid2
         size={{ lg: 6 }}
-        sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}
+        sx={{
+          alignItems: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          mb: '2.5rem',
+        }}
       >
         <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
           Toy
