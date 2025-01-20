@@ -6,13 +6,7 @@ import {
   List,
   ListItem,
 } from '@mui/material'
-
-interface Job {
-  id: string
-  image: string
-  team: string
-  responsibilities: string[]
-}
+import type { Job } from '../../types/experience'
 
 interface ExperienceCardProps {
   job: Job
@@ -20,12 +14,12 @@ interface ExperienceCardProps {
 
 const ExperienceCard = ({ job }: ExperienceCardProps) => (
   <Card
-    key={job.id}
     sx={{
       borderRadius: 2,
       color: 'text.secondary',
       textAlign: 'center',
       width: '32.5rem',
+      boxShadow: 3,
     }}
   >
     <Box
@@ -43,9 +37,9 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
     <CardHeader subheader={job.team} sx={{ textAlign: 'center' }} />
     <CardContent>
       <List sx={{ listStyleType: 'disc', padding: '1rem' }}>
-        {job.responsibilities.map((item, index) => (
-          <ListItem key={index} sx={{ display: 'list-item' }}>
-            {item}
+        {job.responsibilities.map((responsibility) => (
+          <ListItem key={responsibility.id} sx={{ display: 'list-item' }}>
+            {responsibility.text}
           </ListItem>
         ))}
       </List>

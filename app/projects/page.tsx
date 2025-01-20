@@ -4,16 +4,7 @@ import projects from './data/projects.json'
 import AppBar from '../components/AppBar/AppBar'
 import ProjectCard from './components/ProjectCard'
 import PageHeader from '../components/PageHeader'
-
-interface Project {
-  id: string
-  link: string
-  image: string
-  title: string
-  description: string
-  contributions: string[]
-  technologies: string[]
-}
+import type { Project } from '../types/project'
 
 const Projects = () => (
   <>
@@ -29,7 +20,7 @@ const Projects = () => (
         </Typography>
         <Grid2
           container
-          spacing={2}
+          spacing={3}
           sx={{
             display: 'flex',
             justifyContent: 'space-around',
@@ -37,7 +28,7 @@ const Projects = () => (
           }}
         >
           {projects.enterprise.map((project: Project) => (
-            <ProjectCard project={project} />
+            <ProjectCard key={project.id} project={project} />
           ))}
         </Grid2>
       </Grid2>
@@ -50,7 +41,7 @@ const Projects = () => (
         </Typography>
         <Grid2
           container
-          spacing={2}
+          spacing={3}
           sx={{
             display: 'flex',
             justifyContent: 'space-around',
@@ -58,7 +49,7 @@ const Projects = () => (
           }}
         >
           {projects.toy.map((project: Project) => (
-            <ProjectCard project={project} />
+            <ProjectCard key={project.id} project={project} />
           ))}
         </Grid2>
       </Grid2>

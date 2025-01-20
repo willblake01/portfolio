@@ -3,7 +3,13 @@ import Link from 'next/link'
 
 const ContactCard = () => (
   <Grid2 container>
-    <Card sx={{ borderRadius: 2, padding: '0.5rem' }}>
+    <Card
+      sx={{
+        borderRadius: 2,
+        boxShadow: 3,
+        padding: '0.5rem',
+      }}
+    >
       <CardContent>
         <Typography component={'p'}>Phone: 510-394-5710</Typography>
         <Typography component={'p'}>

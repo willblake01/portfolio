@@ -1,9 +1,11 @@
 {
   "paragraphs": [
     {
+      "id": 1,
       "text": "William Blake is an Intuitive Seeker who is never satisfied in his intellectual pursuits and whose curiosity knows no bounds. He is a prolific full stack web developer with a passion for metrics and beating former “best-yets”. He leverages strong business acumen with a background in finance and sales to meld engineering and business interests. He was previously a software engineer on the commerce platform Subscriptions, Notifications, and Payments (SNaP) team at Unity Technologies. He loves to help people help people and is currently seeking a position on an empowered product team. Web development quenches his thirst as an ENTP, who rarely pass up the opportunity to learn something new.<br></br>"
     },
     {
+      "id": 2,
       "text": "When he isn’t making computers dance, you can find him spending his time playing guitar, learning Spanish, running marathons, and trying not to fall down on the soccer field. He loves his native Austin but also enjoys traveling!"
     }
   ]

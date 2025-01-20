@@ -21,14 +21,15 @@ const About = () => (
       <Card
         sx={{
           borderRadius: 2,
+          boxShadow: 3,
           padding: '1.5rem',
           height: 'max-content',
           width: '50rem',
         }}
       >
-        {about.paragraphs.map((paragraph, index) => (
+        {about.paragraphs.map((paragraph) => (
           <Typography
-            key={index}
+            key={paragraph.id}
             component={'p'}
             dangerouslySetInnerHTML={{ __html: paragraph.text }}
             sx={{ textIndent: '4em' }}

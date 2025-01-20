@@ -21,25 +21,25 @@ interface DrawerListProps {
 }
 
 const drawerOptions = [
-  { text: 'Home', icon: <HomeIcon />, route: '/' },
-  { text: 'Experience', icon: <ChecklistIcon />, route: '/experience' },
-  { text: 'Projects', icon: <DashboardIcon />, route: '/projects' },
-  { text: 'About', icon: <InfoIcon />, route: '/about' },
-  { text: 'Contact', icon: <ContactMailIcon />, route: '/contact' },
+  { id: 1, text: 'Home', icon: <HomeIcon />, route: '/' },
+  { id: 2, text: 'Experience', icon: <ChecklistIcon />, route: '/experience' },
+  { id: 3, text: 'Projects', icon: <DashboardIcon />, route: '/projects' },
+  { id: 4, text: 'About', icon: <InfoIcon />, route: '/about' },
+  { id: 5, text: 'Contact', icon: <ContactMailIcon />, route: '/contact' },
 ]
 
 const DrawerList: React.FC<DrawerListProps> = ({ open, toggleDrawer }) => {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {drawerOptions.map((section, index) => (
+        {drawerOptions.map((section) => (
           <Link
             color="inherit"
             href={section.route}
-            key={section.text}
+            key={section.id}
             underline="none"
           >
-            <ListItem key={section.text} disablePadding>
+            <ListItem key={section.id} disablePadding>
               <ListItemButton>
                 <ListItemIcon>{section.icon}</ListItemIcon>
                 <ListItemText primary={section.text} />

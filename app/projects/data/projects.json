@@ -1,88 +1,245 @@
 {
     "enterprise": [
       {
-        "id": "1",
+        "id": 1,
         "title": "Spectrum Trail Racing",
         "description": "Merketing and race registration site",
-        "contributions": ["Added admin protected dashboards for analytics", "Created targeted email campaigns to capture lost opportunities"],
-        "technologies": ["Ruby on Rails", "Haml", "React", "Postgres", "Redis", "RSpec", "AWS"],
-        "link": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1583682869/react-portfolio/spectrum-trail-racing.png"
+        "url": "",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1583682869/react-portfolio/spectrum-trail-racing.png",
+        "contributions": [
+          { 
+            "id": 1,
+            "text": "Added admin protected dashboards for analytics"
+          },
+          { 
+            "id": 2,
+            "text": "Created targeted email campaigns to capture lost opportunities"
+          }
+        ],
+        "technologies": [
+          "Ruby on Rails",
+          "Haml",
+          "React",
+          "Postgres",
+          "Redis",
+          "RSpec",
+          "AWS"
+        ]
       },
       {
-        "id": "2",
+        "id": 2,
         "title": "Jackfruit Challenges Admin",
         "description": "Under Armour admin tool for creating challenges in MapMy Run",
-        "contributions": ["Added support for workout, distance, and time based challenges", "Added support for challenges with multiple goals"],
-        "technologies": ["React", "React Context", "React Query"],
-        "link": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png"
+        "url": "",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Added support for workout, distance, and time based challenges"
+          }, 
+          { 
+            "id": 2,
+            "text": "Added support for challenges with multiple goals"
+          }
+        ],
+        "technologies": [
+          "React", 
+          "React Context", 
+          "React Query"
+        ]
       },
       {
-        "id": "3",
+        "id": 3,
         "title": "MapMy Run",
         "description": "Under Armour GPS workout logging and Social Media app",
-        "contributions": ["Added challenges feature support", "Added UI elements to show challenge progress", "Added support for challenges with multiple goals"],
-        "technologies": ["React", "Redux"],
-        "link": "https://www.mapmyrun.com",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222530/map-my-run.png"
+        "url": "https://www.mapmyrun.com",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222530/map-my-run.png",
+        "contributions": [
+          { 
+            "id": 1,
+            "text": "Added challenges feature support"
+          },
+          { 
+            "id": 2,
+            "text": "Added UI elements to show challenge progress"
+          },
+          {
+            "id": 3,
+            "text": "Added support for challenges with multiple goals"
+          }
+        ],
+        "technologies": [
+          "React",
+          "Redux"
+        ]
       },
       {
-        "id": "4",
+        "id": 4,
         "title": "Seabiscuit",
         "description": "Performance clone for product description pages on underarmour.com",
-        "contributions": ["Ported 1:1 cloned pages to new tech stack", "Added new features to support new product lines"],
-        "technologies": ["Next", "React", "React Query", "GraphQL"],
-        "link": "https://www.underarmour.com",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222388/under-armour.png"
+        "url": "https://www.underarmour.com",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222388/under-armour.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Ported 1:1 cloned pages to new tech stack"
+          },
+          { 
+            "id": 2,
+            "text": "Added new features to support new product lines"
+          }
+        ],
+        "technologies": [
+          "Next", 
+          "React", 
+          "React Query", 
+          "GraphQL"
+        ]
       },
       {
-        "id": "5",
+        "id": 5,
         "title": "OneCommerce Notifications",
         "description": "Unity notification service for new commerce platform",
-        "contributions": ["Standardized translation and versioning processes", "Added templates for Unity Cloud products to support OneCommerce platform"],
-        "technologies": ["Go", "HTML", "CSS"],
-        "link": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png"
+        "url": "",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Standardized translation and versioning processes"
+          },
+          {
+            "id": 2,
+            "text": "Added templates for Unity Cloud products to support OneCommerce platform"
+          }
+        ],
+        "technologies": [
+          "Go",
+          "HTML",
+          "CSS"
+        ]
       },
       {
-        "id": "6",
+        "id": 6,
         "title": "Unity Services Dashboard",
         "description": "All in one dashboard for users and admins to manage Unity services",
-        "contributions": ["Added pages to support metered subscriptions with filtered lists and details page", "Refactored Users page with user subscriptions by type", "Refactored payment methods on admin page"],
-        "technologies": ["React", "React Context", "React Query"],
-        "link": "https://cloud.unity.com/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png"
+        "url": "https://cloud.unity.com/",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Added pages to support metered subscriptions with filtered lists and details page"
+          },
+          {
+            "id": 2,
+            "text": "Refactored Users page with user subscriptions by type"
+          },
+          {
+            "id": 3,
+            "text": "Refactored payment methods on admin page"
+          }
+        ],
+        "technologies": [
+          "React", 
+          "React Context", 
+          "React Query"
+        ]
       }
     ],
 
     "toy": [
       {
-        "id": "1",
+        "id": 1,
         "title": "Train Time",
         "description": "Train scheduler I built as a companion when I play Trainz 2019",
-        "contributions": ["Designed UI", "Connected database for real-time updates", "Added Jest tests"],
-        "technologies": ["Firebase RTD", "Next", "React", "Typescript", "MUI", "Jest"],
-        "link": "https://train-time-i1818sb62-will-blakes-projects.vercel.app",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png"
+        "url": "https://train-time-i1818sb62-will-blakes-projects.vercel.app",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Designed UI"
+          },
+          {
+            "id": 2,
+            "text": "Connected database for real-time updates"
+          },
+          {
+            "id": 3,
+            "text": "Added Jest tests"
+          }
+        ],
+        "technologies": [
+          "Firebase RTD", 
+          "Next", 
+          "React", 
+          "Typescript", 
+          "MUI", 
+          "Jest"
+        ]
       },
       {
-        "id": "2",
+        "id": 2,
         "title": "Simpsons Memory Challenge",
         "description": "Memory challenge game to see how many Simpsons characters you can name",
-        "contributions": ["Designed UI", "Validated user input", "Added game logic to track time and score", "Added data to local storage for persistance"],
-        "technologies": ["Next", "React", "Typescript", "MUI", "Jest"],
-        "link": "https://willblake01.github.io/simpsons-memory-challenge",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1733191086/simpsons-memory-game.png"
+        "url": "https://willblake01.github.io/simpsons-memory-challenge",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1733191086/simpsons-memory-game.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Designed UI"
+          },
+          {
+            "id": 2,
+            "text": "Validated user input"
+          },
+          {
+            "id": 3,
+            "text": "Added game logic to track time and score"
+          },
+          {
+            "id": 4,
+            "text": "Added data to local storage for persistance"
+          }
+        ],
+        "technologies": [
+          "Next", 
+          "React", 
+          "Typescript", 
+          "MUI", 
+          "Jest"
+        ]
       },
       {
-        "id": "3",
+        "id": 3,
         "title": "Range Front",
         "description": "Faux eCommerce app similar to rei.com",
-        "contributions": ["Designed UI", "Created backend for product data", "Added Stripe checkout", "Added Jest tests"],
-        "technologies": ["Next", "React", "Typescript", "GraphQL", "Apollo", "Prisma"],
-        "link": "https://range-front-p2vvbk1za-will-blakes-projects.vercel.app",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1538510166/react-portfolio/range-front.png"
+        "url": "https://range-front-p2vvbk1za-will-blakes-projects.vercel.app",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1538510166/react-portfolio/range-front.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Designed UI"
+          },
+          {
+            "id": 2,
+            "text": "Created backend for product data"
+          },
+          {
+            "id": 3,
+            "text": "Added Stripe checkout"
+          },
+          {
+            "id": 4,
+            "text": "Added Jest tests"
+          }
+        ],
+        "technologies": [
+          "Next", 
+          "React", 
+          "Typescript", 
+          "GraphQL", 
+          "Apollo", 
+          "Prisma"
+        ]
       }
     ]
 }
