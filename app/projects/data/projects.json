@@ -150,7 +150,7 @@
       {
         "id": 1,
         "title": "Train Time",
-        "description": "Train scheduler I built as a companion when I play Trainz 2019",
+        "description": "Train scheduler I built as a companion while playing Trainz 2019",
         "url": "https://train-time-rosy.vercel.app",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png",
         "contributions": [
