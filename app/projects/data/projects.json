@@ -180,7 +180,7 @@
         "id": 2,
         "title": "Simpsons Memory Challenge",
         "description": "Memory challenge game to see how many Simpsons characters you can name",
-        "url": "https://willblake01.github.io/simpsons-memory-challenge",
+        "url": "https://the-simpsons-memory-challenge.vercel.app/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1733191086/simpsons-memory-game.png",
         "contributions": [
           {
