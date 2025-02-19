@@ -149,10 +149,10 @@
     "toy": [
       {
         "id": 1,
-        "title": "Train Time",
-        "description": "Train scheduler I built as a companion while playing Trainz 2019",
-        "url": "https://train-time-rosy.vercel.app",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png",
+        "title": "Fetch Rescue",
+        "description": "Faux dog rescue site",
+        "url": "https://fetch-frontend-exercise-nine.vercel.app/",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1739999169/fetch-rescue_jabauq.png",
         "contributions": [
           {
             "id": 1,
@@ -160,20 +160,24 @@
           },
           {
             "id": 2,
-            "text": "Connected database for real-time updates"
+            "text": "Integrated with backend API"
           },
           {
             "id": 3,
-            "text": "Added Jest tests"
+            "text": "Local storage state management"
+          },
+          {
+            "id": 4,
+            "text": "Fully typed and deployed"
           }
         ],
         "technologies": [
-          "Firebase RTD", 
           "Next", 
           "React", 
           "Typescript", 
-          "MUI", 
-          "Jest"
+          "MUI",
+          "Tailwind",
+          "Vercel"
         ]
       },
       {
@@ -205,15 +209,16 @@
           "React", 
           "Typescript", 
           "MUI", 
-          "Jest"
+          "Jest",
+          "Vercel"
         ]
       },
       {
         "id": 3,
-        "title": "Range Front",
-        "description": "Faux eCommerce app similar to rei.com",
-        "url": "https://range-front.vercel.app",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1538510166/react-portfolio/range-front.png",
+        "title": "Train Time",
+        "description": "Train scheduler I built as a companion while playing Trainz 2019",
+        "url": "https://train-time-rosy.vercel.app",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png",
         "contributions": [
           {
             "id": 1,
@@ -221,24 +226,21 @@
           },
           {
             "id": 2,
-            "text": "Created backend for product data"
+            "text": "Connected database for real-time updates"
           },
           {
             "id": 3,
-            "text": "Added Stripe checkout"
-          },
-          {
-            "id": 4,
             "text": "Added Jest tests"
           }
         ],
         "technologies": [
+          "Firebase RTD", 
           "Next", 
           "React", 
           "Typescript", 
-          "GraphQL", 
-          "Apollo", 
-          "Prisma"
+          "MUI", 
+          "Jest",
+          "Vercel"
         ]
       }
     ]
