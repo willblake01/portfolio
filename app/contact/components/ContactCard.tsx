@@ -1,5 +1,6 @@
 import { Card, CardContent, Grid2, Typography } from '@mui/material'
 import Link from 'next/link'
+import contact from '../data/contact.json'
 
 const ContactCard = () => (
   <Grid2 container>
@@ -11,15 +12,10 @@ const ContactCard = () => (
       }}
     >
       <CardContent>
-        <Typography component={'p'}>Phone: 510-394-5710</Typography>
+        <Typography component={'p'}>{`Phone: ${contact.phone}`}</Typography>
+        <Typography component={'p'}>{`Email: ${contact.email}`}</Typography>
         <Typography component={'p'}>
-          Email: willblakebooking@gmail.com
-        </Typography>
-        <Typography component={'p'}>
-          <Link
-            target="blank"
-            href="https://www.linkedin.com/in/william-blake/"
-          >
+          <Link target="blank" href={`${contact.linkedInURL}`}>
             LinkedIn
           </Link>
         </Typography>
