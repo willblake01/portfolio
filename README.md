@@ -1,8 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-Enabled-blue)
+![Three.js](https://img.shields.io/badge/Three.js-000000?logo=three.js&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
-First, run the development server:
+A modern, performance-focused **personal portfolio** built with **Next.js** and **TypeScript**.  
+This site highlights selected projects, technical depth, and real-world engineering experience with a strong emphasis on **clean architecture**, **maintainability**, and **user experience**.
+
+Built specifically for **recruiters, hiring managers, and engineering teams** evaluating production-quality frontend and full‑stack work.
+
+---
+
+## 🧠 What This Demonstrates
+
+- Advanced **React** patterns and **Next.js App Router** usage
+- Strong **TypeScript** discipline with scalable project structure
+- Experience building **interactive, real-time, and 3D-enabled** web interfaces
+- Performance-conscious UI development
+- Clean, readable code designed for long-term maintenance
+- Practical engineering decisions over demo-only abstractions
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Modern CSS
+
+### Advanced Capabilities
+
+- WebSockets & real-time data flows
+- Three.js / interactive 3D experiences
+- Electron for desktop application patterns
+
+### Platform & Tooling
+
+- Vercel (CI/CD + hosting)
+- ESLint
+- Modern build tooling
+- `next/font` with Geist for optimized typography
+
+---
+
+## ⭐ Highlighted Projects
+
+This portfolio includes:
+
+- Interactive UI experiments
+- Performance-sensitive frontend features
+- Real-time and visual projects that mirror production constraints
+
+Each project emphasizes **clarity, scalability, and user impact** rather than novelty alone.
+
+---
+
+## 🚀 Getting Started (Local Development)
+
+Install dependencies and start the development server:
 
 ```bash
 npm run dev
@@ -14,23 +77,44 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Project Structure
 
-## Learn More
+- `app/page.tsx` — Main portfolio entry point
+- `app/` — App Router layouts and routes
+- Component-driven architecture designed for rapid iteration
 
-To learn more about Next.js, take a look at the following resources:
+Hot reloading is enabled for a fast, efficient development workflow.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Deployment
 
-## Deploy on Vercel
+This project is optimized for **Vercel**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Zero-config deployment
+- Automatic builds on push
+- Edge-optimized by default
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployment docs:
+<https://nextjs.org/docs/app/building-your-application/deploying>
+
+---
+
+## 💼 Why Hire Me
+
+- Proven ability to ship **production-quality frontend systems**
+- Strong balance of **UX sensibility** and **engineering rigor**
+- Comfortable owning features end-to-end
+- Experience working across **web, real-time systems, and 3D**
+- Clear communicator who values maintainable, well-documented code
+
+---
+
+## 📬 Contact
+
+Interested in working together or learning more?  
+Reach out via GitHub or through the contact links on the portfolio site.
