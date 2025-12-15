@@ -156,7 +156,7 @@
         "contributions": [
           {
             "id": 1,
-            "text": "Designed UI"
+            "text": "Custom UI"
           },
           {
             "id": 2,
@@ -164,7 +164,7 @@
           },
           {
             "id": 3,
-            "text": "Local storage state management"
+            "text": "Local storage state management for persistence"
           },
           {
             "id": 4,
@@ -189,27 +189,30 @@
         "contributions": [
           {
             "id": 1,
-            "text": "Designed UI"
+            "text": "Custom UI"
           },
           {
             "id": 2,
-            "text": "Validated user input"
+            "text": "Optional hints with character image and quote"
           },
           {
             "id": 3,
-            "text": "Added game logic to track time and score"
+            "text": "Validates and normalizes user input"
           },
           {
             "id": 4,
-            "text": "Added data to local storage for persistance"
+            "text": "Song Player for theme song including pause and stop functionality"
+          },
+          {
+            "id": 5,
+            "text": "Local storage state management for persistence"
           }
         ],
         "technologies": [
           "Next", 
           "React", 
           "Typescript", 
-          "MUI", 
-          "Jest",
+          "MUI",
           "Vercel"
         ]
       },
@@ -222,15 +225,15 @@
         "contributions": [
           {
             "id": 1,
-            "text": "Designed UI"
+            "text": "Custom UI"
           },
           {
             "id": 2,
-            "text": "Connected database for real-time updates"
+            "text": "Firebase RTD for real-time updates across users and sessions"
           },
           {
             "id": 3,
-            "text": "Added Jest tests"
+            "text": "Jest (unit testing)"
           }
         ],
         "technologies": [
@@ -241,6 +244,50 @@
           "MUI", 
           "Jest",
           "Vercel"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Raspberry Pi Neopixels",
+        "description": "This project lets you control WS281x LED strips (NeoPixels) on a Raspberry Pi using a beautiful CLI menu of effects",
+        "url": "",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1765832599/raspberry-pi-neopixels_c7o5g2.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Circuit with resistor for level shifting data line from 3.3v out (Pi) to 5v in (LED strip) to prevent bit shifting"
+          },
+          {
+            "id": 2,
+            "text": "Camera Module to support \"on motion\" color override"
+          },
+          {
+            "id": 3,
+            "text": "Develop on Mac, run on Raspberry Pi"
+          },
+          {
+            "id": 4,
+            "text": "Terminal prompts for setting configuration and user inputs for effect, interval, brightness, and RGB values"
+          },
+          {
+            "id": 5,
+            "text": "Visual effects modes including Solid, Checkerboard, Change, Blink, Breathe, Growing Bar, Wheel, and Walk Pixel"
+          },
+          {
+            "id": 6,
+            "text": "Jest (unit testing)"
+          }
+        ],
+        "technologies": [
+          "Raspberry Pi + Camera Module",
+          "Node",
+          "Typescript",
+          "rpi-ws281x",
+          "WS2811 Addressable LEDs",
+          "SN74AHCT125 Logic Level Shifter",
+          "GPIO / PWM / DMA",
+          "Jest",
+          "Breadboard prototyping & electronics"
         ]
       }
     ]
