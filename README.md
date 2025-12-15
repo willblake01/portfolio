@@ -3,9 +3,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-Enabled-blue)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?logo=three.js&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
@@ -38,9 +36,7 @@ Built specifically for **recruiters, hiring managers, and engineering teams** ev
 
 ### Advanced Capabilities
 
-- WebSockets & real-time data flows
 - Three.js / interactive 3D experiences
-- Electron for desktop application patterns
 
 ### Platform & Tooling
 
@@ -99,7 +95,7 @@ This project is optimized for **Vercel**:
 - Automatic builds on push
 - Edge-optimized by default
 
-Deployment docs:
+Deployment docs:  
 <https://nextjs.org/docs/app/building-your-application/deploying>
 
 ---
