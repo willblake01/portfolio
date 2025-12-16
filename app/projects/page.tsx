@@ -25,7 +25,7 @@ const Projects = () => (
         </Typography>
         <Grid2
           container
-          spacing={3}
+          spacing={6}
           sx={{
             display: 'flex',
             justifyContent: 'space-around',
@@ -51,7 +51,7 @@ const Projects = () => (
         </Typography>
         <Grid2
           container
-          spacing={3}
+          spacing={6}
           sx={{
             display: 'flex',
             justifyContent: 'space-around',
