@@ -1,31 +1,31 @@
 [
   {
-      "id": 1,
-      "title": "Spectrum",
-      "team": "Solo Developer",
-      "image": "https://res.cloudinary.com/willblake01/image/upload/v1734651619/spectrum-trail-racing.png",
-      "responsibilities": [
-        {
-          "id": 1,
-          "text": "Worked under Senior Engineer on Ruby on Rails application utilizing Haml, Sass, Postgres, Redis, RSpec, Codeship, Heroku, and AWS"
-        },
-        {
-          "id": 2,
-          "text": "Effectively translated client requirements into application design and system requirements utilizing Scrum framework"
-        },
-        {
-          "id": 3,
-          "text": "Created admin protected dashboards for business analytics and capturing lost opportunities"
-        },
-        {
-          "id": 4,
-          "text": "Migrated race registration pages from Haml to React single page application to solve state management issues with multi-step form"
-        },
-        {
-          "id": 5,
-          "text": "Stabilized application by taking test coverage from 9.22% to 54.49%"
-        }
-      ]
+    "id": 1,
+    "title": "Unity",
+    "team": "Commerce Platform",
+    "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png",
+    "responsibilities": [
+      {
+        "id": 1,
+        "text": "Created technical design documents, contributed to product requirements documents, and drove for alignment to ensure successful completion of team initiatives"
+      },
+      {
+        "id": 2,
+        "text": "Developed features in admin protected segments of Unity Services Dashboard in agile scrums with product manager for OneCommerce initiative"
+      },
+      {
+        "id": 3,
+        "text": "Migrated components from Unity One (MUI 4 base) component library to Cloud Foundation design system (MUI 5 base) Storybook components"
+      },
+      {
+        "id": 4,
+        "text": "Refactored notifications service and implemented email templates to support OneCommerce Unity Cloud launch"
+      },
+      {
+        "id": 5,
+        "text": "Completed Unity Leadership training and Unity “Certified Interviewer” involved in the intern program"
+      }
+    ]
   },
   {
     "id": 2,
@@ -57,29 +57,29 @@
   },
   {
     "id": 3,
-    "title": "Unity",
-    "team": "Commerce Platform",
-    "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png",
+    "title": "Spectrum",
+    "team": "Solo Developer",
+    "image": "https://res.cloudinary.com/willblake01/image/upload/v1734651619/spectrum-trail-racing.png",
     "responsibilities": [
       {
         "id": 1,
-        "text": "Created technical design documents, contributed to product requirements documents, and drove for alignment to ensure successful completion of team initiatives"
+        "text": "Worked under Senior Engineer on Ruby on Rails application utilizing Haml, Sass, Postgres, Redis, RSpec, Codeship, Heroku, and AWS"
       },
       {
         "id": 2,
-        "text": "Developed features in admin protected segments of Unity Services Dashboard in agile scrums with product manager for OneCommerce initiative"
+        "text": "Effectively translated client requirements into application design and system requirements utilizing Scrum framework"
       },
       {
         "id": 3,
-        "text": "Migrated components from Unity One (MUI 4 base) component library to Cloud Foundation design system (MUI 5 base) Storybook components"
+        "text": "Created admin protected dashboards for business analytics and capturing lost opportunities"
       },
       {
         "id": 4,
-        "text": "Refactored notifications service and implemented email templates to support OneCommerce Unity Cloud launch"
+        "text": "Migrated race registration pages from Haml to React single page application to solve state management issues with multi-step form"
       },
       {
         "id": 5,
-        "text": "Completed Unity Leadership training and Unity “Certified Interviewer” involved in the intern program"
+        "text": "Stabilized application by taking test coverage from 9.22% to 54.49%"
       }
     ]
   }
