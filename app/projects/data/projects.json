@@ -2,55 +2,81 @@
     "enterprise": [
       {
         "id": 1,
-        "title": "Spectrum Trail Racing",
-        "description": "Merketing and race registration site",
-        "url": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1583682869/react-portfolio/spectrum-trail-racing.png",
+        "title": "Unity Services Dashboard",
+        "description": "All in one dashboard for users and admins to manage Unity services",
+        "url": "https://cloud.unity.com/",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png",
         "contributions": [
-          { 
+          {
             "id": 1,
-            "text": "Added admin protected dashboards for analytics"
+            "text": "Added pages to support metered subscriptions with filtered lists and details page"
           },
-          { 
+          {
             "id": 2,
-            "text": "Created targeted email campaigns to capture lost opportunities"
+            "text": "Refactored Users page with user subscriptions by type"
+          },
+          {
+            "id": 3,
+            "text": "Refactored payment methods on admin page"
           }
         ],
         "technologies": [
-          "Ruby on Rails",
-          "Haml",
+          "Typescript",
           "React",
-          "Postgres",
-          "Redis",
-          "RSpec",
-          "AWS"
+          "React Query",
+          "Next",
+          "Jest"
         ]
       },
       {
         "id": 2,
-        "title": "Jackfruit Challenges Admin",
-        "description": "Under Armour admin tool for creating challenges in MapMyRun",
+        "title": "OneCommerce Notifications",
+        "description": "Unity notification service for new commerce platform",
         "url": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Added support for workout, distance, and time based challenges"
-          }, 
-          { 
+            "text": "Standardized translation and versioning processes"
+          },
+          {
             "id": 2,
-            "text": "Added support for challenges with multiple goals"
+            "text": "Added templates for Unity Cloud products to support OneCommerce platform"
           }
         ],
         "technologies": [
-          "React", 
-          "React Context", 
-          "React Query",
-          "React Testing Library"
+          "Go",
+          "HTML",
+          "CSS"
         ]
       },
       {
         "id": 3,
+        "title": "Seabiscuit",
+        "description": "Performance clone for product description pages on underarmour.com",
+        "url": "https://www.underarmour.com",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222388/under-armour.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Ported 1:1 cloned pages to new tech stack"
+          },
+          { 
+            "id": 2,
+            "text": "Added new features to support new product lines"
+          }
+        ],
+        "technologies": [
+          "Typescript", 
+          "React", 
+          "React Query", 
+          "GraphQL",
+          "Next",
+          "Jest"
+        ]
+      },
+      {
+        "id": 4,
         "title": "MapMyRun",
         "description": "Under Armour GPS workout logging and Social Media app",
         "url": "https://www.mapmyrun.com",
@@ -77,78 +103,52 @@
         ]
       },
       {
-        "id": 4,
-        "title": "Seabiscuit",
-        "description": "Performance clone for product description pages on underarmour.com",
-        "url": "https://www.underarmour.com",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222388/under-armour.png",
+        "id": 5,
+        "title": "Jackfruit Challenges Admin",
+        "description": "Under Armour admin tool for creating challenges in MapMyRun",
+        "url": "",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Ported 1:1 cloned pages to new tech stack"
-          },
+            "text": "Added support for workout, distance, and time based challenges"
+          }, 
           { 
             "id": 2,
-            "text": "Added new features to support new product lines"
+            "text": "Added support for challenges with multiple goals"
           }
         ],
         "technologies": [
-          "Typescript", 
           "React", 
-          "React Query", 
-          "GraphQL",
-          "Next",
-          "Jest"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "OneCommerce Notifications",
-        "description": "Unity notification service for new commerce platform",
-        "url": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png",
-        "contributions": [
-          {
-            "id": 1,
-            "text": "Standardized translation and versioning processes"
-          },
-          {
-            "id": 2,
-            "text": "Added templates for Unity Cloud products to support OneCommerce platform"
-          }
-        ],
-        "technologies": [
-          "Go",
-          "HTML",
-          "CSS"
+          "React Context", 
+          "React Query",
+          "React Testing Library"
         ]
       },
       {
         "id": 6,
-        "title": "Unity Services Dashboard",
-        "description": "All in one dashboard for users and admins to manage Unity services",
-        "url": "https://cloud.unity.com/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png",
+        "title": "Spectrum Trail Racing",
+        "description": "Merketing and race registration site",
+        "url": "",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1583682869/react-portfolio/spectrum-trail-racing.png",
         "contributions": [
-          {
+          { 
             "id": 1,
-            "text": "Added pages to support metered subscriptions with filtered lists and details page"
+            "text": "Added admin protected dashboards for analytics"
           },
-          {
+          { 
             "id": 2,
-            "text": "Refactored Users page with user subscriptions by type"
-          },
-          {
-            "id": 3,
-            "text": "Refactored payment methods on admin page"
+            "text": "Created targeted email campaigns to capture lost opportunities"
           }
         ],
         "technologies": [
-          "Typescript",
+          "Ruby on Rails",
+          "Haml",
           "React",
-          "React Query",
-          "Next",
-          "Jest"
+          "Postgres",
+          "Redis",
+          "RSpec",
+          "AWS"
         ]
       }
     ],
