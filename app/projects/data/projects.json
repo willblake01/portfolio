@@ -45,7 +45,8 @@
         "technologies": [
           "React", 
           "React Context", 
-          "React Query"
+          "React Query",
+          "React Testing Library"
         ]
       },
       {
@@ -69,8 +70,10 @@
           }
         ],
         "technologies": [
+          "Typescript",
           "React",
-          "Redux"
+          "Redux",
+          "React Testing Library"
         ]
       },
       {
@@ -90,10 +93,12 @@
           }
         ],
         "technologies": [
-          "Next", 
+          "Typescript", 
           "React", 
           "React Query", 
-          "GraphQL"
+          "GraphQL",
+          "Next",
+          "Jest"
         ]
       },
       {
@@ -139,9 +144,11 @@
           }
         ],
         "technologies": [
-          "React", 
-          "React Context", 
-          "React Query"
+          "Typescript",
+          "React",
+          "React Query",
+          "Next",
+          "Jest"
         ]
       }
     ],
@@ -172,11 +179,11 @@
           }
         ],
         "technologies": [
-          "Next", 
-          "React", 
           "Typescript", 
+          "React", 
           "MUI",
           "Tailwind",
+          "Next",
           "Vercel"
         ]
       },
@@ -209,10 +216,10 @@
           }
         ],
         "technologies": [
-          "Next", 
-          "React", 
-          "Typescript", 
+          "Typescript",
+          "React",
           "MUI",
+          "Next",
           "Vercel"
         ]
       },
@@ -237,13 +244,12 @@
           }
         ],
         "technologies": [
-          "Firebase RTD", 
-          "Next", 
-          "React", 
-          "Typescript", 
-          "MUI", 
-          "Jest",
-          "Vercel"
+          "Typescript",
+          "React",
+          "MUI",
+          "Next",
+          "Vercel",
+          "Firebase RTD"
         ]
       },
       {
