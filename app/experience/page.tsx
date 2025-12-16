@@ -11,7 +11,7 @@ const Experience = () => (
     <PageHeader title="Experience" />
     <Grid2
       container
-      spacing={2}
+      spacing={0}
       sx={{
         display: 'flex',
         justifyContent: 'space-around',
