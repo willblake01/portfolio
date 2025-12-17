@@ -1,5 +1,8 @@
+import Link from 'next/link'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import {
   Card,
+  CardActions,
   CardActionArea,
   CardContent,
   CardHeader,
@@ -38,6 +41,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <Typography component="div">
           Technologies: <i>{project.technologies.join(', ')}</i>
         </Typography>
+        <CardActions>
+          {project?.gitHub ? (
+            <Link href={project.gitHub} target="_blank">
+              <GitHubIcon />
+            </Link>
+          ) : null}
+        </CardActions>
       </CardContent>
     </>
   )

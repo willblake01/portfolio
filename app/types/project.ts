@@ -11,4 +11,5 @@ export interface Project {
   description: string
   contributions: Contribution[]
   technologies: string[]
+  gitHub?: string
 }

@@ -185,7 +185,8 @@
           "Tailwind",
           "Next",
           "Vercel"
-        ]
+        ],
+        "gitHub": "https://gitHub.com/willblake01/fetch-frontend-exercise"
       },
       {
         "id": 2,
@@ -221,7 +222,8 @@
           "MUI",
           "Next",
           "Vercel"
-        ]
+        ],
+        "gitHub": "https://gitHub.com/willblake01/the-simpsons-memory-challenge"
       },
       {
         "id": 3,
@@ -250,7 +252,8 @@
           "Next",
           "Vercel",
           "Firebase RTD"
-        ]
+        ],
+        "gitHub": "https://gitHub.com/willblake01/train-time"
       },
       {
         "id": 4,
@@ -298,7 +301,8 @@
           "GPIO / PWM / DMA",
           "Jest",
           "Breadboard prototyping & electronics"
-        ]
+        ],
+        "gitHub": "https://github.com/willblake01/raspberry-pi-neopixels"
       }
     ]
 }
