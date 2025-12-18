@@ -67,14 +67,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <CardBody />
       )}
 
-      <CardActions>
+      <CardActions sx={{ justifyContent: 'center' }}>
         {project?.gitHub ? (
           <IconButton
             component="a"
             href={project.gitHub}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="View on Github"
+            aria-label="View on GitHub"
           >
             <GitHubIcon />
           </IconButton>
