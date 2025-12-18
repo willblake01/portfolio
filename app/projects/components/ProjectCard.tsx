@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import {
   Card,
@@ -7,6 +6,7 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
+  IconButton,
   List,
   ListItem,
   Typography,
@@ -18,12 +18,13 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
-  const CardComponents = () => (
+  const CardBody = () => (
     <>
       <CardMedia
-        sx={{ height: 300 }}
+        component="img"
+        height="300"
         image={project.image}
-        title={project.title}
+        alt={project.title}
       />
       <CardHeader
         title={project.title}
@@ -41,13 +42,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <Typography component="div">
           Technologies: <i>{project.technologies.join(', ')}</i>
         </Typography>
-        <CardActions>
-          {project?.gitHub ? (
-            <Link href={project.gitHub} target="_blank">
-              <GitHubIcon />
-            </Link>
-          ) : null}
-        </CardActions>
       </CardContent>
     </>
   )
@@ -61,12 +55,31 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       }}
     >
       {project.url ? (
-        <CardActionArea href={project.url} target="_blank">
-          <CardComponents />
+        <CardActionArea
+          component="a"
+          href={project.url}
+          target="_blank"
+          rel="roopener noreferrer"
+        >
+          <CardBody />
         </CardActionArea>
       ) : (
-        <CardComponents />
+        <CardBody />
       )}
+
+      <CardActions>
+        {project?.gitHub ? (
+          <IconButton
+            component="a"
+            href={project.gitHub}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View on Github"
+          >
+            <GitHubIcon />
+          </IconButton>
+        ) : null}
+      </CardActions>
     </Card>
   )
 }
