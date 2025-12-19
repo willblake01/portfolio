@@ -7,14 +7,13 @@ import projects from '../data/vr.json'
 const VR = () => (
   <>
     <AppBar />
-    <PageHeader title="Virtual Reality" />
+    <PageHeader title="VR" />
     <Grid2
       container
       spacing={6}
       sx={{
         display: 'flex',
         justifyContent: 'space-around',
-        flexDirection: 'column',
         mb: '2.5rem',
       }}
     >
