@@ -1,6 +1,39 @@
 [
   {
     "id": 1,
+    "title": "Custom VR Template",
+    "description": "Unreal Engine VR template with custom functionality",
+    "url": "",
+    "image": "https://res.cloudinary.com/willblake01/image/upload/v1766185827/custom-vr-template_ngm84h.jpg",
+    "contributions": [
+      {
+        "id": 1,
+        "text": "Custom toggle stick locomotion with sprint and recovery phase"
+      },
+      {
+        "id": 2,
+        "text": "Props table with grabbable blocks and nerf gun"
+      },
+      {
+        "id": 3,
+        "text": "Use as a template to build your own scene"
+      },
+      {
+        "id": 4,
+        "text": "Download the .apk file below to sideload on a headset (Tested on Quest 3)"
+      }
+    ],
+    "technologies": [
+      "Unreal Engine",
+      "Android Studio",
+      "Quest 3",
+      "Meta Quest Developer Hub"
+    ],
+    "gitHub": "https://github.com/willblake01/CustomVRTemplate",
+    "apk": "https://drive.google.com/file/d/1Pirova7WxhOq-Bn0Y4qChZmzexHA9eRB/view?usp=drive_link"
+  },
+  {
+    "id": 2,
     "title": "Test Project",
     "description": "In development Unreal Engine scene",
     "url": "",
@@ -37,7 +70,7 @@
     "apk": "https://drive.google.com/file/d/1oDdze7MNe83KqVWOIeXIz-_eXMQeNQml/view?usp=drive_link"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Unreal Heroes",
     "description": "In development Unreal Engine scene",
     "url": "",

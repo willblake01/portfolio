@@ -51,7 +51,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       sx={{
         borderRadius: 2,
         boxShadow: 3,
-        width: '35rem',
+        width: '30rem',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
       {project.url ? (
@@ -67,32 +69,39 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <CardBody />
       )}
 
-      {project?.apk ? (
-        <CardActions sx={{ justifyContent: 'center' }}>
-          <a
-            href={project.apk}
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download .apk file
-          </a>
+      {(project?.apk || project?.gitHub) && (
+        <CardActions
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            marginTop: 'auto',
+            gap: 2,
+          }}
+        >
+          {project?.apk && (
+            <a
+              href={project.apk}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download .apk file
+            </a>
+          )}
+          {project?.gitHub && (
+            <IconButton
+              component="a"
+              href={project.gitHub}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View on GitHub"
+            >
+              <GitHubIcon />
+            </IconButton>
+          )}
         </CardActions>
-      ) : null}
-
-      {project?.gitHub ? (
-        <CardActions sx={{ justifyContent: 'center' }}>
-          <IconButton
-            component="a"
-            href={project.gitHub}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View on GitHub"
-          >
-            <GitHubIcon />
-          </IconButton>
-        </CardActions>
-      ) : null}
+      )}
     </Card>
   )
 }
