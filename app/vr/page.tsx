@@ -1,13 +1,13 @@
 'use client'
 import { Grid2 } from '@mui/material'
-import experience from '../data/experience.json'
 import { AppBar, PageHeader } from '../components'
-import ExperienceCard from './components/ExperienceCard'
+import { VRCard } from './components'
+import projects from '../data/vr.json'
 
-const Experience = () => (
+const VR = () => (
   <>
     <AppBar />
-    <PageHeader title="Experience" />
+    <PageHeader title="Virtual Reality" />
     <Grid2
       container
       spacing={0}
@@ -17,11 +17,11 @@ const Experience = () => (
         mb: '2.5rem',
       }}
     >
-      {experience.map((job) => (
-        <ExperienceCard key={job.id} job={job} />
+      {projects.map((project) => (
+        <VRCard key={project.id} project={project} />
       ))}
     </Grid2>
   </>
 )
 
-export default Experience
+export default VR

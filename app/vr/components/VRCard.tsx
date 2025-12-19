@@ -1,4 +1,3 @@
-import GitHubIcon from '@mui/icons-material/GitHub'
 import {
   Card,
   CardActions,
@@ -6,7 +5,6 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
-  IconButton,
   List,
   ListItem,
   Typography,
@@ -17,7 +15,7 @@ interface ProjectCardProps {
   project: Project
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const VRCard = ({ project }: ProjectCardProps) => {
   const CardBody = () => (
     <>
       <CardMedia
@@ -68,20 +66,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       )}
 
       <CardActions sx={{ justifyContent: 'center' }}>
-        {project?.gitHub ? (
-          <IconButton
-            component="a"
-            href={project.gitHub}
+        {
+          <a
+            href={project.apk}
+            download
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="View on GitHub"
           >
-            <GitHubIcon />
-          </IconButton>
-        ) : null}
+            Download .apk file
+          </a>
+        }
       </CardActions>
     </Card>
   )
 }
 
-export default ProjectCard
+export default VRCard

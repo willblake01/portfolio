@@ -1,7 +1,7 @@
 import { Grid2, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import MobileAppBar from './components/MobileAppBar'
+import { MobileAppBar } from './components'
 
 const AppBar = () => {
   const theme = useTheme()
@@ -43,6 +43,17 @@ const AppBar = () => {
         }}
       >
         projects
+      </Button>
+      <Button
+        component={'a'}
+        href="/vr"
+        style={{
+          background: 'none',
+          color: 'var(--foreground)',
+          margin: '0.625rem 0 0 0.625rem',
+        }}
+      >
+        vr
       </Button>
       <Button
         component="a"

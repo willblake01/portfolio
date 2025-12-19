@@ -1,10 +1,9 @@
 'use client'
 import { Grid2, Typography } from '@mui/material'
-import projects from './data/projects.json'
-import AppBar from '../components/AppBar/AppBar'
-import ProjectCard from './components/ProjectCard'
-import PageHeader from '../components/PageHeader'
-import type { Project } from '../types/project'
+import projects from '../data/projects.json'
+import { AppBar, PageHeader } from '../components'
+import { ProjectCard } from './components'
+import type { Project } from '../types'
 
 const Projects = () => (
   <>

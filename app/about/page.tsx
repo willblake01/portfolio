@@ -1,8 +1,7 @@
 'use client'
 import { Grid2, Card, Typography } from '@mui/material'
-import AppBar from '../components/AppBar/AppBar'
-import about from './data/about.json'
-import PageHeader from '../components/PageHeader'
+import { AppBar, PageHeader } from '../components'
+import about from '../data/about.json'
 
 const About = () => (
   <>

@@ -1,6 +1,6 @@
 import { Card, CardContent, Grid2, Typography } from '@mui/material'
 import Link from 'next/link'
-import contact from '../data/contact.json'
+import contact from '../../data/contact.json'
 
 const ContactCard = () => (
   <Grid2 container>

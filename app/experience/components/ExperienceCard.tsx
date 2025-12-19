@@ -6,7 +6,7 @@ import {
   List,
   ListItem,
 } from '@mui/material'
-import type { Job } from '../../types/experience'
+import type { Job } from '../../types'
 
 interface ExperienceCardProps {
   job: Job

@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { AppBar, Grid2, IconButton, Toolbar } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import DrawerList from './DrawerList'
+import { DrawerList } from '.'
 
 const MobileAppBar = () => {
   const [open, setOpen] = React.useState(false)

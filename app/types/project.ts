@@ -12,4 +12,5 @@ export interface Project {
   contributions: Contribution[]
   technologies: string[]
   gitHub?: string
+  apk?: string
 }

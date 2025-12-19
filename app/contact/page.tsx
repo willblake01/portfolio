@@ -1,8 +1,7 @@
 'use client'
 import { Grid2 } from '@mui/material'
-import AppBar from '../components/AppBar/AppBar'
-import ContactCard from './components/ContactCard'
-import PageHeader from '../components/PageHeader'
+import { AppBar, PageHeader } from '../components'
+import { ContactCard } from './components'
 
 const Contact = () => (
   <>

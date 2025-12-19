@@ -1,11 +1,9 @@
 'use client'
 import { Suspense } from 'react'
-import { Grid2, Typography } from '@mui/material'
+import { Grid2 } from '@mui/material'
 import { Canvas } from '@react-three/fiber'
-import AppBar from './components/AppBar/AppBar'
-import Avatar from './components/Avatar/Avatar'
-import Light from './components/Avatar/components/Light'
-import Controls from './components/Avatar/components/OrbitControls'
+import { AppBar, Avatar } from './components'
+import { Controls, Light } from './components/Avatar/components'
 import PageHeader from './components/PageHeader'
 
 const Home = () => (
