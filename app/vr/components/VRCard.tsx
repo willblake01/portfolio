@@ -1,3 +1,4 @@
+import GitHubIcon from '@mui/icons-material/GitHub'
 import {
   Card,
   CardActions,
@@ -5,6 +6,7 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
+  IconButton,
   List,
   ListItem,
   Typography,
@@ -76,6 +78,20 @@ const VRCard = ({ project }: ProjectCardProps) => {
             Download .apk file
           </a>
         }
+      </CardActions>
+
+      <CardActions sx={{ justifyContent: 'center' }}>
+        {project?.gitHub ? (
+          <IconButton
+            component="a"
+            href={project.gitHub}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View on GitHub"
+          >
+            <GitHubIcon />
+          </IconButton>
+        ) : null}
       </CardActions>
     </Card>
   )
