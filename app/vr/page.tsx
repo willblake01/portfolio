@@ -1,7 +1,7 @@
 'use client'
 import { Grid2 } from '@mui/material'
 import { AppBar, PageHeader } from '../components'
-import { ProjectCard } from '../projects/components'
+import { ProjectCard } from '../components'
 import projects from '../data/vr.json'
 
 const VR = () => (
