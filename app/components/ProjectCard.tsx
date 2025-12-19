@@ -67,8 +67,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <CardBody />
       )}
 
-      <CardActions sx={{ justifyContent: 'center' }}>
-        {project?.apk ? (
+      {project?.apk ? (
+        <CardActions sx={{ justifyContent: 'center' }}>
           <a
             href={project.apk}
             download
@@ -77,11 +77,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           >
             Download .apk file
           </a>
-        ) : null}
-      </CardActions>
+        </CardActions>
+      ) : null}
 
-      <CardActions sx={{ justifyContent: 'center' }}>
-        {project?.gitHub ? (
+      {project?.gitHub ? (
+        <CardActions sx={{ justifyContent: 'center' }}>
           <IconButton
             component="a"
             href={project.gitHub}
@@ -91,8 +91,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           >
             <GitHubIcon />
           </IconButton>
-        ) : null}
-      </CardActions>
+        </CardActions>
+      ) : null}
     </Card>
   )
 }
