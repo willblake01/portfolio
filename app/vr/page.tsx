@@ -14,6 +14,7 @@ const VR = () => (
       sx={{
         display: 'flex',
         justifyContent: 'space-around',
+        flexDirection: 'column',
         mb: '2.5rem',
       }}
     >
