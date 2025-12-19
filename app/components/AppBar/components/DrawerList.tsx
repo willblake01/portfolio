@@ -14,6 +14,7 @@ import ChecklistIcon from '@mui/icons-material/Checklist'
 import ContactMailIcon from '@mui/icons-material/ContactMail'
 import InfoIcon from '@mui/icons-material/Info'
 import DashboardIcon from '@mui/icons-material/Dashboard'
+import ViewInArIcon from '@mui/icons-material/ViewInAr'
 
 interface DrawerListProps {
   open: boolean
@@ -24,6 +25,7 @@ const drawerOptions = [
   { id: 1, text: 'Home', icon: <HomeIcon />, route: '/' },
   { id: 2, text: 'Experience', icon: <ChecklistIcon />, route: '/experience' },
   { id: 3, text: 'Projects', icon: <DashboardIcon />, route: '/projects' },
+  { id: 4, text: 'VR', icon: <ViewInArIcon />, route: '/vr' },
   { id: 4, text: 'About', icon: <InfoIcon />, route: '/about' },
   { id: 5, text: 'Contact', icon: <ContactMailIcon />, route: '/contact' },
 ]
