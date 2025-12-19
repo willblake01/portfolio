@@ -1,7 +1,7 @@
 'use client'
 import { Grid2 } from '@mui/material'
 import { AppBar, PageHeader } from '../components'
-import { VRCard } from './components'
+import { ProjectCard } from '../projects/components'
 import projects from '../data/vr.json'
 
 const VR = () => (
@@ -18,7 +18,7 @@ const VR = () => (
       }}
     >
       {projects.map((project) => (
-        <VRCard key={project.id} project={project} />
+        <ProjectCard key={project.id} project={project} />
       ))}
     </Grid2>
   </>

@@ -68,6 +68,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       )}
 
       <CardActions sx={{ justifyContent: 'center' }}>
+        {project?.apk ? (
+          <a
+            href={project.apk}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download .apk file
+          </a>
+        ) : null}
+      </CardActions>
+
+      <CardActions sx={{ justifyContent: 'center' }}>
         {project?.gitHub ? (
           <IconButton
             component="a"
