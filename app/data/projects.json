@@ -156,6 +156,45 @@
     "toy": [
       {
         "id": 1,
+        "title": "Range Front",
+        "description": "Faux e-commerce REI style site",
+        "url": "https://range-front.vercel.app/",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1766287672/react-portfolio/range-front.png",
+        "contributions": [
+          {
+            "id": 1,
+            "text": "Custom UI"
+          },
+          {
+            "id": 2,
+            "text": "Integrated with backend API"
+          },
+          {
+            "id": 3,
+            "text": "Login user for cart functionality and placing orders"
+          },
+          {
+            "id": 4,
+            "text": "Stripe integrated checkout flow"
+          },
+          {
+            "id": 5,
+            "text": "Fully typed and deployed"
+          }
+        ],
+        "technologies": [
+          "Typescript", 
+          "React",
+          "Styled Components",
+          "Next",
+          "Vercel",
+          "GraphQL",
+          "Apollo"
+        ],
+        "gitHub": "https://github.com/willblake01/range-front"
+      },
+      {
+        "id": 2,
         "title": "Fetch Rescue",
         "description": "Faux dog rescue site",
         "url": "https://fetch-frontend-exercise-nine.vercel.app/",
@@ -189,7 +228,7 @@
         "gitHub": "https://gitHub.com/willblake01/fetch-frontend-exercise"
       },
       {
-        "id": 2,
+        "id": 3,
         "title": "The Simpsons Memory Challenge",
         "description": "Simple game to see how many Simpsons characters you can remember",
         "url": "https://the-simpsons-memory-challenge.vercel.app/",
@@ -226,7 +265,7 @@
         "gitHub": "https://gitHub.com/willblake01/the-simpsons-memory-challenge"
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "Train Time",
         "description": "Train scheduler I built as a companion while playing Trainz 2019",
         "url": "https://train-time-rosy.vercel.app",
@@ -256,7 +295,7 @@
         "gitHub": "https://gitHub.com/willblake01/train-time"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "Raspberry Pi Neopixels",
         "description": "Control WS281x LED strips (NeoPixels) on a Raspberry Pi using a beautiful CLI menu of effects",
         "url": "",
