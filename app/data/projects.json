@@ -171,14 +171,18 @@
           },
           {
             "id": 3,
-            "text": "Login user for cart functionality and placing orders"
+            "text": "Permissions system including admin, user, product create, product update, product delete, and permission update"
           },
           {
             "id": 4,
-            "text": "Stripe integrated checkout flow"
+            "text": "Login user for cart functionality and placing orders"
           },
           {
             "id": 5,
+            "text": "Stripe integrated checkout flow"
+          },
+          {
+            "id": 6,
             "text": "Fully typed and deployed"
           }
         ],
@@ -189,7 +193,10 @@
           "Next",
           "Vercel",
           "GraphQL",
-          "Apollo"
+          "Apollo",
+          "Node",
+          "Postgres",
+          "Jest"
         ],
         "gitHub": "https://github.com/willblake01/range-front"
       },
