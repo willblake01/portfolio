@@ -10,10 +10,9 @@ const VR = () => (
     <PageHeader title="VR" />
     <Grid2
       container
-      spacing={6}
       sx={{
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         mb: '2.5rem',
       }}
     >

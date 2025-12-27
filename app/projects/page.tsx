@@ -13,8 +13,8 @@ const Projects = () => (
       <Grid2
         size={{ lg: 6 }}
         sx={{
-          alignItems: 'center',
           display: 'flex',
+          alignItems: 'center',
           flexDirection: 'column',
           mb: '2.5rem',
         }}
@@ -27,7 +27,7 @@ const Projects = () => (
           spacing={6}
           sx={{
             display: 'flex',
-            justifyContent: 'space-around',
+            justifyContent: 'space-evenly',
             width: '100%',
           }}
         >
@@ -39,8 +39,8 @@ const Projects = () => (
       <Grid2
         size={{ lg: 6 }}
         sx={{
-          alignItems: 'center',
           display: 'flex',
+          alignItems: 'center',
           flexDirection: 'column',
           mb: '2.5rem',
         }}
@@ -53,7 +53,7 @@ const Projects = () => (
           spacing={6}
           sx={{
             display: 'flex',
-            justifyContent: 'space-around',
+            justifyContent: 'space-evenly',
             width: '100%',
           }}
         >
