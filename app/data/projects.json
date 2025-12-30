@@ -175,14 +175,18 @@
           },
           {
             "id": 4,
-            "text": "Login user for cart functionality and placing orders"
+            "text": "Email willblakebooking@gmail.com for admin permission"
           },
           {
             "id": 5,
-            "text": "Stripe integrated checkout flow"
+            "text": "Login user for cart functionality and placing orders"
           },
           {
             "id": 6,
+            "text": "Stripe integrated checkout flow"
+          },
+          {
+            "id": 7,
             "text": "Fully typed and deployed"
           }
         ],
