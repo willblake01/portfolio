@@ -156,13 +156,13 @@
       {
         "id": 1,
         "title": "Range Front",
-        "description": "Full-stack e-commerce platform inspired by REI, built to explore real-world commerce workflows including authentication, role-based permissions, cart state management, and Stripe-powered checkout. Designed and implemented a GraphQL API with fine-grained authorization, Postgres persistence, and a fully typed React/Next.js frontend deployed to production.",
+        "description": "Full-stack e-commerce platform inspired by REI, built to explore real-world commerce workflows including authentication, role-based permissions, cart state management, and Stripe-powered checkout.",
         "url": "https://range-front.vercel.app/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1767065265/react-portfolio/range-front.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Designed and implemented a fully typed React/Next.js frontend consuming a GraphQL API"
+            "text": "Designed and implemented a GraphQL API with fine-grained authorization, Postgres persistence, and a fully typed React/Next.js frontend deployed to production"
           },
           {
             "id": 2,
