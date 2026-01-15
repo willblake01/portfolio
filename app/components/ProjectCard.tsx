@@ -29,9 +29,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <CardHeader
         title={project.title}
         subheader={project.description}
-        sx={{ textAlign: 'center' }}
+        titleTypographyProps={{
+          sx: { textAlign: 'center', marginBottom: '0.5rem' },
+        }}
+        subheaderTypographyProps={{ sx: { textAlign: 'left' } }}
+        sx={{ paddingBottom: '0.5rem' }}
       />
-      <CardContent sx={{ color: 'text.secondary' }}>
+      <CardContent sx={{ color: 'text.secondary', paddingTop: '0.5rem' }}>
         <List sx={{ listStyleType: 'disc', padding: '1rem' }}>
           {project.contributions.map((contribution) => (
             <ListItem key={contribution.id} sx={{ display: 'list-item' }}>

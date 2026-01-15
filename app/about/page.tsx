@@ -31,7 +31,7 @@ const About = () => (
             key={paragraph.id}
             component={'p'}
             dangerouslySetInnerHTML={{ __html: paragraph.text }}
-            sx={{ textIndent: '4em' }}
+            sx={{ textIndent: '2rem' }}
           />
         ))}
       </Card>

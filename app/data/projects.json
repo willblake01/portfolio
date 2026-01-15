@@ -3,21 +3,21 @@
       {
         "id": 1,
         "title": "Unity Services Dashboard",
-        "description": "All in one dashboard for users and admins to manage Unity services",
+        "description": "A role-based, all-in-one dashboard for managing Unity services, metered subscriptions, and administrative workflows.",
         "url": "https://cloud.unity.com/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Added pages to support metered subscriptions with filtered lists and details page"
+            "text": "Implemented metered subscription pages with filtered listings and detailed views"
           },
           {
             "id": 2,
-            "text": "Refactored Users page with user subscriptions by type"
+            "text": "Refactored the Users page to surface subscriptions grouped by type"
           },
           {
             "id": 3,
-            "text": "Refactored payment methods on admin page"
+            "text": "Improved and refactored admin payment method management"
           }
         ],
         "technologies": [
@@ -31,17 +31,17 @@
       {
         "id": 2,
         "title": "Unity OneCommerce Notifications",
-        "description": "Notifications service for commerce platform",
+        "description": "A backend notifications service for Unity’s OneCommerce platform, supporting templated, versioned, and localized communications.",
         "url": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Standardized translation and versioning processes"
+            "text": "Designed and standardized translation and versioning strategies for notification templates"
           },
           {
             "id": 2,
-            "text": "Added templates for Unity Cloud products to support OneCommerce platform"
+            "text": "Expanded notification template coverage to support Unity Cloud products on the OneCommerce platform"
           }
         ],
         "technologies": [
@@ -53,17 +53,17 @@
       {
         "id": 3,
         "title": "Seabiscuit",
-        "description": "Performance clone for product description pages on underarmour.com",
+        "description": "A modern, scalable clone of Under Armour’s product detail pages, migrated to a new tech stack with full feature parity and extensibility.",
         "url": "https://www.underarmour.com",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222388/under-armour.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Ported 1:1 cloned pages to new tech stack"
+            "text": "Led the migration of legacy product detail pages to a modern React/Next.js stack with full parity"
           },
-          { 
+          {
             "id": 2,
-            "text": "Added new features to support new product lines"
+            "text": "Extended the platform to support new product lines without impacting performance"
           }
         ],
         "technologies": [
@@ -78,21 +78,20 @@
       {
         "id": 4,
         "title": "MapMyRun",
-        "description": "Under Armour GPS workout logging and Social Media app",
-        "url": "https://www.mapmyrun.com",
+        "description": "A large-scale GPS workout logging and social fitness application supporting real-time activity tracking and challenge-based engagement.",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222530/map-my-run.png",
         "contributions": [
-          { 
+          {
             "id": 1,
-            "text": "Added challenges feature support"
+            "text": "Delivered challenge feature enhancements to improve user engagement"
           },
-          { 
+          {
             "id": 2,
-            "text": "Added UI elements to show challenge progress"
+            "text": "Designed and implemented progress visualizations for active challenges"
           },
           {
             "id": 3,
-            "text": "Added support for challenges with multiple goals"
+            "text": "Architected support for multi-goal challenges within existing systems"
           }
         ],
         "technologies": [
@@ -105,17 +104,17 @@
       {
         "id": 5,
         "title": "Jackfruit Challenges Admin",
-        "description": "Under Armour admin tool for creating challenges in MapMyRun",
+        "description": "An internal admin platform for configuring and managing MapMyRun challenges, supporting multiple goal types and complex challenge rules.",
         "url": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734223151/under-armour-logo.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Added support for workout, distance, and time based challenges"
-          }, 
-          { 
+            "text": "Expanded challenge configuration to support workout, distance, and time-based goals"
+          },
+          {
             "id": 2,
-            "text": "Added support for challenges with multiple goals"
+            "text": "Architected multi-goal challenge support for internal MapMyRun tooling"
           }
         ],
         "technologies": [
@@ -128,17 +127,17 @@
       {
         "id": 6,
         "title": "Spectrum Trail Racing",
-        "description": "Merketing and race registration site",
+        "description": "A full-stack marketing and race registration platform with administrative dashboards, analytics, and automated outreach.",
         "url": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1583682869/react-portfolio/spectrum-trail-racing.png",
         "contributions": [
-          { 
+          {
             "id": 1,
-            "text": "Added admin protected dashboards for analytics"
+            "text": "Designed and implemented role-protected analytics dashboards for business stakeholders"
           },
-          { 
+          {
             "id": 2,
-            "text": "Created targeted email campaigns to capture lost opportunities"
+            "text": "Developed automated email campaigns to capture lost conversion opportunities"
           }
         ],
         "technologies": [
@@ -157,37 +156,37 @@
       {
         "id": 1,
         "title": "Range Front",
-        "description": "Faux e-commerce REI style site",
+        "description": "Full-stack e-commerce platform inspired by REI, built to explore real-world commerce workflows including authentication, role-based permissions, cart state management, and Stripe-powered checkout. Designed and implemented a GraphQL API with fine-grained authorization, Postgres persistence, and a fully typed React/Next.js frontend deployed to production.",
         "url": "https://range-front.vercel.app/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1767065265/react-portfolio/range-front.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Custom UI"
+            "text": "Designed and implemented a fully typed React/Next.js frontend consuming a GraphQL API"
           },
           {
             "id": 2,
-            "text": "Integrated with backend API"
+            "text": "Built a role-based permissions system supporting admin and user workflows"
           },
           {
             "id": 3,
-            "text": "Permissions system including admin, user, product create, product update, product delete, and permission update"
-          },
-          {
-            "id": 4,
             "text": "Email willblakebooking@gmail.com for admin permission"
           },
           {
+            "id": 4,
+            "text": "Implemented secure Stripe checkout and order placement flow"
+          },
+          {
             "id": 5,
-            "text": "Login user for cart functionality and placing orders"
+            "text": "Designed GraphQL mutations and queries for product, cart, and order lifecycle"
           },
           {
             "id": 6,
-            "text": "Stripe integrated checkout flow"
+            "text": "Deployed frontend and backend independently with production configuration"
           },
           {
             "id": 7,
-            "text": "Fully typed and deployed"
+            "text": "Wrote Jest tests to validate core business logic"
           }
         ],
         "technologies": [
@@ -207,25 +206,25 @@
       {
         "id": 2,
         "title": "Fetch Rescue",
-        "description": "Faux dog rescue site",
+        "description": "A dog rescue web application simulating an adoption experience, featuring a modern UI, persistent state, and API-driven data.",
         "url": "https://fetch-frontend-exercise-nine.vercel.app/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1739999169/fetch-rescue_jabauq.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Custom UI"
+            "text": "Owned UI design and implementation with a focus on usability and accessibility"
           },
           {
             "id": 2,
-            "text": "Integrated with backend API"
+            "text": "Integrated API-driven data flows using modern React patterns"
           },
           {
             "id": 3,
-            "text": "Local storage state management for persistence"
+            "text": "Architected client-side state persistence via local storage"
           },
           {
             "id": 4,
-            "text": "Fully typed and deployed"
+            "text": "Ensured type safety and production readiness across the application"
           }
         ],
         "technologies": [
@@ -241,29 +240,29 @@
       {
         "id": 3,
         "title": "The Simpsons Memory Challenge",
-        "description": "Simple game to see how many characters you can remember",
+        "description": "A TypeScript-driven React game demonstrating robust input validation, state persistence, and interactive UI patterns.",
         "url": "https://the-simpsons-memory-challenge.vercel.app/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1733191086/simpsons-memory-game.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Custom UI"
+            "text": "Owned UI and interaction design with a focus on clarity and user engagement"
           },
           {
             "id": 2,
-            "text": "Optional hints with character image and quote"
+            "text": "Designed flexible hint and alias systems to improve game accessibility"
           },
           {
             "id": 3,
-            "text": "Validates and normalizes user input"
+            "text": "Implemented robust input handling to account for user variability"
           },
           {
             "id": 4,
-            "text": "Song Player for theme song including pause and stop functionality"
+            "text": "Integrated audio playback controls to enhance immersion"
           },
           {
             "id": 5,
-            "text": "Local storage state management for persistence"
+            "text": "Architected client-side persistence using local storage"
           }
         ],
         "technologies": [
@@ -278,21 +277,21 @@
       {
         "id": 4,
         "title": "Train Time",
-        "description": "Train scheduler used as a companion while playing Trainz 2019",
+        "description": "A real-time scheduling application built with Firebase Realtime Database to synchronize train plans across users and sessions.",
         "url": "https://train-time-rosy.vercel.app",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png",
         "contributions": [
           {
             "id": 1,
-            "text": "Custom UI"
+            "text": "Owned end-to-end UI design and implementation for the scheduling experience"
           },
           {
             "id": 2,
-            "text": "Firebase RTD for real-time updates across users and sessions"
+            "text": "Architected real-time synchronization using Firebase Realtime Database"
           },
           {
             "id": 3,
-            "text": "Jest (unit testing)"
+            "text": "Established unit testing practices to support ongoing iteration"
           }
         ],
         "technologies": [
