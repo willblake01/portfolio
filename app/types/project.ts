@@ -5,7 +5,7 @@ interface Contribution {
 
 export interface Project {
   id: number
-  url: string
+  url?: string
   image: string
   title: string
   description: string
