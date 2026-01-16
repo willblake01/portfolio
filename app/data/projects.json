@@ -174,18 +174,22 @@
           },
           {
             "id": 4,
-            "text": "Implemented secure Stripe checkout and order placement flow"
+            "text": "Implemented real-user performance monitoring using Vercel Analytics and Speed Insights to track Core Web Vitals (LCP, INP, CLS)"
           },
           {
             "id": 5,
-            "text": "Designed GraphQL mutations and queries for product, cart, and order lifecycle"
+            "text": "Implemented secure Stripe checkout and order placement flow"
           },
           {
             "id": 6,
-            "text": "Deployed frontend and backend independently with production configuration"
+            "text": "Designed GraphQL mutations and queries for product, cart, and order lifecycle"
           },
           {
             "id": 7,
+            "text": "Deployed frontend and backend independently with production configuration"
+          },
+          {
+            "id": 8,
             "text": "Wrote Jest tests to validate core business logic"
           }
         ],
