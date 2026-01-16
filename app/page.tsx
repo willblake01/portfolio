@@ -1,10 +1,9 @@
 'use client'
-import { Suspense } from 'react'
+
 import { Grid2 } from '@mui/material'
-import { Canvas } from '@react-three/fiber'
-import { AppBar, Avatar } from './components'
-import { Controls, Light } from './components/Avatar/components'
+import { AppBar } from './components'
 import PageHeader from './components/PageHeader'
+import { AvatarScene } from './components/AvatarScene'
 
 const Home = () => (
   <>
@@ -19,20 +18,7 @@ const Home = () => (
           width: '37.5rem',
         }}
       >
-        <Canvas
-          shadows
-          className="canvas"
-          camera={{
-            position: [0, 0, 2],
-          }}
-        >
-          <Suspense fallback={null}>
-            <Light position={[2, 3, 2]} />
-            <Controls />
-            <Avatar />
-          </Suspense>
-          <ambientLight color={'white'} intensity={4} />
-        </Canvas>
+        <AvatarScene />
       </Grid2>
     </Grid2>
   </>
