@@ -307,7 +307,7 @@
       {
         "id": 5,
         "title": "Raspberry Pi Neopixels",
-        "description": "Control WS281x LED strips (NeoPixels) on a Raspberry Pi using a beautiful CLI menu of effects",
+        "description": "Control WS281x LED strips (NeoPixels) on a Raspberry Pi using a beautiful CLI menu of effects.",
         "url": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/v1765832599/raspberry-pi-neopixels_c7o5g2.png",
         "contributions": [
