@@ -203,7 +203,9 @@
           "Apollo",
           "Node",
           "Postgres",
-          "Jest"
+          "Jest",
+          "Vercel Analytics",
+          "Vercel Speed Insights"
         ],
         "gitHub": "https://github.com/willblake01/range-front"
       },
