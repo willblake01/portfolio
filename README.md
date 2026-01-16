@@ -49,6 +49,14 @@ Built specifically for **recruiters, hiring managers, and engineering teams** ev
 
 ---
 
+## ⚡️ Performance & UX
+
+- 3D content (React Three Fiber / WebGL) is isolated to a client-only route/component and loaded via dynamic import (`ssr: false`) to keep initial JS lean.
+- Real-user performance is tracked using Vercel Speed Insights (Core Web Vitals: LCP / INP / CLS).
+- Analytics are collected via Vercel Analytics.
+
+---
+
 ## ⭐ Highlighted Projects
 
 This portfolio includes:
