@@ -202,16 +202,16 @@
           "React",
           "Styled Components",
           "Next",
-          "Vercel",
-          "Render",
-          "Resend",
           "GraphQL",
           "Apollo",
           "Node",
           "Postgres",
           "Jest",
+          "Vercel",
           "Vercel Analytics",
-          "Vercel Speed Insights"
+          "Vercel Speed Insights",
+          "Render",
+          "Resend"
         ],
         "gitHub": "https://github.com/willblake01/range-front"
       },
