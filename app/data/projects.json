@@ -170,7 +170,7 @@
           },
           {
             "id": 3,
-            "text": "Email willblakebooking@gmail.com for admin permission"
+            "text": "Request elevated permissions via direct contact (admin access intentionally restricted)"
           },
           {
             "id": 4,
@@ -182,14 +182,18 @@
           },
           {
             "id": 6,
-            "text": "Designed GraphQL mutations and queries for product, cart, and order lifecycle"
+            "text": "Implemented webhook-driven transactional email receipts for completed Stripe payments, ensuring idempotent post-payment workflows"
           },
           {
             "id": 7,
-            "text": "Deployed frontend and backend independently with production configuration"
+            "text": "Designed GraphQL mutations and queries for product, cart, and order lifecycle"
           },
           {
             "id": 8,
+            "text": "Deployed frontend and backend independently with production configuration"
+          },
+          {
+            "id": 9,
             "text": "Wrote Jest tests to validate core business logic"
           }
         ],
@@ -199,6 +203,8 @@
           "Styled Components",
           "Next",
           "Vercel",
+          "Render",
+          "Resend",
           "GraphQL",
           "Apollo",
           "Node",
