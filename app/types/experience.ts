@@ -5,7 +5,9 @@ interface Responsibility {
 
 export interface Job {
   id: number
-  image: string
+  title: string
   team: string
+  image: string
   responsibilities: Responsibility[]
+  technologies: string[]
 }

@@ -22,9 +22,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     <>
       <CardMedia
         component="img"
-        height="300"
         image={project.image}
         alt={project.title}
+        sx={{
+          width: '100%',
+          height: 'clamp(200px, 32vw, 320px)',
+          objectFit: 'cover',
+          display: 'block',
+        }}
       />
       <CardHeader
         title={project.title}
@@ -35,15 +40,29 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         subheaderTypographyProps={{ sx: { textAlign: 'left' } }}
         sx={{ paddingBottom: '0.5rem' }}
       />
-      <CardContent sx={{ color: 'text.secondary', paddingTop: '0.5rem' }}>
-        <List sx={{ listStyleType: 'disc', padding: '1rem' }}>
+      <CardContent
+        sx={{
+          color: 'text.secondary',
+          paddingTop: '0.5rem',
+          display: 'flex',
+          flexDirection: 'column',
+          flexGrow: 1,
+        }}
+      >
+        <List
+          sx={{
+            listStyleType: 'disc',
+            padding: '1rem',
+            flexGrow: 1,
+          }}
+        >
           {project.contributions.map((contribution) => (
             <ListItem key={contribution.id} sx={{ display: 'list-item' }}>
               {contribution.text}
             </ListItem>
           ))}
         </List>
-        <Typography component="div">
+        <Typography component="div" sx={{ marginTop: 'auto' }}>
           Technologies: <i>{project.technologies.join(', ')}</i>
         </Typography>
       </CardContent>

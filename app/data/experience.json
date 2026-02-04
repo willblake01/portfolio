@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Unity",
     "team": "Commerce Platform",
-    "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222998/unity-logo.png",
+    "image": "https://res.cloudinary.com/willblake01/image/upload/c_pad,ar_4:3/v1734222998/unity-logo.png",
     "responsibilities": [
       {
         "id": 1,
@@ -11,11 +11,11 @@
       },
       {
         "id": 2,
-        "text": "Developed features in admin protected segments of Unity Services Dashboard in agile scrums with product manager for OneCommerce initiative"
+        "text": "Owned development of admin-protected features in the Unity Services Dashboard for the OneCommerce initiative, collaborating directly with product to deliver launch-critical functionality"
       },
       {
         "id": 3,
-        "text": "Migrated components from Unity One (MUI 4 base) component library to Cloud Foundation design system (MUI 5 base) Storybook components"
+        "text": "Led migration of legacy MUI v4 components to the Cloud Foundation design system (MUI v5), improving consistency, accessibility, and long-term maintainability across teams"
       },
       {
         "id": 4,
@@ -25,6 +25,16 @@
         "id": 5,
         "text": "Completed Unity Leadership training and Unity “Certified Interviewer” involved in the intern program"
       }
+    ],
+    "technologies": [
+      "Github Copilot",
+      "ChatGPT",
+      "Jira",
+      "TypeScript",
+      "React",
+      "MUI",
+      "GraphQL",
+      "Jest"
     ]
   },
   {
@@ -35,11 +45,11 @@
     "responsibilities": [
       {
         "id": 1,
-        "text": "Started on internal tools team and quickly moved up the engineering ladder to work on MapMyRun (10M user base) and Seabiscuit (Performance clone for underarmour.com product description pages using GraphQL, TypeScript, and NextJS)"
+        "text": "Contributed to MapMyRun (10M+ users) and Seabiscuit, a high-traffic GraphQL-powered product description platform for underarmour.com"
       },
       {
         "id": 2,
-        "text": "Primary developer and Product Owner for Jackfruit challenges admin tool"
+        "text": "Served as primary developer and Product Owner for the Jackfruit challenges admin tool, enabling support teams to launch and manage user challenges without engineering intervention"
       },
       {
         "id": 3,
@@ -51,8 +61,18 @@
       },
       {
         "id": 5,
-        "text": "Created NPM package with unit conversion tables for duration, distance, and time to be used across suite of applications"
+        "text": "Created and maintained a shared NPM package for unit conversions, reducing duplicated logic and ensuring consistency across multiple applications"
       }
+    ],
+    "technologies": [
+      "Github Copilot",
+      "Jira",
+      "TypeScript",
+      "React",
+      "MUI",
+      "Redux",
+      "React Query",
+      "React Testing Library"
     ]
   },
   {
@@ -79,8 +99,24 @@
       },
       {
         "id": 5,
-        "text": "Stabilized application by taking test coverage from 9.22% to 54.49%"
+        "text": "Increased automated test coverage from 9.22% to 54.49%, significantly improving deployment confidence and production stability"
+      },
+      {
+        "id": 6,
+        "text": "Tech environment: Pivotal Tracker, Ruby on Rails, React, Postgres, Redis, Haml, Sass, AWS, Heroku, RSpec"
       }
+    ],
+    "technologies": [
+      "Pivotal Tracker",
+      "Ruby on Rails",
+      "React",
+      "Postgres",
+      "Redis",
+      "Haml",
+      "Sass",
+      "AWS",
+      "Heroku",
+      "RSpec"
     ]
   }
 ]
