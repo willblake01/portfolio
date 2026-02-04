@@ -30,8 +30,8 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
       alt={job.title}
       sx={{
         width: '100%',
-        height: 'clamp(220px, 34vw, 360px)',
-        objectFit: 'cover',
+        aspectRatio: '16 / 9',
+        objectFit: 'contain',
         display: 'block',
       }}
     />
