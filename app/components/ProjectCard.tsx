@@ -26,7 +26,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         alt={project.title}
         sx={{
           width: '100%',
-          height: 'clamp(200px, 32vw, 320px)',
+          aspectRatio: '16 / 9',
+          height: 'auto',
           objectFit: 'cover',
           display: 'block',
         }}

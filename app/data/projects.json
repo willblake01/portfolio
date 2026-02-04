@@ -5,7 +5,7 @@
         "title": "Unity Services Dashboard",
         "description": "A role-based, all-in-one dashboard for managing Unity services, metered subscriptions, and administrative workflows.",
         "url": "https://cloud.unity.com/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222779/unity-dashboard.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770238418/unity-dashboard.png",
         "contributions": [
           {
             "id": 1,
@@ -55,7 +55,7 @@
         "title": "Seabiscuit",
         "description": "A modern, scalable clone of Under Armour’s product detail pages, migrated to a new tech stack with full feature parity and extensibility.",
         "url": "https://www.underarmour.com",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222388/under-armour.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770238109/under-armour.png",
         "contributions": [
           {
             "id": 1,
@@ -79,7 +79,7 @@
         "id": 4,
         "title": "MapMyRun",
         "description": "A large-scale GPS workout logging and social fitness application supporting real-time activity tracking and challenge-based engagement.",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734222530/map-my-run.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770238269/map-my-run.png",
         "contributions": [
           {
             "id": 1,
@@ -129,7 +129,7 @@
         "title": "Spectrum Trail Racing",
         "description": "A full-stack marketing and race registration platform with administrative dashboards, analytics, and automated outreach.",
         "url": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1583682869/react-portfolio/spectrum-trail-racing.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770237892/react-portfolio/spectrum-trail-racing.png",
         "contributions": [
           {
             "id": 1,
@@ -158,7 +158,7 @@
         "title": "Range Front",
         "description": "Full-stack e-commerce platform inspired by REI, built to explore real-world commerce workflows including authentication, role-based permissions, cart state management, and Stripe-powered checkout.",
         "url": "https://range-front.vercel.app/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1767065265/react-portfolio/range-front.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770235998/react-portfolio/range-front.png",
         "contributions": [
           {
             "id": 1,
@@ -220,7 +220,7 @@
         "title": "Fetch Rescue",
         "description": "A dog rescue web application simulating an adoption experience, featuring a modern UI, persistent state, and API-driven data.",
         "url": "https://fetch-frontend-exercise-nine.vercel.app/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1739999169/fetch-rescue_jabauq.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770236737/fetch-rescue_jabauq.png",
         "contributions": [
           {
             "id": 1,
@@ -254,7 +254,7 @@
         "title": "The Simpsons Memory Challenge",
         "description": "A TypeScript-driven React game demonstrating robust input validation, state persistence, and interactive UI patterns.",
         "url": "https://the-simpsons-memory-challenge.vercel.app/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1733191086/simpsons-memory-game.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770236980/simpsons-memory-game.png",
         "contributions": [
           {
             "id": 1,
@@ -291,7 +291,7 @@
         "title": "Train Time",
         "description": "A real-time scheduling application built with Firebase Realtime Database to synchronize train plans across users and sessions.",
         "url": "https://train-time-rosy.vercel.app",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1734560561/train-time.png",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770237226/train-time.png",
         "contributions": [
           {
             "id": 1,
