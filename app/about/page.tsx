@@ -40,7 +40,7 @@ const About = () => (
         sx={{ display: 'flex', justifyContent: 'center' }}
       >
         <img
-          src="https://res.cloudinary.com/willblake01/image/upload/v1732640647/profile-pic.jpg"
+          src={about.image}
           alt="profile-pic"
           style={{
             borderRadius: '8px',
