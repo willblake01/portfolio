@@ -17,6 +17,8 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
   <Card
     sx={{
       borderRadius: 2,
+      border: '1px solid',
+      borderColor: 'divider',
       color: 'text.secondary',
       width: '32.5rem',
       boxShadow: 3,
