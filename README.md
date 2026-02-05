@@ -7,7 +7,7 @@
 ![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-![Portfolio landing page](https://res.cloudinary.com/willblake01/image/upload/v1766004073/portfolio_bvwtej.png)
+![Portfolio landing page](https://res.cloudinary.com/willblake01/image/upload/v1770261647/portfolio/portfolio_bvwtej.webp)
 
 A modern, performance-focused **personal portfolio** built with **Next.js** and **TypeScript**.  
 This site highlights selected projects, technical depth, and real-world engineering experience with a strong emphasis on **clean architecture**, **maintainability**, and **user experience**.
