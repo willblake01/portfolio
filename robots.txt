@@ -1,0 +1,107 @@
+# robots.txt for portfolio site
+# Generated: 2026-04-06
+
+# ===========================================
+# AI & LLM Training Crawlers — Blocked
+# ===========================================
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+# OpenAI (ChatGPT browsing)
+User-agent: ChatGPT-User
+Disallow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Disallow: /
+
+# Anthropic (older)
+User-agent: anthropic-ai
+Disallow: /
+
+# Google AI (Gemini / Vertex)
+User-agent: Google-Extended
+Disallow: /
+
+# Meta AI
+User-agent: FacebookBot
+Disallow: /
+
+# Apple
+User-agent: Applebot-Extended
+Disallow: /
+
+# Amazon Alexa
+User-agent: Amazonbot
+Disallow: /
+
+# Common Crawl (used widely for AI training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+# You.com
+User-agent: YouBot
+Disallow: /
+
+# Bytedance / TikTok
+User-agent: Bytespider
+Disallow: /
+
+# Diffbot (used for ML datasets)
+User-agent: Diffbot
+Disallow: /
+
+# ImagesiftBot
+User-agent: ImagesiftBot
+Disallow: /
+
+# Omgili / Webz.io (data aggregation)
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+# DataForSeo
+User-agent: DataForSeoBot
+Disallow: /
+
+# Timpibot
+User-agent: Timpibot
+Disallow: /
+
+# ===========================================
+# Standard Search Engines — Allowed
+# ===========================================
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ===========================================
+# Default: allow all other bots
+# ===========================================
+
+User-agent: *
+Allow: /
+
+# Sitemap (update with your actual URL)
+# Sitemap: https://yourportfolio.com/sitemap.xml

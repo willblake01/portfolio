@@ -71,6 +71,9 @@ const RootLayout = ({
   children: React.ReactNode
 }>) => (
   <html lang="en">
+    <head>
+      <meta name="robots" content="noai" />
+    </head>
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       {children}
       <Analytics />
