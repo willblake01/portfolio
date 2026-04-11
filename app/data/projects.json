@@ -220,7 +220,7 @@
         "title": "Fetch Rescue",
         "description": "A dog rescue web application simulating an adoption experience, featuring a modern UI, persistent state, and API-driven data.",
         "url": "https://fetch-frontend-exercise-nine.vercel.app/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770242342/portfolio/fetch-rescue_jabauq.webp",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/v1770242342/portfolio/fetch-rescue.webp",
         "contributions": [
           {
             "id": 1,
