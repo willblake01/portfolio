@@ -1,6 +1,5 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   // SWC automatically reads the "browserslist" field in package.json.
   // Targeting last 2 versions of evergreen browsers (see package.json)
   // means Next will skip legacy ES5 transpilation and polyfills for
@@ -8,3 +7,4 @@ const nextConfig: NextConfig = {
 }
 
 export default nextConfig
+
