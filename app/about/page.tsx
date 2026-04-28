@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Grid2, Card, Typography } from '@mui/material'
 import { AppBar, PageHeader } from '../components'
 import about from '../data/about.json'
@@ -38,15 +39,18 @@ const About = () => (
         size={{ sm: 1, lg: 3 }}
         sx={{ display: 'flex', justifyContent: 'center' }}
       >
-        <img
-          src={about.image}
-          alt="profile-pic"
-          style={{
-            borderRadius: '8px',
-            height: 'auto',
-            width: '100%',
-          }}
-        />
+        <Image
+            src={about.image}
+            alt="profile-pic"
+            priority
+            width={400}
+            height={400}
+            style={{
+              borderRadius: '8px',
+              height: 'auto',
+              width: '100%',
+            }}
+          />
       </Grid2>
     </Grid2>
   </>

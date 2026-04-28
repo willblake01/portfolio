@@ -1,8 +1,9 @@
+import Image from 'next/image'
 import {
   Box,
   Card,
   CardContent,
-  CardHeader, CardMedia,
+  CardHeader,
   List,
   ListItem,
   Typography,
@@ -26,17 +27,15 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
       flexDirection: 'column',
     }}
   >
-    <CardMedia
-      component="img"
-      image={job.image}
-      alt={job.title}
-      sx={{
-        width: '100%',
-        aspectRatio: '16 / 9',
-        objectFit: 'contain',
-        display: 'block',
-      }}
-    />
+    <Box sx={{ position: 'relative', width: '100%', aspectRatio: '16 / 9' }}>
+      <Image
+        src={job.image}
+        alt={job.title}
+        fill
+        sizes="(max-width: 600px) 100vw, 520px"
+        style={{ objectFit: 'contain' }}
+      />
+    </Box>
     <CardHeader title={job.team} sx={{ textAlign: 'center' }} />
     <CardContent
       sx={{

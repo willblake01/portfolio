@@ -17,6 +17,12 @@ const geistMono = localFont({
   weight: '100 900',
   display: 'swap',
 })
+const fingerPaint = localFont({
+  src: './fonts/FingerPaint-Regular.ttf',
+  variable: '--font-finger-paint',
+  weight: '400',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamwillblake.com'),
@@ -77,7 +83,7 @@ const RootLayout = ({
     <head>
       <meta name="robots" content="noai" />
     </head>
-    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <body className={`${geistSans.variable} ${geistMono.variable} ${fingerPaint.variable} antialiased`}>
         <AppRouterCacheProvider>
           {children}
         </AppRouterCacheProvider>
