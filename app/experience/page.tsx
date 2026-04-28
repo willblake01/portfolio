@@ -1,4 +1,3 @@
-'use client'
 import { Grid2 } from '@mui/material'
 import experience from '../data/experience.json'
 import { AppBar, PageHeader } from '../components'

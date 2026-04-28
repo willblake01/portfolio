@@ -1,3 +1,4 @@
+'use client'
 import { ThemeProvider, Typography } from '@mui/material'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import { Grid2 } from '@mui/material'

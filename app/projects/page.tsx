@@ -1,4 +1,3 @@
-'use client'
 import { Grid2, Typography } from '@mui/material'
 import projects from '../data/projects.json'
 import { AppBar, PageHeader } from '../components'

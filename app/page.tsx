@@ -1,4 +1,3 @@
-'use client'
 
 import dynamic from 'next/dynamic'
 import { Box, Grid2 } from '@mui/material'

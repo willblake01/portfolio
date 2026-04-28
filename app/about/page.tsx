@@ -1,4 +1,3 @@
-'use client'
 import { Grid2, Card, Typography } from '@mui/material'
 import { AppBar, PageHeader } from '../components'
 import about from '../data/about.json'

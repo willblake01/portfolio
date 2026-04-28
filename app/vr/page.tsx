@@ -1,4 +1,3 @@
-'use client'
 import { Grid2 } from '@mui/material'
 import { AppBar, PageHeader } from '../components'
 import { ProjectCard } from '../components'

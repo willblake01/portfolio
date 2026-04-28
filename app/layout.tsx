@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -8,11 +9,13 @@ const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
   weight: '100 900',
+  display: 'swap',
 })
 const geistMono = localFont({
   src: './fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
   weight: '100 900',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -75,10 +78,12 @@ const RootLayout = ({
       <meta name="robots" content="noai" />
     </head>
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      {children}
-      <Analytics />
-      <SpeedInsights />
-    </body>
+        <AppRouterCacheProvider>
+          {children}
+        </AppRouterCacheProvider>
+        <Analytics />
+        <SpeedInsights />
+      </body>
   </html>
 )
 
