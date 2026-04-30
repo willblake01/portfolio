@@ -10,33 +10,54 @@ const AvatarScene = dynamic(
 )
 
 const Home = () => (
-  <Box sx={{
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100vh'
-  }}>
+  <Box
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100vh',
+      overflow: 'hidden',
+    }}
+  >
     <AppBar />
-    <Grid2
-      container
+    <Box
       sx={{
         display: 'flex',
-        justifyContent: 'space-around',
         flex: 1,
-        overflow: 'hidden'
+        overflow: 'hidden',
       }}
     >
-      <PageHeader title="Where there's a Will, <br /> there's a way" sx={{ padding: '1rem' }} />
       <Grid2
         container
         sx={{
-          display: 'flex',
+          flex: 1,
           height: '100%',
-          width: '37.5rem',
+          flexDirection: { xs: 'column', lg: 'row' },
+          flexWrap: { xs: 'nowrap', lg: 'wrap' },
         }}
       >
-        <AvatarScene />
+        <Grid2
+          size={{ xs: 12, lg: 8 }}
+          sx={{
+            display: 'flex',
+            height: { xs: 'max-content', lg: '100%' },
+            padding: '1rem',
+          }}
+        >
+          <PageHeader title="Where there's a Will, <br /> there's a way" />
+        </Grid2>
+        <Grid2
+          size={{ xs: 12, lg: 4 }}
+          sx={{
+            display: 'flex',
+            flex: { xs: 1, lg: 'unset' },
+            height: { xs: 'unset', lg: '100%' },
+            overflowY: { xs: 'auto', lg: 'unset' },
+          }}
+        >
+          <AvatarScene />
+        </Grid2>
       </Grid2>
-    </Grid2>
+    </Box>
   </Box>
 )
 
