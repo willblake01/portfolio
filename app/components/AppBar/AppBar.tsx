@@ -1,5 +1,5 @@
 'use client'
-import { Grid2, Button } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { MobileAppBar } from './components'
@@ -11,7 +11,7 @@ const AppBar = () => {
   return mobile ? (
     <MobileAppBar />
   ) : (
-    <Grid2 container sx={{ display: 'flex', mb: '2.5rem' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'row', mb: '2.5rem' }}>
       <Button
         component="a"
         href="/"
@@ -78,7 +78,7 @@ const AppBar = () => {
       >
         contact
       </Button>
-    </Grid2>
+    </Box>
   )
 }
 export default AppBar

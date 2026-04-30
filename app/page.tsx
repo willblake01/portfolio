@@ -10,13 +10,22 @@ const AvatarScene = dynamic(
 )
 
 const Home = () => (
-  <Box sx={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+  <Box sx={{
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh'
+  }}>
     <AppBar />
     <Grid2
       container
-      sx={{ display: 'flex', justifyContent: 'space-around', flex: 1, overflow: 'hidden' }}
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        flex: 1,
+        overflow: 'hidden'
+      }}
     >
-      <PageHeader title="Where there's a Will, <br /> there's a way" />
+      <PageHeader title="Where there's a Will, <br /> there's a way" sx={{ padding: '2rem' }} />
       <Grid2
         container
         sx={{

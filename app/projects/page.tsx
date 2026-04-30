@@ -1,4 +1,4 @@
-import { Grid2, Typography } from '@mui/material'
+import { Box, Grid2, Typography } from '@mui/material'
 import projects from '../data/projects.json'
 import { AppBar, PageHeader } from '../components'
 import { ProjectCard } from '../components'
@@ -8,60 +8,60 @@ const Projects = () => (
   <>
     <AppBar />
     <PageHeader title="Projects" />
-    <Grid2 container>
-      <Grid2
-        size={{ lg: 6 }}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          flexDirection: 'column',
-          mb: '2.5rem',
-        }}
-      >
-        <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
-          Enterprise
-        </Typography>
+    <Box sx={{ mb: '6rem' }}>
+      <Grid2 container rowSpacing={10}>
         <Grid2
-          container
-          spacing={6}
+          size={{ lg: 6 }}
           sx={{
             display: 'flex',
-            justifyContent: 'space-evenly',
-            width: '100%',
+            alignItems: 'center',
+            flexDirection: 'column',
           }}
         >
-          {projects.enterprise.map((project: Project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+          <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
+            Enterprise
+          </Typography>
+          <Grid2
+            container
+            spacing={6}
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              width: '100%',
+            }}
+          >
+            {projects.enterprise.map((project: Project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </Grid2>
         </Grid2>
-      </Grid2>
-      <Grid2
-        size={{ lg: 6 }}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          flexDirection: 'column',
-          mb: '2.5rem',
-        }}
-      >
-        <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
-          Toy
-        </Typography>
         <Grid2
-          container
-          spacing={6}
+          size={{ lg: 6 }}
           sx={{
             display: 'flex',
-            justifyContent: 'space-evenly',
-            width: '100%',
+            alignItems: 'center',
+            flexDirection: 'column',
           }}
         >
-          {projects.toy.map((project: Project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+          <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
+            Toy
+          </Typography>
+          <Grid2
+            container
+            spacing={6}
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              width: '100%',
+            }}
+          >
+            {projects.toy.map((project: Project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </Grid2>
         </Grid2>
       </Grid2>
-    </Grid2>
+    </Box>
   </>
 )
 

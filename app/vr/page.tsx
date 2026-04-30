@@ -1,4 +1,4 @@
-import { Grid2 } from '@mui/material'
+import { Box, Grid2 } from '@mui/material'
 import { AppBar, PageHeader } from '../components'
 import { ProjectCard } from '../components'
 import projects from '../data/vr.json'
@@ -7,18 +7,20 @@ const VR = () => (
   <>
     <AppBar />
     <PageHeader title="VR" />
-    <Grid2
-      container
-      sx={{
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        mb: '2.5rem',
-      }}
-    >
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
-    </Grid2>
+    <Box sx={{ mb: '6rem' }}>
+      <Grid2
+        container
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-evenly',
+        }}
+        spacing={6}
+      >
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </Grid2>
+    </Box>
   </>
 )
 
