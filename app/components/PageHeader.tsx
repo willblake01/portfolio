@@ -18,6 +18,7 @@ const PageHeader = ({ title, sx }: PageHeaderProps) => (
     sx={{
       display: 'flex',
       justifyContent: 'center',
+      mb: '2.5rem',
       ...sx,
     }}
   >

@@ -25,7 +25,7 @@ const Home = () => (
         overflow: 'hidden'
       }}
     >
-      <PageHeader title="Where there's a Will, <br /> there's a way" sx={{ padding: '2rem' }} />
+      <PageHeader title="Where there's a Will, <br /> there's a way" sx={{ padding: '1rem' }} />
       <Grid2
         container
         sx={{
