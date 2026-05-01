@@ -7,14 +7,7 @@ const Experience = () => (
   <>
     <AppBar />
     <PageHeader title='Experience' />
-    <Grid2
-      container
-      sx={{
-        display: 'flex',
-        justifyContent: 'space-evenly',
-      }}
-      spacing={6}
-    >
+    <Grid2 container sx={{ display: 'flex', justifyContent: 'space-evenly' }} spacing={6}>
       {experience.map((job) => (
         <ExperienceCard key={job.id} job={job} />
       ))}

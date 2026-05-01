@@ -7,14 +7,7 @@ const VR = () => (
   <>
     <AppBar />
     <PageHeader title='VR' />
-    <Grid2
-      container
-      sx={{
-        display: 'flex',
-        justifyContent: 'space-evenly',
-      }}
-      spacing={6}
-    >
+    <Grid2 container sx={{ display: 'flex', justifyContent: 'space-evenly' }} spacing={6}>
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}

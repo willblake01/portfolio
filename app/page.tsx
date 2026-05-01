@@ -16,6 +16,7 @@ const Home = () => (
       flexDirection: 'column',
       height: '100vh',
       overflow: 'hidden',
+      mb: -12,
     }}
   >
     <AppBar />
