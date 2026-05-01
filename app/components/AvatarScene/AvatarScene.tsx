@@ -8,13 +8,13 @@ import { Light } from './components'
 
 const AvatarScene = () => {
   return (
-    <Canvas shadows className="canvas" camera={{ position: [0, 0.9, 2], fov: 68 }}>
+    <Canvas shadows className='canvas' camera={{ position: [0, 0.9, 2], fov: 68 }}>
       <Suspense fallback={null}>
         <Light position={[2, 3, 2]} />
         <OrbitControls target={[0, 0.9, 0]} enableZoom={false} enablePan={false} />
         <Avatar />
       </Suspense>
-      <ambientLight color="white" intensity={4} />
+      <ambientLight color='white' intensity={4} />
     </Canvas>
   )
 }

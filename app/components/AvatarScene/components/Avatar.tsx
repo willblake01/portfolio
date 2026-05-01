@@ -50,30 +50,30 @@ export function Avatar(props: JSX.IntrinsicElements['group']) {
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group name="Scene">
-        <group name="waving_avatar">
+      <group name='Scene'>
+        <group name='waving_avatar'>
           <primitive object={nodes.Hips} />
-          <group name="waving_avatar001">
+          <group name='waving_avatar001'>
             <skinnedMesh
-              name="waving_avatar_1"
+              name='body'
               geometry={nodes.waving_avatar_1.geometry}
               material={materials.Boy01_Body_MAT1}
               skeleton={nodes.waving_avatar_1.skeleton}
             />
             <skinnedMesh
-              name="waving_avatar_2"
+              name='mouth'
               geometry={nodes.waving_avatar_2.geometry}
               material={materials.Boy01_Mouth_MAT2}
               skeleton={nodes.waving_avatar_2.skeleton}
             />
             <skinnedMesh
-              name="waving_avatar_3"
+              name='eyes'
               geometry={nodes.waving_avatar_3.geometry}
               material={materials.Boy01_Eyes_MAT2}
               skeleton={nodes.waving_avatar_3.skeleton}
             />
             <skinnedMesh
-              name="waving_avatar_4"
+              name='brows'
               geometry={nodes.waving_avatar_4.geometry}
               material={materials.Boy01_Brows_MAT2}
               skeleton={nodes.waving_avatar_4.skeleton}

@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
@@ -80,13 +81,14 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode
 }>) => (
-  <html lang="en">
+  <html lang='en'>
     <head>
-      <meta name="robots" content="noai" />
+      <meta name='robots' content='noai' />
+      <title>Will Blake's Portfolio</title>
     </head>
     <body className={`${geistSans.variable} ${geistMono.variable} ${fingerPaint.variable} antialiased`}>
         <AppRouterCacheProvider>
-            <Box component="main" sx={{ pb: 12 }}>
+            <Box component='main' sx={{ pb: 12 }}>
               {children}
             </Box>
           </AppRouterCacheProvider>

@@ -6,7 +6,7 @@ import ExperienceCard from './components/ExperienceCard'
 const Experience = () => (
   <>
     <AppBar />
-    <PageHeader title="Experience" />
+    <PageHeader title='Experience' />
     <Grid2
       container
       sx={{

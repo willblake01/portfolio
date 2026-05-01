@@ -6,7 +6,7 @@ import projects from '../data/vr.json'
 const VR = () => (
   <>
     <AppBar />
-    <PageHeader title="VR" />
+    <PageHeader title='VR' />
     <Grid2
       container
       sx={{

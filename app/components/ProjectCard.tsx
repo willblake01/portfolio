@@ -25,7 +25,7 @@ const CardBody = ({ project }: ProjectCardProps) => (
         src={project.image}
         alt={project.title}
         fill
-        sizes="(max-width: 600px) 100vw, 512px"
+        sizes='(max-width: 600px) 100vw, 512px'
         style={{ objectFit: 'cover' }}
       />
     </Box>
@@ -60,7 +60,7 @@ const CardBody = ({ project }: ProjectCardProps) => (
           </ListItem>
         ))}
       </List>
-      <Typography component="div" sx={{ marginTop: 'auto' }}>
+      <Typography component='div' sx={{ marginTop: 'auto' }}>
         Technologies: <i>{project.technologies.join(', ')}</i>
       </Typography>
     </CardContent>
@@ -79,10 +79,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
   >
     {project.url ? (
       <CardActionArea
-        component="a"
+        component='a'
         href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
       >
         <CardBody project={project} />
       </CardActionArea>
@@ -104,19 +104,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
           <a
             href={project.apk}
             download
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
             Download .apk file
           </a>
         )}
         {project?.gitHub && (
           <IconButton
-            component="a"
+            component='a'
             href={project.gitHub}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View on GitHub"
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='View on GitHub'
           >
             <GitHubIcon />
           </IconButton>

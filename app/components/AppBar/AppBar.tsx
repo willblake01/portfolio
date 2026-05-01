@@ -13,8 +13,8 @@ const AppBar = () => {
   ) : (
     <Box sx={{ display: 'flex', flexDirection: 'row', mb: '2.5rem' }}>
       <Button
-        component="a"
-        href="/"
+        component='a'
+        href='/'
         style={{
           background: 'none',
           color: 'var(--foreground)',
@@ -24,8 +24,8 @@ const AppBar = () => {
         home
       </Button>
       <Button
-        component="a"
-        href="/experience"
+        component='a'
+        href='/experience'
         style={{
           background: 'none',
           color: 'var(--foreground)',
@@ -35,8 +35,8 @@ const AppBar = () => {
         experience
       </Button>
       <Button
-        component="a"
-        href="/projects"
+        component='a'
+        href='/projects'
         style={{
           background: 'none',
           color: 'var(--foreground)',
@@ -47,7 +47,7 @@ const AppBar = () => {
       </Button>
       <Button
         component={'a'}
-        href="/vr"
+        href='/vr'
         style={{
           background: 'none',
           color: 'var(--foreground)',
@@ -57,8 +57,8 @@ const AppBar = () => {
         vr
       </Button>
       <Button
-        component="a"
-        href="/about"
+        component='a'
+        href='/about'
         style={{
           background: 'none',
           color: 'var(--foreground)',
@@ -69,7 +69,7 @@ const AppBar = () => {
       </Button>
       <Button
         component={'a'}
-        href="/contact"
+        href='/contact'
         style={{
           background: 'none',
           color: 'var(--foreground)',

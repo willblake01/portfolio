@@ -26,7 +26,7 @@ const PageHeader = ({ title, sx }: PageHeaderProps) => (
       <Typography
         component={'h2'}
         dangerouslySetInnerHTML={{ __html: title }}
-        fontFamily="var(--font-finger-paint)"
+        fontFamily='var(--font-finger-paint)'
         variant={'h1'}
       />
     </ThemeProvider>

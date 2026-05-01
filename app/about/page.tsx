@@ -6,7 +6,7 @@ import about from '../data/about.json'
 const About = () => (
   <>
     <AppBar />
-    <PageHeader title="About" />
+    <PageHeader title='About' />
     <Grid2
       container
       size={7}
@@ -40,7 +40,7 @@ const About = () => (
       >
         <Image
             src={about.image}
-            alt="profile-pic"
+            alt='profile-pic'
             priority
             width={400}
             height={400}

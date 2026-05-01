@@ -7,7 +7,7 @@ import type { Project } from '../types'
 const Projects = () => (
   <>
     <AppBar />
-    <PageHeader title="Projects" />
+    <PageHeader title='Projects' />
     <Grid2 container rowSpacing={10}>
         <Grid2
           size={{ lg: 6 }}
@@ -17,7 +17,7 @@ const Projects = () => (
             flexDirection: 'column',
           }}
         >
-          <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
+          <Typography component='div' sx={{ mb: '2.5rem' }} variant='h5'>
             Enterprise
           </Typography>
           <Grid2
@@ -42,7 +42,7 @@ const Projects = () => (
             flexDirection: 'column',
           }}
         >
-          <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
+          <Typography component='div' sx={{ mb: '2.5rem' }} variant='h5'>
             Toy
           </Typography>
           <Grid2
