@@ -2,7 +2,7 @@
 import dynamic from 'next/dynamic'
 import { Box, Grid2 } from '@mui/material'
 import { AppBar } from './components'
-import PageHeader from './components/PageHeader'
+import HeroHeading from './components/HeroHeading'
 
 const AvatarScene = dynamic(
   () => import('./components/AvatarScene').then((mod) => mod.AvatarScene),
@@ -32,18 +32,20 @@ const Home = () => (
           flex: 1,
           height: '100%',
           flexDirection: { xs: 'column', lg: 'row' },
-          flexWrap: { xs: 'nowrap', lg: 'wrap' },
+          flexWrap: { xs: 'wrap', lg: 'wrap' },
         }}
       >
         <Grid2
           size={{ xs: 12, lg: 8 }}
           sx={{
             display: 'flex',
-            height: { xs: 'max-content', lg: '100%' },
-            padding: '1rem',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: 'max-content',
+            padding: { xs: '0 1rem', lg: '1rem 2rem' },
           }}
         >
-          <PageHeader title="Where there's a Will, <br /> there's a way" />
+          <HeroHeading />
         </Grid2>
         <Grid2
           size={{ xs: 12, lg: 4 }}

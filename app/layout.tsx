@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
+import { Box } from '@mui/material'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -85,8 +86,10 @@ const RootLayout = ({
     </head>
     <body className={`${geistSans.variable} ${geistMono.variable} ${fingerPaint.variable} antialiased`}>
         <AppRouterCacheProvider>
-          {children}
-        </AppRouterCacheProvider>
+            <Box component="main" sx={{ pb: 12 }}>
+              {children}
+            </Box>
+          </AppRouterCacheProvider>
         <Analytics />
         <SpeedInsights />
       </body>

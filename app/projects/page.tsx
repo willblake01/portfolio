@@ -1,4 +1,4 @@
-import { Box, Grid2, Typography } from '@mui/material'
+import { Grid2, Typography } from '@mui/material'
 import projects from '../data/projects.json'
 import { AppBar, PageHeader } from '../components'
 import { ProjectCard } from '../components'
@@ -8,8 +8,7 @@ const Projects = () => (
   <>
     <AppBar />
     <PageHeader title="Projects" />
-    <Box sx={{ mb: '6rem' }}>
-      <Grid2 container rowSpacing={10}>
+    <Grid2 container rowSpacing={10}>
         <Grid2
           size={{ lg: 6 }}
           sx={{
@@ -61,7 +60,6 @@ const Projects = () => (
           </Grid2>
         </Grid2>
       </Grid2>
-    </Box>
   </>
 )
 

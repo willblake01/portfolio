@@ -14,7 +14,6 @@ const About = () => (
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        mb: '2.5rem',
       }}
     >
       <Card
