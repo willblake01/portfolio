@@ -24,7 +24,7 @@ const AvatarScene = () => {
       <Suspense fallback={null}>
         <Light position={[2, 3, 2]} />
         <OrbitControls target={[0, 1, 0]} enableZoom={false} enablePan={false} />
-        <Avatar ref={avatarRef} position={[0, 0, 0]} />
+        <Avatar ref={avatarRef} position={[0, -0.15, 0]} />
       </Suspense>
       <ambientLight color='white' intensity={4} />
     </Canvas>
