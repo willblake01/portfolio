@@ -11,7 +11,7 @@ const AppBar = () => {
   return mobile ? (
     <MobileAppBar />
   ) : (
-    <Box sx={{ display: 'flex', flexDirection: 'row', mb: '2.5rem' }}>
+    <Box data-appbar sx={{ display: 'flex', flexDirection: 'row', mb: '2.5rem' }}>
       <Button
         component='a'
         href='/'

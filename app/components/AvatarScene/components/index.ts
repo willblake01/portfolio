@@ -1,2 +1,3 @@
-export { default as Avatar } from './Avatar'
+export { Avatar } from './Avatar'
+export type { AvatarHandle } from './Avatar'
 export { default as Light } from './Light'
