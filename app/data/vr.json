@@ -45,18 +45,22 @@
       },
       {
         "id": 2,
-        "text": "Sandbox for practicing functionality"
+        "text": "Designed atmospheric night environment including custom sky, lighting, and fog to establish mood"
       },
       {
         "id": 3,
-        "text": "Custom toggle stick locomotion with sprint and recovery phase"
+        "text": "Sandbox for practicing functionality"
       },
       {
         "id": 4,
-        "text": "Props table with grabbable blocks and nerf gun"
+        "text": "Custom toggle stick locomotion with sprint and recovery phase"
       },
       {
         "id": 5,
+        "text": "Props table with grabbable blocks and nerf gun"
+      },
+      {
+        "id": 6,
         "text": "Download the .apk file below to sideload on a headset (Tested on Quest 3)"
       }
     ],
@@ -86,10 +90,14 @@
       },
       {
         "id": 3,
-        "text": "Custom toggle stick locomotion with sprint and recovery phase"
+        "text": "Designed atmospheric night environment including custom sky and lighting to establish mood"
       },
       {
         "id": 4,
+        "text": "Custom toggle stick locomotion with sprint and recovery phase"
+      },
+      {
+        "id": 5,
         "text": "Download the .apk file below to sideload on a headset (Tested on Quest 3)"
       }
     ],
