@@ -82,7 +82,7 @@
       },
       {
         "id": 2,
-        "text": "Sandbox for practicing functionality"
+        "text": "Implemented AI-controlled Paragon characters with patrol behaviour and animated combat sequences"
       },
       {
         "id": 3,
@@ -90,10 +90,6 @@
       },
       {
         "id": 4,
-        "text": "Props table with grabbable blocks and nerf gun"
-      },
-      {
-        "id": 5,
         "text": "Download the .apk file below to sideload on a headset (Tested on Quest 3)"
       }
     ],
