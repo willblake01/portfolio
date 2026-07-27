@@ -21,7 +21,7 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
       border: '1px solid',
       borderColor: 'divider',
       color: 'text.secondary',
-      width: '32.5rem',
+      width: '30rem',
       boxShadow: 3,
       display: 'flex',
       flexDirection: 'column',

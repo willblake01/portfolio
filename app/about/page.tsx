@@ -16,7 +16,7 @@ const About = () => (
   >
     <AppBar />
     <HexFloat
-      tilt={15}
+      tilt={10}
       float={0.3}
       iridescence={0.4}
       grain={0.4}

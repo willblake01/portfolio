@@ -14,13 +14,13 @@ const Experience = () => (
   >
     <AppBar />
     <HexFloat
-      tilt={15}
+      tilt={10}
       float={0.3}
       iridescence={0.4}
       grain={0.4}
       style={{ flex: 1, minHeight: 0 }}
     >
-      <Box sx={{ minHeight: '100%', pb: 6 }}>
+      <Box sx={{ minHeight: '100%', width: '100%', pb: 6 }}>
         <PageHeader title="Experience" />
         <Grid2
           container
