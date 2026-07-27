@@ -25,6 +25,7 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
       boxShadow: 3,
       display: 'flex',
       flexDirection: 'column',
+      backgroundColor: 'background.paper'
     }}
   >
     <Box sx={{ position: 'relative', width: '100%', aspectRatio: '16 / 9' }}>

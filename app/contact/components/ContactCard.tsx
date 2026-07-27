@@ -9,6 +9,7 @@ const ContactCard = () => (
         borderRadius: 2,
         boxShadow: 3,
         padding: '0.5rem',
+        height: 'max-content',
       }}
     >
       <CardContent>

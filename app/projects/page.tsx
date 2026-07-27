@@ -1,66 +1,83 @@
-import { Grid2, Typography } from '@mui/material'
+import { Box, Grid2, Typography } from '@mui/material'
+import { HexFloat } from '@/components/canvas-ui/hex-float'
 import projects from '../data/projects.json'
 import { AppBar, PageHeader } from '../components'
 import { ProjectCard } from '../components'
 import type { Project } from '../types'
 
 const Projects = () => (
-  <>
+  <Box
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+    }}
+  >
     <AppBar />
-    <PageHeader title='Projects' />
-    <Grid2 container rowSpacing={10}>
-        <Grid2
-          size={{ lg: 6 }}
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'column',
-          }}
-        >
-          <Typography component='div' sx={{ mb: '2.5rem' }} variant='h5'>
-            Enterprise
-          </Typography>
+    <HexFloat
+      tilt={15}
+      float={0.3}
+      iridescence={0.4}
+      grain={0.4}
+      style={{ flex: 1, minHeight: 0 }}
+    >
+      <Box sx={{ minHeight: '100%', pb: 6 }}>
+        <PageHeader title="Projects" />
+        <Grid2 container rowSpacing={10}>
           <Grid2
-            container
-            spacing={6}
+            size={{ lg: 6 }}
             sx={{
               display: 'flex',
-              justifyContent: 'space-evenly',
-              width: '100%',
+              alignItems: 'center',
+              flexDirection: 'column',
             }}
           >
-            {projects.enterprise.map((project: Project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
+            <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
+              Enterprise
+            </Typography>
+            <Grid2
+              container
+              spacing={6}
+              sx={{
+                display: 'flex',
+                justifyContent: 'space-evenly',
+                width: '100%',
+              }}
+            >
+              {projects.enterprise.map((project: Project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </Grid2>
           </Grid2>
-        </Grid2>
-        <Grid2
-          size={{ lg: 6 }}
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'column',
-          }}
-        >
-          <Typography component='div' sx={{ mb: '2.5rem' }} variant='h5'>
-            Toy
-          </Typography>
           <Grid2
-            container
-            spacing={6}
+            size={{ lg: 6 }}
             sx={{
               display: 'flex',
-              justifyContent: 'space-evenly',
-              width: '100%',
+              alignItems: 'center',
+              flexDirection: 'column',
             }}
           >
-            {projects.toy.map((project: Project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
+            <Typography component="div" sx={{ mb: '2.5rem' }} variant="h5">
+              Toy
+            </Typography>
+            <Grid2
+              container
+              spacing={6}
+              sx={{
+                display: 'flex',
+                justifyContent: 'space-evenly',
+                width: '100%',
+              }}
+            >
+              {projects.toy.map((project: Project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </Grid2>
           </Grid2>
         </Grid2>
-      </Grid2>
-  </>
+      </Box>
+    </HexFloat>
+  </Box>
 )
 
 export default Projects

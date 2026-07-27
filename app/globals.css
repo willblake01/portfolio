@@ -20,7 +20,46 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}:root {
+   --background: #ffffff;
+   --foreground: #171717;
+ }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #e8edf2;
+  }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* fonts are loaded via next/font/local in layout.tsx */
+
+.cardSubHeader {
+  text-align: left;
+}
+
+.canvas {
+  background: var(--background);
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;

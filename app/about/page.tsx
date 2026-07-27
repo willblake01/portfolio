@@ -1,46 +1,62 @@
 import Image from 'next/image'
-import { Grid2, Card, Typography } from '@mui/material'
+import { Box, Grid2, Card, Typography } from '@mui/material'
+import { HexFloat } from '@/components/canvas-ui/hex-float'
+
 import { AppBar, PageHeader } from '../components'
 import about from '../data/about.json'
 
 const About = () => (
-  <>
+  <Box
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100vh',
+      overflow: 'hidden',
+    }}
+  >
     <AppBar />
-    <PageHeader title='About' />
-    <Grid2
-      container
-      size={7}
-      spacing={4}
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-      }}
+    <HexFloat
+      tilt={15}
+      float={0.3}
+      iridescence={0.4}
+      grain={0.4}
+      style={{ flex: 1, overflow: 'hidden' }}
     >
-      <Card
+      <PageHeader title="About" />
+      <Grid2
+        container
+        size={7}
+        spacing={4}
         sx={{
-          borderRadius: 2,
-          boxShadow: 3,
-          padding: '1.5rem',
-          height: 'max-content',
-          width: '50rem',
+          display: 'flex',
+          justifyContent: 'center',
         }}
       >
-        {about.paragraphs.map((paragraph) => (
-          <Typography
-            key={paragraph.id}
-            component={'p'}
-            dangerouslySetInnerHTML={{ __html: paragraph.text }}
-            sx={{ textIndent: '2rem' }}
-          />
-        ))}
-      </Card>
-      <Grid2
-        size={{ sm: 1, lg: 3 }}
-        sx={{ display: 'flex', justifyContent: 'center' }}
-      >
-        <Image
+        <Card
+          sx={{
+            borderRadius: 2,
+            boxShadow: 3,
+            padding: '1.5rem',
+            height: 'max-content',
+            width: '50rem',
+          }}
+        >
+          {about.paragraphs.map((paragraph) => (
+            <Typography
+              key={paragraph.id}
+              component={'p'}
+              dangerouslySetInnerHTML={{ __html: paragraph.text }}
+              sx={{ textIndent: '2rem' }}
+            />
+          ))}
+        </Card>
+        <Grid2
+          size={{ sm: 1, lg: 3 }}
+          sx={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <Image
             src={about.image}
-            alt='profile-pic'
+            alt="profile-pic"
             priority
             width={400}
             height={400}
@@ -50,9 +66,10 @@ const About = () => (
               width: '100%',
             }}
           />
+        </Grid2>
       </Grid2>
-    </Grid2>
-  </>
+    </HexFloat>
+  </Box>
 )
 
 export default About

@@ -88,7 +88,7 @@ const RootLayout = ({
     </head>
     <body className={`${geistSans.variable} ${geistMono.variable} ${fingerPaint.variable} antialiased`}>
         <AppRouterCacheProvider>
-            <Box component='main' sx={{ pb: 12 }}>
+            <Box component='main'>
               {children}
             </Box>
           </AppRouterCacheProvider>
