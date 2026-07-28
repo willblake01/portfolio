@@ -142,8 +142,10 @@ export const Avatar = React.forwardRef<AvatarHandle, JSX.IntrinsicElements['grou
         mixer.removeEventListener('finished', onFinished)
         wave1.stop()
         idle0.stop()
+        mixer.uncacheClip(waveClip1)
+        mixer.uncacheClip(idleClip0)
       }
-    }, [actions, mixer, animations])
+    }, [mixer, animations])
 
     return (
       <group ref={group} {...props} dispose={null}>

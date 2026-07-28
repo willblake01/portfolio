@@ -20,13 +20,25 @@ const AvatarScene = () => {
   }, [])
 
   return (
-    <Canvas shadows className='canvas' camera={{ position: [0, 1.5, 2.5], fov: 68 }}>
+    <Canvas
+      shadows
+      className="canvas"
+      camera={{ position: [0, 1.5, 2.5], fov: 68 }}
+      dpr={[1, 2]} // cap device pixel ratio; unbounded DPR on retina/4K screens inflates GPU memory fast
+      onCreated={({ gl }) => {
+        gl.debug.checkShaderErrors = process.env.NODE_ENV === 'development'
+      }}
+    >
       <Suspense fallback={null}>
         <Light position={[2, 3, 2]} />
-        <OrbitControls target={[0, 1, 0]} enableZoom={false} enablePan={false} />
+        <OrbitControls
+          target={[0, 1, 0]}
+          enableZoom={false}
+          enablePan={false}
+        />
         <Avatar ref={avatarRef} position={[0, -0.15, 0]} />
       </Suspense>
-      <ambientLight color='white' intensity={4} />
+      <ambientLight color="white" intensity={4} />
     </Canvas>
   )
 }
