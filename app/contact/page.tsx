@@ -13,30 +13,21 @@ const Contact = () => (
     }}
   >
     <AppBar />
-    <HexFloat
-      tilt={10}
-      float={0.3}
-      iridescence={0.4}
-      grain={0.4}
-      style={{ flex: 1, overflow: 'hidden' }}
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+      }}
     >
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          height: '100%',
-        }}
+      <PageHeader title="Contact" />
+      <Grid2
+        container
+        sx={{ flex: 1, display: 'flex', justifyContent: 'center' }}
       >
-        <PageHeader title="Contact" />
-        <Grid2
-          container
-          sx={{ flex: 1, display: 'flex', justifyContent: 'center' }}
-        >
-          <ContactCard />
-        </Grid2>
-      </Box>
-    </HexFloat>
-
+        <ContactCard />
+      </Grid2>
+    </Box>
   </Box>
 )
 

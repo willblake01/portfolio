@@ -72,7 +72,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
     sx={{
       borderRadius: 2,
       boxShadow: 3,
-      width: '32rem',
+      width: '30rem',
       display: 'flex',
       flexDirection: 'column',
     }}

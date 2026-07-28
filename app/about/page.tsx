@@ -15,60 +15,52 @@ const About = () => (
     }}
   >
     <AppBar />
-    <HexFloat
-      tilt={10}
-      float={0.3}
-      iridescence={0.4}
-      grain={0.4}
-      style={{ flex: 1, overflow: 'hidden' }}
+    <PageHeader title="About" />
+    <Grid2
+      container
+      size={7}
+      spacing={4}
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+      }}
     >
-      <PageHeader title="About" />
-      <Grid2
-        container
-        size={7}
-        spacing={4}
+      <Card
         sx={{
-          display: 'flex',
-          justifyContent: 'center',
+          borderRadius: 2,
+          boxShadow: 3,
+          padding: '1.5rem',
+          height: 'max-content',
+          width: '50rem',
         }}
       >
-        <Card
-          sx={{
-            borderRadius: 2,
-            boxShadow: 3,
-            padding: '1.5rem',
-            height: 'max-content',
-            width: '50rem',
-          }}
-        >
-          {about.paragraphs.map((paragraph) => (
-            <Typography
-              key={paragraph.id}
-              component={'p'}
-              dangerouslySetInnerHTML={{ __html: paragraph.text }}
-              sx={{ textIndent: '2rem' }}
-            />
-          ))}
-        </Card>
-        <Grid2
-          size={{ sm: 1, lg: 3 }}
-          sx={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <Image
-            src={about.image}
-            alt="profile-pic"
-            priority
-            width={400}
-            height={400}
-            style={{
-              borderRadius: '8px',
-              height: 'auto',
-              width: '100%',
-            }}
+        {about.paragraphs.map((paragraph) => (
+          <Typography
+            key={paragraph.id}
+            component={'p'}
+            dangerouslySetInnerHTML={{ __html: paragraph.text }}
+            sx={{ textIndent: '2rem' }}
           />
-        </Grid2>
+        ))}
+      </Card>
+      <Grid2
+        size={{ sm: 1, lg: 3 }}
+        sx={{ display: 'flex', justifyContent: 'center' }}
+      >
+        <Image
+          src={about.image}
+          alt="profile-pic"
+          priority
+          width={400}
+          height={400}
+          style={{
+            borderRadius: '8px',
+            height: 'auto',
+            width: '100%',
+          }}
+        />
       </Grid2>
-    </HexFloat>
+    </Grid2>
   </Box>
 )
 

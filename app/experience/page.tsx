@@ -12,18 +12,18 @@ const Experience = () => (
     }}
   >
     <AppBar />
-      <Box sx={{ minHeight: '100%', width: '100%', pb: 6 }}>
-        <PageHeader title="Experience" />
-        <Grid2
-          container
-          sx={{ display: 'flex', justifyContent: 'space-evenly' }}
-          spacing={6}
-        >
-          {experience.map((job) => (
-            <ExperienceCard key={job.id} job={job} />
-          ))}
-        </Grid2>
-      </Box>
+    <Box sx={{ minHeight: '100%', width: '100%', pb: 6 }}>
+      <PageHeader title="Experience" />
+      <Grid2
+        container
+        sx={{ display: 'flex', justifyContent: 'space-evenly' }}
+        spacing={6}
+      >
+        {experience.map((job) => (
+          <ExperienceCard key={job.id} job={job} />
+        ))}
+      </Grid2>
+    </Box>
   </Box>
 )
 
