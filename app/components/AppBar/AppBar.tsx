@@ -8,74 +8,41 @@ const AppBar = () => {
   const theme = useTheme()
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
+  const buttonStyle = {
+    background: 'none',
+    color: 'var(--foreground)',
+  }
+
   return mobile ? (
     <MobileAppBar />
   ) : (
-    <Box data-appbar sx={{ display: 'flex', flexDirection: 'row', mb: '2.5rem' }}>
-      <Button
-        component='a'
-        href='/'
-        style={{
-          background: 'none',
-          color: 'var(--foreground)',
-          margin: '0.625rem 0 0 0.625rem',
-        }}
-      >
+    <Box
+      data-appbar
+      sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: '0.625rem',
+        pl: '0.625rem',
+        height: '6rem',
+      }}
+    >
+      <Button component="a" href="/" style={buttonStyle}>
         home
       </Button>
-      <Button
-        component='a'
-        href='/experience'
-        style={{
-          background: 'none',
-          color: 'var(--foreground)',
-          margin: '0.625rem 0 0 0.625rem',
-        }}
-      >
+      <Button component="a" href="/experience" style={buttonStyle}>
         experience
       </Button>
-      <Button
-        component='a'
-        href='/projects'
-        style={{
-          background: 'none',
-          color: 'var(--foreground)',
-          margin: '0.625rem 0 0 0.625rem',
-        }}
-      >
+      <Button component="a" href="/projects" style={buttonStyle}>
         projects
       </Button>
-      <Button
-        component={'a'}
-        href='/vr'
-        style={{
-          background: 'none',
-          color: 'var(--foreground)',
-          margin: '0.625rem 0 0 0.625rem',
-        }}
-      >
+      <Button component="a" href="/vr" style={buttonStyle}>
         vr
       </Button>
-      <Button
-        component='a'
-        href='/about'
-        style={{
-          background: 'none',
-          color: 'var(--foreground)',
-          margin: '0.625rem 0 0 0.625rem',
-        }}
-      >
+      <Button component="a" href="/about" style={buttonStyle}>
         about
       </Button>
-      <Button
-        component={'a'}
-        href='/contact'
-        style={{
-          background: 'none',
-          color: 'var(--foreground)',
-          margin: '0.625rem 0 0 0.625rem',
-        }}
-      >
+      <Button component="a" href="/contact" style={buttonStyle}>
         contact
       </Button>
     </Box>
