@@ -25,7 +25,6 @@ const Contact = () => (
           display: 'flex',
           flexDirection: 'column',
           height: '100%',
-          backgroundColor: 'background.default',
         }}
       >
         <PageHeader title="Contact" />
