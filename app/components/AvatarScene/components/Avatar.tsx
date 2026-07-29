@@ -1,7 +1,7 @@
 'use client'
 
 import * as THREE from 'three'
-import React, { useEffect, useImperativeHandle, useRef } from 'react'
+import React, { JSX, useEffect, useImperativeHandle, useRef } from 'react'
 import { useGraph } from '@react-three/fiber'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { GLTF, SkeletonUtils } from 'three-stdlib'
