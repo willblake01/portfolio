@@ -22,9 +22,11 @@ const AvatarScene = () => {
   return (
     <Canvas
       shadows
+      style={{ background: 'transparent' }}
       className="canvas"
       camera={{ position: [0, 1.5, 2.5], fov: 68 }}
       dpr={[1, 2]} // cap device pixel ratio; unbounded DPR on retina/4K screens inflates GPU memory fast
+      gl={{ alpha: true}}
       onCreated={({ gl }) => {
         gl.debug.checkShaderErrors = process.env.NODE_ENV === 'development'
       }}

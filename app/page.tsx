@@ -1,7 +1,8 @@
+'use client'
 
 import dynamic from 'next/dynamic'
 import { Box, Grid2 } from '@mui/material'
-import { HexFloat } from '@/components/canvas-ui/hex-float'
+import { useTheme } from '@mui/material/styles'
 import { AppBar } from './components'
 import HeroHeading from './components/HeroHeading'
 
@@ -10,22 +11,20 @@ const AvatarScene = dynamic(
   { ssr: false },
 )
 
-const Home = () => (
-  <Box
-    sx={{
-      display: 'flex',
-      flexDirection: 'column',
-      height: '100vh',
-    }}
-  >
-    <AppBar />
-    <HexFloat
-      tilt={10}
-      float={0.3}
-      iridescence={0.4}
-      grain={0.4}
-      style={{ flex: 1, overflow: 'hidden' }}
+const Home = () => {
+  const theme = useTheme()
+
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100vh',
+        overflow: 'hidden',
+        position: 'relative',
+      }}
     >
+      <AppBar />
       <Box
         sx={{
           display: 'flex',
@@ -67,8 +66,8 @@ const Home = () => (
           </Grid2>
         </Grid2>
       </Box>
-    </HexFloat>
-  </Box>
-)
+    </Box>
+  )
+}
 
 export default Home

@@ -24,7 +24,7 @@ const AppBar = () => {
         alignItems: 'center',
         gap: '0.625rem',
         pl: '0.625rem',
-        height: '6rem',
+        height: '4rem',
       }}
     >
       <Button component="a" href="/" style={buttonStyle}>

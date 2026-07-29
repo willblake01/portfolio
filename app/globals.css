@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .canvas {
-  background: var(--background);
+  background: transparent;
 }
 
 
@@ -69,8 +69,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .cardSubHeader {
   text-align: left;
-}
-
-.canvas {
-  background: var(--background);
 }
