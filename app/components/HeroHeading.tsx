@@ -9,7 +9,7 @@ const LINE_2 = "there's a way"
 // How long after mount (i.e. after the avatar's wave begins, since both
 // now start together) the word reveal should wait before starting. Tune
 // this one value to shift the text earlier/later relative to the wave.
-const WORD_REVEAL_DELAY = 2
+const WORD_REVEAL_DELAY = 3
 
 const WORD_STAGGER = 0.15
 const WORD_DURATION = 1.0
