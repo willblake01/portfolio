@@ -1,10 +1,10 @@
 'use client'
 
 import * as THREE from 'three'
-import React, { useEffect, useImperativeHandle, useRef } from 'react'
+import React, { JSX, useEffect, useImperativeHandle, useRef } from 'react'
 import { useGraph } from '@react-three/fiber'
 import { useGLTF, useAnimations } from '@react-three/drei'
-import { GLTF, SkeletonUtils } from 'three-stdlib'
+import { SkeletonUtils } from 'three-stdlib'
 
 const AVATAR_URL =
   'https://res.cloudinary.com/willblake01/raw/upload/v1777653389/portfolio/3D/models/avatar.glb'
@@ -16,7 +16,7 @@ interface GLTFAction extends THREE.AnimationClip {
   name: ActionName
 }
 
-type GLTFResult = GLTF & {
+type GLTFResult = {
   nodes: {
     Boy01_Body_Geo: THREE.SkinnedMesh
     Boy01_Brows_Geo: THREE.SkinnedMesh
@@ -34,7 +34,6 @@ type GLTFResult = GLTF & {
     Boy01_Eyes_MAT2: THREE.MeshStandardMaterial
     Boy01_Brows_MAT2: THREE.MeshStandardMaterial
   }
-  animations: GLTFAction[]
 }
 
 export interface AvatarHandle {
@@ -46,7 +45,7 @@ export const Avatar = React.forwardRef<AvatarHandle, JSX.IntrinsicElements['grou
     const group = useRef<THREE.Group>(null)
     const { scene, animations } = useGLTF(AVATAR_URL)
     const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
-    const { nodes } = useGraph(clone) as GLTFResult
+    const { nodes } = useGraph(clone) as unknown as GLTFResult
     const { actions, mixer } = useAnimations(animations, group)
 
     // Stable refs to current actions so triggerWave can access them without stale closure
