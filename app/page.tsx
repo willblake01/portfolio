@@ -1,8 +1,8 @@
 'use client'
 
+import { useCallback, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { Box, Grid2 } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
 import { AppBar } from './components'
 import HeroHeading from './components/HeroHeading'
 
@@ -12,7 +12,8 @@ const AvatarScene = dynamic(
 )
 
 const Home = () => {
-  const theme = useTheme()
+  const [heroReady, setHeroReady] = useState(false)
+  const handleInitialWaveComplete = useCallback(() => setHeroReady(true), [])
 
   return (
     <Box
@@ -21,12 +22,12 @@ const Home = () => {
         flexDirection: 'column',
         height: '100vh',
         overflow: 'hidden',
-        position: 'relative',
       }}
     >
       <AppBar />
       <Box
         sx={{
+          position: 'relative',
           display: 'flex',
           flex: 1,
           height: '100%',
@@ -35,6 +36,8 @@ const Home = () => {
         <Grid2
           container
           sx={{
+            position: 'relative',
+            zIndex: 1,
             flex: 1,
             height: '100%',
             flexDirection: { xs: 'column', lg: 'row' },
@@ -51,7 +54,7 @@ const Home = () => {
               padding: { xs: '0 1rem', lg: '1rem 2rem' },
             }}
           >
-            <HeroHeading />
+            <HeroHeading start={heroReady} />
           </Grid2>
           <Grid2
             size={{ xs: 12, lg: 4 }}
@@ -62,7 +65,7 @@ const Home = () => {
               overflowY: { xs: 'auto', lg: 'unset' },
             }}
           >
-            <AvatarScene />
+            <AvatarScene onInitialWaveComplete={handleInitialWaveComplete} />
           </Grid2>
         </Grid2>
       </Box>

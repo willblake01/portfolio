@@ -6,7 +6,11 @@ import { OrbitControls } from '@react-three/drei'
 import { Avatar, AvatarHandle } from './components'
 import { Light } from './components'
 
-const AvatarScene = () => {
+interface AvatarSceneProps {
+  onInitialWaveComplete?: () => void
+}
+
+const AvatarScene = ({ onInitialWaveComplete }: AvatarSceneProps) => {
   const avatarRef = useRef<AvatarHandle>(null)
 
   useEffect(() => {
@@ -23,10 +27,9 @@ const AvatarScene = () => {
     <Canvas
       shadows
       style={{ background: 'transparent' }}
-      className="canvas"
       camera={{ position: [0, 1.5, 2.5], fov: 68 }}
-      dpr={[1, 2]} // cap device pixel ratio; unbounded DPR on retina/4K screens inflates GPU memory fast
-      gl={{ alpha: true}}
+      dpr={[1, 2]}
+      gl={{ alpha: true }}
       onCreated={({ gl }) => {
         gl.debug.checkShaderErrors = process.env.NODE_ENV === 'development'
       }}
@@ -38,7 +41,11 @@ const AvatarScene = () => {
           enableZoom={false}
           enablePan={false}
         />
-        <Avatar ref={avatarRef} position={[0, -0.15, 0]} />
+        <Avatar
+          ref={avatarRef}
+          position={[0, -0.15, 0]}
+          onInitialWaveComplete={onInitialWaveComplete}
+        />
       </Suspense>
       <ambientLight color="white" intensity={4} />
     </Canvas>
