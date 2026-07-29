@@ -1,5 +1,4 @@
 import { Box, Grid2 } from '@mui/material'
-import { HexFloat } from '@/components/canvas-ui/hex-float'
 import { AppBar, PageHeader } from '../components'
 import { ProjectCard } from '../components'
 import projects from '../data/vr.json'

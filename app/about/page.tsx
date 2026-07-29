@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Box, Grid2, Card, Typography } from '@mui/material'
-import { HexFloat } from '@/components/canvas-ui/hex-float'
 
 import { AppBar, PageHeader } from '../components'
 import about from '../data/about.json'
