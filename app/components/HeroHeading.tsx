@@ -6,10 +6,14 @@ import { Typography } from '@mui/material'
 const LINE_1 = "Where there's a Will,"
 const LINE_2 = "there's a way"
 
+// How long after mount (i.e. after the avatar's wave begins, since both
+// now start together) the word reveal should wait before starting. Tune
+// this one value to shift the text earlier/later relative to the wave.
+const WORD_REVEAL_DELAY = 2
+
 const WORD_STAGGER = 0.15
-const WORD_DURATION = 1.0
+const WORD_DURATION = 2.0
 const PAUSE_BETWEEN_LINES = 0.25
-const DELAY_AFTER_WAVE = 0.5
 
 // Roughly how long it takes line 1's words to finish revealing, so line 2
 // can start right after — rather than both lines staggering as one
@@ -60,24 +64,22 @@ const AnimatedLine = ({
   </motion.span>
 )
 
-export interface HeroHeadingProps {
-  // When false, the heading stays hidden and waits — set true once the
-  // avatar's entrance wave completes so the two feel choreographed together.
-  start: boolean
-}
-
-const HeroHeading = ({ start }: HeroHeadingProps) => (
+// Starts revealing on its own as soon as it mounts — no longer waits on a
+// signal from the avatar's wave animation, since both now begin together
+// at page load. Use WORD_REVEAL_DELAY to shift the text's start time
+// relative to that shared moment.
+const HeroHeading = () => (
   <Typography
     component={motion.h1}
     initial="hidden"
-    animate={start ? 'show' : 'hidden'}
+    animate="show"
     fontFamily="var(--font-finger-paint)"
     variant="h1"
   >
-    <AnimatedLine text={LINE_1} delayChildren={DELAY_AFTER_WAVE} />
+    <AnimatedLine text={LINE_1} delayChildren={WORD_REVEAL_DELAY} />
     <AnimatedLine
       text={LINE_2}
-      delayChildren={DELAY_AFTER_WAVE + line1FinishOffset + PAUSE_BETWEEN_LINES}
+      delayChildren={WORD_REVEAL_DELAY + line1FinishOffset + PAUSE_BETWEEN_LINES}
     />
   </Typography>
 )
