@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { motion } from 'motion/react'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import {
   Card,
@@ -68,62 +71,69 @@ const CardBody = ({ project }: ProjectCardProps) => (
 )
 
 const ProjectCard = ({ project }: ProjectCardProps) => (
-  <Card
-    sx={{
-      borderRadius: 2,
-      boxShadow: 3,
-      width: '30rem',
-      display: 'flex',
-      flexDirection: 'column',
-    }}
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: '-15% 0px' }}
+    transition={{ duration: 0.6, ease: 'easeOut' }}
   >
-    {project.url ? (
-      <CardActionArea
-        component='a'
-        href={project.url}
-        target='_blank'
-        rel='noopener noreferrer'
-      >
+    <Card
+      sx={{
+        borderRadius: 2,
+        boxShadow: 3,
+        width: '30rem',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      {project.url ? (
+        <CardActionArea
+          component="a"
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CardBody project={project} />
+        </CardActionArea>
+      ) : (
         <CardBody project={project} />
-      </CardActionArea>
-    ) : (
-      <CardBody project={project} />
-    )}
+      )}
 
-    {(project?.apk || project?.gitHub) && (
-      <CardActions
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          marginTop: 'auto',
-          gap: 2,
-        }}
-      >
-        {project?.apk && (
-          <a
-            href={project.apk}
-            download
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Download .apk file
-          </a>
-        )}
-        {project?.gitHub && (
-          <IconButton
-            component='a'
-            href={project.gitHub}
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='View on GitHub'
-          >
-            <GitHubIcon />
-          </IconButton>
-        )}
-      </CardActions>
-    )}
-  </Card>
+      {(project?.apk || project?.gitHub) && (
+        <CardActions
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            marginTop: 'auto',
+            gap: 2,
+          }}
+        >
+          {project?.apk && (
+            <a
+              href={project.apk}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download .apk file
+            </a>
+          )}
+          {project?.gitHub && (
+            <IconButton
+              component="a"
+              href={project.gitHub}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View on GitHub"
+            >
+              <GitHubIcon />
+            </IconButton>
+          )}
+        </CardActions>
+      )}
+    </Card>
+  </motion.div>
 )
 
 export default ProjectCard
