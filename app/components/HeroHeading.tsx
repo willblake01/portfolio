@@ -12,15 +12,14 @@ const LINE_2 = "there's a way"
 const WORD_REVEAL_DELAY = 2
 
 const WORD_STAGGER = 0.15
-const WORD_DURATION = 2.0
+const WORD_DURATION = 1.0
 const PAUSE_BETWEEN_LINES = 0.25
 
 // Roughly how long it takes line 1's words to finish revealing, so line 2
 // can start right after — rather than both lines staggering as one
 // continuous run.
 const line1WordCount = LINE_1.split(' ').length
-const line1FinishOffset =
-  (line1WordCount - 1) * WORD_STAGGER + WORD_DURATION
+const line1FinishOffset = (line1WordCount - 1) * WORD_STAGGER + WORD_DURATION
 
 const wordVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -68,7 +67,11 @@ const AnimatedLine = ({
 // signal from the avatar's wave animation, since both now begin together
 // at page load. Use WORD_REVEAL_DELAY to shift the text's start time
 // relative to that shared moment.
-const HeroHeading = () => (
+interface HeroHeadingProps {
+  start?: boolean
+}
+
+const HeroHeading = ({ start }: HeroHeadingProps) => (
   <Typography
     component={motion.h1}
     initial="hidden"
@@ -79,7 +82,9 @@ const HeroHeading = () => (
     <AnimatedLine text={LINE_1} delayChildren={WORD_REVEAL_DELAY} />
     <AnimatedLine
       text={LINE_2}
-      delayChildren={WORD_REVEAL_DELAY + line1FinishOffset + PAUSE_BETWEEN_LINES}
+      delayChildren={
+        WORD_REVEAL_DELAY + line1FinishOffset + PAUSE_BETWEEN_LINES
+      }
     />
   </Typography>
 )
