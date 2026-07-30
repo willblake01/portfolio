@@ -11,9 +11,9 @@ const LINE_2 = "there's a way"
 // this one value to shift the text earlier/later relative to the wave.
 const WORD_REVEAL_DELAY = 3
 
-const WORD_STAGGER = 0.15
-const WORD_DURATION = 1.0
-const PAUSE_BETWEEN_LINES = 0.25
+const WORD_STAGGER = 0.20
+const WORD_DURATION = 2.0
+const PAUSE_BETWEEN_LINES = 0
 
 // Roughly how long it takes line 1's words to finish revealing, so line 2
 // can start right after — rather than both lines staggering as one
