@@ -33,8 +33,10 @@
       "TypeScript",
       "React",
       "MUI",
-      "Next",
       "GraphQL",
+      "Next",
+      "Node",
+      "GCP",
       "Jest"
     ]
   },
@@ -73,7 +75,10 @@
       "MUI",
       "Redux",
       "React Query",
-      "React Testing Library"
+      "React Testing Library",
+      "MUI",
+      "Node",
+      "Jest"
     ]
   },
   {
