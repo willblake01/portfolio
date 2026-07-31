@@ -9,12 +9,14 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material'
-import HomeIcon from '@mui/icons-material/Home'
-import ChecklistIcon from '@mui/icons-material/Checklist'
-import ContactMailIcon from '@mui/icons-material/ContactMail'
-import InfoIcon from '@mui/icons-material/Info'
-import DashboardIcon from '@mui/icons-material/Dashboard'
-import ViewInArIcon from '@mui/icons-material/ViewInAr'
+import {
+  MdHome,
+  MdChecklist,
+  MdContactMail,
+  MdInfo,
+  MdDashboard,
+  MdViewInAr,
+} from 'react-icons/md'
 
 interface DrawerListProps {
   open: boolean
@@ -22,12 +24,12 @@ interface DrawerListProps {
 }
 
 const drawerOptions = [
-  { id: 1, text: 'Home', icon: <HomeIcon />, route: '/' },
-  { id: 2, text: 'Experience', icon: <ChecklistIcon />, route: '/experience' },
-  { id: 3, text: 'Projects', icon: <DashboardIcon />, route: '/projects' },
-  { id: 4, text: 'VR', icon: <ViewInArIcon />, route: '/vr' },
-  { id: 4, text: 'About', icon: <InfoIcon />, route: '/about' },
-  { id: 5, text: 'Contact', icon: <ContactMailIcon />, route: '/contact' },
+  { id: 1, text: 'Home', icon: <MdHome size={24} />, route: '/' },
+  { id: 2, text: 'Experience', icon: <MdChecklist size={24} />, route: '/experience' },
+  { id: 3, text: 'Projects', icon: <MdDashboard size={24} />, route: '/projects' },
+  { id: 4, text: 'VR', icon: <MdViewInAr size={24} />, route: '/vr' },
+  { id: 5, text: 'About', icon: <MdInfo size={24} />, route: '/about' },
+  { id: 6, text: 'Contact', icon: <MdContactMail size={24} />, route: '/contact' },
 ]
 
 const DrawerList: React.FC<DrawerListProps> = ({ open, toggleDrawer }) => {

@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { motion } from 'motion/react'
-import GitHubIcon from '@mui/icons-material/GitHub'
+import { SiGithub } from 'react-icons/si'
 import {
   Card,
   CardActions,
@@ -127,7 +127,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
               rel="noopener noreferrer"
               aria-label="View on GitHub"
             >
-              <GitHubIcon />
+              <SiGithub size={22} />
             </IconButton>
           )}
         </CardActions>

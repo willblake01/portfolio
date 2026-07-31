@@ -1,7 +1,7 @@
 'use client'
 import * as React from 'react'
 import { AppBar, Grid2, IconButton, Toolbar } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+import { MdMenu } from 'react-icons/md'
 import { DrawerList } from '.'
 
 const MobileAppBar = () => {
@@ -29,7 +29,7 @@ const MobileAppBar = () => {
             sx={{ mr: 2 }}
             onClick={toggleDrawer(true)}
           >
-            <MenuIcon />
+            <MdMenu size={28} />
           </IconButton>
           <DrawerList open={open} toggleDrawer={toggleDrawer} />
         </Toolbar>
