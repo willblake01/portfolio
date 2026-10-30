@@ -1,2 +1,2 @@
 export type { Job } from './experience'
-export type { Project } from './project'
+export type { ContributionItem, Project } from './project'

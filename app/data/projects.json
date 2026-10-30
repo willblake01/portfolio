@@ -155,50 +155,155 @@
     "toy": [
       {
         "id": 1,
+        "title": "Raspberry Pi NeoPixels",
+        "description": "A TypeScript effects engine for WS281x LED strips on a Raspberry Pi, with live data modes, a guided CLI, and a fully tested core.",
+        "url": "",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770245203/portfolio/projects/raspberry-pi-neopixels.webp",
+        "sections": [
+          {
+            "title": "Live data modes",
+            "items": [
+              {
+                "id": "weather",
+                "label": "Weather",
+                "text": "strip color tracks the current temperature, turns blue for rain, and pulses for NWS severe weather warnings and watches"
+              },
+              {
+                "id": "sunrise-sunset",
+                "label": "Sunrise/Sunset",
+                "text": "follows the real sun through dawn, daylight, and dusk, with an optional moon phase rendered across the strip at night"
+              },
+              {
+                "id": "uv-aqi-space",
+                "label": "UV Index, Air Quality, and Space Weather",
+                "text": "standard EPA/WHO color scales and NOAA geomagnetic storm levels, with pulsing alerts during storms"
+              },
+              {
+                "id": "location",
+                "text": "Location auto-detected by IP or entered by city"
+              }
+            ]
+          },
+          {
+            "title": "Effects and tools",
+            "items": [
+              {
+                "id": "classic",
+                "label": "Classic effects",
+                "text": "Solid, Checkerboard, Change, Blink, Breathe, Growing Bar, Wheel, and Walk Pixel"
+              },
+              {
+                "id": "custom-pixels",
+                "label": "Custom Pixels",
+                "text": "build multi-segment layouts interactively, pixel by pixel or by range"
+              },
+              {
+                "id": "pomodoro",
+                "label": "Pomodoro timer",
+                "text": "a draining countdown bar with color-coded focus and break phases"
+              },
+              {
+                "id": "motion",
+                "text": "Camera Module motion detection overrides the current effect with a chosen color"
+              }
+            ]
+          },
+          {
+            "title": "Engineering",
+            "items": [
+              {
+                "id": "gamma",
+                "text": "Gamma correction for perceptually accurate color and smooth fades"
+              },
+              {
+                "id": "architecture",
+                "label": "Shared polling architecture",
+                "text": "pure frame builders, dependency-injected data sources, render-on-change, and graceful handling of network failures"
+              },
+              {
+                "id": "ctrl-c",
+                "text": "Ctrl+C at any prompt exits safely and leaves the LEDs untouched"
+              },
+              {
+                "id": "dev",
+                "text": "Develop on Mac with a no-op driver; run on the Pi with the real hardware"
+              },
+              {
+                "id": "tests",
+                "text": "Extensive Jest test suite with fake timers and mocked hardware"
+              }
+            ]
+          },
+          {
+            "title": "Hardware",
+            "items": [
+              {
+                "id": "level-shifter",
+                "text": "SN74AHCT125 logic level shifter (3.3 V Pi → 5 V strip) with a series resistor on the data line for clean signaling"
+              },
+              {
+                "id": "addressable",
+                "text": "Individually addressable LEDs, suited to custom signs and 3D builds"
+              }
+            ]
+          }
+        ],
+        "technologies": [
+          "Raspberry Pi + Camera Module",
+          "Node.js",
+          "TypeScript",
+          "rpi-ws281x",
+          "WS2811/WS2812 addressable LEDs",
+          "SN74AHCT125",
+          "GPIO/PWM/DMA",
+          "Open-Meteo",
+          "National Weather Service API",
+          "NOAA Space Weather Prediction Center",
+          "Jest",
+          "breadboard prototyping"
+        ],
+        "gitHub": "https://github.com/willblake01/raspberry-pi-neopixels"
+      },
+      {
+        "id": 2,
         "title": "Range Front",
-        "description": "Full-stack e-commerce platform inspired by REI, built to explore real-world commerce workflows including authentication, role-based permissions, cart state management, and Stripe-powered checkout.",
+        "description": "Full-stack e-commerce platform inspired by REI, exploring real-world commerce workflows: authentication, role-based permissions, cart state, and Stripe checkout.",
         "url": "https://range-front.vercel.app/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770242518/portfolio/projects/range-front.webp",
         "contributions": [
           {
             "id": 1,
-            "text": "Designed and implemented a GraphQL API with fine-grained authorization, Postgres persistence, and a fully typed React/Next.js frontend deployed to production"
+            "label": "GraphQL API",
+            "text": "product, cart, and order queries and mutations with fine-grained authorization and Postgres persistence"
           },
           {
             "id": 2,
-            "text": "Built a role-based permissions system supporting admin and user workflows"
+            "label": "Roles and permissions",
+            "text": "separate admin and user workflows (admin access available on request)"
           },
           {
             "id": 3,
-            "text": "Request elevated permissions via direct contact (admin access intentionally restricted)"
+            "label": "Checkout",
+            "text": "secure Stripe payments with webhook-driven, idempotent email receipts"
           },
           {
             "id": 4,
-            "text": "Implemented real-user performance monitoring using Vercel Analytics and Speed Insights to track Core Web Vitals (LCP, INP, CLS)"
+            "label": "Frontend",
+            "text": "fully typed React/Next.js app with Apollo client state"
           },
           {
             "id": 5,
-            "text": "Implemented secure Stripe checkout and order placement flow"
+            "label": "Performance",
+            "text": "real-user Core Web Vitals monitoring (LCP, INP, CLS) with Vercel Analytics and Speed Insights"
           },
           {
             "id": 6,
-            "text": "Implemented webhook-driven transactional email receipts for completed Stripe payments, ensuring idempotent post-payment workflows"
-          },
-          {
-            "id": 7,
-            "text": "Designed GraphQL mutations and queries for product, cart, and order lifecycle"
-          },
-          {
-            "id": 8,
-            "text": "Deployed frontend and backend independently with production configuration"
-          },
-          {
-            "id": 9,
-            "text": "Wrote Jest tests to validate core business logic"
+            "label": "Production",
+            "text": "frontend and backend deployed independently, with Jest tests covering core business logic"
           }
         ],
         "technologies": [
-          "Typescript", 
+          "TypeScript",
           "React",
           "Styled Components",
           "Next",
@@ -216,7 +321,7 @@
         "gitHub": "https://github.com/willblake01/range-front"
       },
       {
-        "id": 2,
+        "id": 3,
         "title": "Fetch Rescue",
         "description": "A dog rescue web application simulating an adoption experience, featuring a modern UI, persistent state, and API-driven data.",
         "url": "https://fetch-frontend-exercise-nine.vercel.app/",
@@ -224,24 +329,24 @@
         "contributions": [
           {
             "id": 1,
-            "text": "Owned UI design and implementation with a focus on usability and accessibility"
+            "text": "Built search with breed filters, sorting, and paginated results against Fetch's dog API"
           },
           {
             "id": 2,
-            "text": "Integrated API-driven data flows using modern React patterns"
+            "text": "Designed a favorites flow that generates an adoption match from the user's saved dogs"
           },
           {
             "id": 3,
-            "text": "Architected client-side state persistence via local storage"
+            "text": "Persisted favorites and session state in local storage so progress survives reloads"
           },
           {
             "id": 4,
-            "text": "Ensured type safety and production readiness across the application"
+            "text": "Focused on accessible, responsive UI with MUI and Tailwind, fully typed in TypeScript"
           }
         ],
         "technologies": [
-          "Typescript", 
-          "React", 
+          "Typescript",
+          "React",
           "MUI",
           "Tailwind",
           "Next",
@@ -250,44 +355,34 @@
         "gitHub": "https://gitHub.com/willblake01/fetch-frontend-exercise"
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "The Simpsons Memory Challenge",
-        "description": "A TypeScript-driven React game demonstrating robust input validation, state persistence, and interactive UI patterns.",
+        "description": "A memory game where you name as many Simpsons characters as you can, with forgiving answer matching, hints, and saved progress.",
         "url": "https://the-simpsons-memory-challenge.vercel.app/",
         "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770242617/portfolio/projects/the-simpsons-memory-challenge.webp",
         "contributions": [
           {
             "id": 1,
-            "text": "Owned UI and interaction design with a focus on clarity and user engagement"
+            "text": "Built alias matching so variations like \"Mr. Burns\" and \"Montgomery Burns\" all count"
           },
           {
             "id": 2,
-            "text": "Designed flexible hint and alias systems to improve game accessibility"
+            "text": "Normalized player input (case, spacing, punctuation) so near-correct answers aren't rejected"
           },
           {
             "id": 3,
-            "text": "Implemented robust input handling to account for user variability"
+            "text": "Designed a hint system to help players who get stuck"
           },
           {
             "id": 4,
-            "text": "Integrated audio playback controls to enhance immersion"
-          },
-          {
-            "id": 5,
-            "text": "Architected client-side persistence using local storage"
+            "text": "Added audio with playback controls, and saved progress in local storage"
           }
         ],
-        "technologies": [
-          "Typescript",
-          "React",
-          "MUI",
-          "Next",
-          "Vercel"
-        ],
+        "technologies": ["Typescript", "React", "MUI", "Next", "Vercel"],
         "gitHub": "https://gitHub.com/willblake01/the-simpsons-memory-challenge"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "Train Time",
         "description": "A real-time scheduling application built with Firebase Realtime Database to synchronize train plans across users and sessions.",
         "url": "https://train-time-rosy.vercel.app",
@@ -315,55 +410,6 @@
           "Firebase RTD"
         ],
         "gitHub": "https://gitHub.com/willblake01/train-time"
-      },
-      {
-        "id": 5,
-        "title": "Raspberry Pi Neopixels",
-        "description": "Control WS281x LED strips (NeoPixels) on a Raspberry Pi using a beautiful CLI menu of effects.",
-        "url": "",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770245203/portfolio/projects/raspberry-pi-neopixels.webp",
-        "contributions": [
-          {
-            "id": 1,
-            "text": "Circuit with resistor for level shifting data line from 3.3V out (Pi) to 5V in (LED strip) to prevent bit shifting"
-          },
-          {
-            "id": 2,
-            "text": "Camera Module to support \"on motion\" color override"
-          },
-          {
-            "id": 3,
-            "text": "Develop on Mac, run on Raspberry Pi"
-          },
-          {
-            "id": 4,
-            "text": "Terminal prompts for setting configuration and user inputs for effect, interval, brightness, and RGB values"
-          },
-          {
-            "id": 5,
-            "text": "Visual effects modes including Solid, Checkerboard, Change, Blink, Breathe, Growing Bar, Wheel, and Walk Pixel"
-          },
-          {
-            "id": 6,
-            "text": "Individually addressable LEDs, can be used for custom signs and 3D models"
-          },
-          {
-            "id": 7,
-            "text": "Jest (unit testing)"
-          }
-        ],
-        "technologies": [
-          "Raspberry Pi + Camera Module",
-          "Node",
-          "Typescript",
-          "rpi-ws281x",
-          "WS2811 Addressable LEDs",
-          "SN74AHCT125 Logic Level Shifter",
-          "GPIO / PWM / DMA",
-          "Jest",
-          "Breadboard prototyping & electronics"
-        ],
-        "gitHub": "https://github.com/willblake01/raspberry-pi-neopixels"
       }
     ]
 }

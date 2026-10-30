@@ -1,6 +1,12 @@
-interface Contribution {
-  id: number
+export interface ContributionItem {
+  id: string | number
+  label?: string
   text: string
+}
+
+export interface ContributionSection {
+  title: string
+  items: ContributionItem[]
 }
 
 export interface Project {
@@ -9,7 +15,8 @@ export interface Project {
   image: string
   title: string
   description: string
-  contributions: Contribution[]
+  sections?: ContributionSection[]
+  contributions: ContributionItem[]
   technologies: string[]
   gitHub?: string
   apk?: string

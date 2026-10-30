@@ -1,4 +1,5 @@
 'use client'
+
 import { Box, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -74,6 +75,9 @@ const AppBar = () => {
     <Box
       data-appbar
       sx={{
+        position: 'relative',
+        zIndex: 10,
+        backgroundColor: 'var(--background)',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',

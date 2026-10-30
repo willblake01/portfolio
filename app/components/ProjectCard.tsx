@@ -15,10 +15,79 @@ import {
   ListItem,
   Typography,
 } from '@mui/material'
-import type { Project } from '../types'
+import type { ContributionItem, Project } from '../types'
 
 interface ProjectCardProps {
   project: Project
+}
+
+const ContributionList = ({
+  items,
+  dense = false,
+}: {
+  items: ContributionItem[]
+  dense?: boolean
+}) => (
+  <List
+    sx={{
+      listStyleType: 'disc',
+      paddingLeft: '1.5rem',
+      paddingY: dense ? 0 : '1rem',
+    }}
+  >
+    {items.map((item) => (
+      <ListItem
+        key={item.id}
+        sx={{ display: 'list-item', paddingY: dense ? '0.15rem' : undefined }}
+      >
+        {item.label && (
+          <Box component="strong" sx={{ color: 'text.primary' }}>
+            {item.label}:{' '}
+          </Box>
+        )}
+        {item.text}
+      </ListItem>
+    ))}
+  </List>
+)
+
+const Contributions = ({ project }: ProjectCardProps) => {
+  if (project.sections?.length) {
+    return (
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 1.5,
+          flexGrow: 1,
+          paddingY: '0.5rem',
+        }}
+      >
+        {project.sections.map((section) => (
+          <Box key={section.title}>
+            <Typography
+              component="h3"
+              variant="subtitle2"
+              sx={{
+                color: 'text.primary',
+                fontWeight: 600,
+                marginBottom: '0.25rem',
+              }}
+            >
+              {section.title}
+            </Typography>
+            <ContributionList items={section.items} dense />
+          </Box>
+        ))}
+      </Box>
+    )
+  }
+
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <ContributionList items={project.contributions ?? []} />
+    </Box>
+  )
 }
 
 const CardBody = ({ project }: ProjectCardProps) => (
@@ -28,17 +97,21 @@ const CardBody = ({ project }: ProjectCardProps) => (
         src={project.image}
         alt={project.title}
         fill
-        sizes='(max-width: 600px) 100vw, 512px'
+        sizes="(max-width: 600px) 100vw, 512px"
         style={{ objectFit: 'cover' }}
       />
     </Box>
     <CardHeader
       title={project.title}
       subheader={project.description}
-      titleTypographyProps={{
-        sx: { textAlign: 'center', marginBottom: '0.5rem' },
+      slotProps={{
+        title: {
+          sx: { textAlign: 'center', marginBottom: '0.5rem' },
+        },
+        subheader: {
+          sx: { textAlign: 'left' },
+        },
       }}
-      subheaderTypographyProps={{ sx: { textAlign: 'left' } }}
       sx={{ paddingBottom: '0.5rem' }}
     />
     <CardContent
@@ -50,20 +123,11 @@ const CardBody = ({ project }: ProjectCardProps) => (
         flexGrow: 1,
       }}
     >
-      <List
-        sx={{
-          listStyleType: 'disc',
-          padding: '1rem',
-          flexGrow: 1,
-        }}
+      <Contributions project={project} />
+      <Typography
+        component="div"
+        sx={{ marginTop: 'auto', paddingTop: '1rem' }}
       >
-        {project.contributions.map((contribution) => (
-          <ListItem key={contribution.id} sx={{ display: 'list-item' }}>
-            {contribution.text}
-          </ListItem>
-        ))}
-      </List>
-      <Typography component='div' sx={{ marginTop: 'auto' }}>
         Technologies: <i>{project.technologies.join(', ')}</i>
       </Typography>
     </CardContent>

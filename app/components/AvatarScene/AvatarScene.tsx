@@ -25,6 +25,7 @@ const AvatarScene = ({ onInitialWaveComplete }: AvatarSceneProps) => {
 
   return (
     <Canvas
+      data-avatar-scene
       shadows
       style={{ background: 'transparent' }}
       camera={{ position: [0, 1.5, 2.5], fov: 68 }}
