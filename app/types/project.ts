@@ -1,6 +1,6 @@
 export interface ContributionItem {
   id: string | number
-  label?: string
+  label?: string | undefined
   text: string
 }
 
@@ -15,8 +15,8 @@ export interface Project {
   image: string
   title: string
   description: string
-  sections?: ContributionSection[]
-  contributions: ContributionItem[]
+  sections?: ContributionSection[] | undefined
+  contributions?: ContributionItem[] | undefined
   technologies: string[]
   gitHub?: string
   apk?: string
