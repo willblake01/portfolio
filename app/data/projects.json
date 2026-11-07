@@ -155,6 +155,172 @@
     "toy": [
       {
         "id": 1,
+        "title": "Range Front",
+        "description": "Full-stack e-commerce platform inspired by REI, exploring real-world commerce workflows: authentication, role-based permissions, cart state, and Stripe checkout.",
+        "url": "https://range-front.vercel.app/",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770242518/portfolio/projects/range-front.webp",
+        "contributions": [
+          {
+            "id": 1,
+            "label": "GraphQL API",
+            "text": "product, cart, and order queries and mutations with fine-grained authorization and Postgres persistence"
+          },
+          {
+            "id": 2,
+            "label": "Roles and permissions",
+            "text": "separate admin and user workflows (admin access available on request)"
+          },
+          {
+            "id": 3,
+            "label": "Checkout",
+            "text": "secure Stripe payments with webhook-driven, idempotent email receipts"
+          },
+          {
+            "id": 4,
+            "label": "Frontend",
+            "text": "fully typed React/Next.js app with Apollo client state"
+          },
+          {
+            "id": 5,
+            "label": "Performance",
+            "text": "real-user Core Web Vitals monitoring (LCP, INP, CLS) with Vercel Analytics and Speed Insights"
+          },
+          {
+            "id": 6,
+            "label": "Production",
+            "text": "frontend and backend deployed independently, with Jest tests covering core business logic"
+          }
+        ],
+        "technologies": [
+          "TypeScript",
+          "React",
+          "Styled Components",
+          "Next",
+          "GraphQL",
+          "Apollo",
+          "Node",
+          "Postgres",
+          "Jest",
+          "Vercel",
+          "Vercel Analytics",
+          "Vercel Speed Insights",
+          "Render",
+          "Resend"
+        ],
+        "gitHub": "https://github.com/willblake01/range-front"
+      },
+      {
+        "id": 2,
+        "title": "Train Time",
+        "description": "An Amtrak trip planner and live tracker. Browse departures for 500+ stations on any date, build multi-leg trips with connection checks, and follow each train's live status on travel day.",
+        "url": "https://train-time-rosy.vercel.app",
+        "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770242732/portfolio/projects/train-time.webp",
+        "sections": [
+          {
+            "title": "Departure board",
+            "items": [
+              {
+                "id": "any-date",
+                "label": "Any station, any date",
+                "text": "departures for 500+ Amtrak stations from the official timetable, shown in each station's local time"
+              },
+              {
+                "id": "live-overlay",
+                "label": "Live overlay",
+                "text": "delays, boarding status, estimated times, and track numbers for trains running now"
+              },
+              {
+                "id": "themes",
+                "text": "Light and dark themes that follow the system setting"
+              }
+            ]
+          },
+          {
+            "title": "Trip planner",
+            "items": [
+              {
+                "id": "multi-leg",
+                "label": "Multi-leg trips",
+                "text": "add legs straight from the board; the board then jumps to your transfer station, showing only trains you can still catch"
+              },
+              {
+                "id": "connections",
+                "label": "Connection checks",
+                "text": "each leg must leave from where the last one arrives, after it arrives, with warnings for tight or missed transfers"
+              },
+              {
+                "id": "tracking",
+                "label": "Travel-day tracking",
+                "text": "each leg shows live status for the exact run you're riding; future legs show as scheduled"
+              },
+              {
+                "id": "private",
+                "text": "Private trips for every visitor through anonymous sign-in, with no account required"
+              }
+            ]
+          },
+          {
+            "title": "Data pipeline",
+            "items": [
+              {
+                "id": "gtfs",
+                "label": "GTFS conversion",
+                "text": "converts Amtrak's 18 MB timetable feed into a compact server-only schedule, leaving out Thruway buses"
+              },
+              {
+                "id": "action",
+                "label": "Weekly GitHub Action",
+                "text": "downloads the latest feed, rebuilds and validates the schedule, runs the tests, and opens a pull request when anything changes"
+              },
+              {
+                "id": "merge",
+                "label": "Scheduled + live merge",
+                "text": "one departures API matches timetable trains to live Amtraker runs, with caching, timeouts, and a timetable-only fallback"
+              }
+            ]
+          },
+          {
+            "title": "Engineering",
+            "items": [
+              {
+                "id": "time",
+                "label": "Timetable edge cases",
+                "text": "times past midnight (up to 80 hours into a trip), daylight saving transitions, and a fix for Arizona stations listed in the wrong time zone"
+              },
+              {
+                "id": "security",
+                "label": "Security",
+                "text": "per-user database rules, live status written only server-side with the Firebase Admin SDK, and a throttled, capped refresh endpoint"
+              },
+              {
+                "id": "validation",
+                "text": "Zod validation of external and stored data, so malformed records are skipped instead of breaking the page"
+              },
+              {
+                "id": "tests",
+                "text": "Jest unit tests covering GTFS conversion, time zones, live matching, and trip rules"
+              }
+            ]
+          }
+        ],
+        "technologies": [
+          "Typescript",
+          "React",
+          "MUI",
+          "Next",
+          "Vercel",
+          "Firebase RTD",
+          "Firebase Auth",
+          "Zod",
+          "Jest",
+          "GitHub Actions",
+          "Amtrak GTFS",
+          "Amtraker API"
+        ],
+        "gitHub": "https://gitHub.com/willblake01/train-time"
+      },
+      {
+        "id": 3,
         "title": "Raspberry Pi NeoPixels",
         "description": "A TypeScript effects engine for WS281x LED strips on a Raspberry Pi, with live data modes, a guided CLI, and a fully tested core.",
         "url": "",
@@ -265,63 +431,7 @@
         "gitHub": "https://github.com/willblake01/raspberry-pi-neopixels"
       },
       {
-        "id": 2,
-        "title": "Range Front",
-        "description": "Full-stack e-commerce platform inspired by REI, exploring real-world commerce workflows: authentication, role-based permissions, cart state, and Stripe checkout.",
-        "url": "https://range-front.vercel.app/",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770242518/portfolio/projects/range-front.webp",
-        "contributions": [
-          {
-            "id": 1,
-            "label": "GraphQL API",
-            "text": "product, cart, and order queries and mutations with fine-grained authorization and Postgres persistence"
-          },
-          {
-            "id": 2,
-            "label": "Roles and permissions",
-            "text": "separate admin and user workflows (admin access available on request)"
-          },
-          {
-            "id": 3,
-            "label": "Checkout",
-            "text": "secure Stripe payments with webhook-driven, idempotent email receipts"
-          },
-          {
-            "id": 4,
-            "label": "Frontend",
-            "text": "fully typed React/Next.js app with Apollo client state"
-          },
-          {
-            "id": 5,
-            "label": "Performance",
-            "text": "real-user Core Web Vitals monitoring (LCP, INP, CLS) with Vercel Analytics and Speed Insights"
-          },
-          {
-            "id": 6,
-            "label": "Production",
-            "text": "frontend and backend deployed independently, with Jest tests covering core business logic"
-          }
-        ],
-        "technologies": [
-          "TypeScript",
-          "React",
-          "Styled Components",
-          "Next",
-          "GraphQL",
-          "Apollo",
-          "Node",
-          "Postgres",
-          "Jest",
-          "Vercel",
-          "Vercel Analytics",
-          "Vercel Speed Insights",
-          "Render",
-          "Resend"
-        ],
-        "gitHub": "https://github.com/willblake01/range-front"
-      },
-      {
-        "id": 3,
+        "id": 4,
         "title": "Fetch Rescue",
         "description": "A dog rescue web application simulating an adoption experience, featuring a modern UI, persistent state, and API-driven data.",
         "url": "https://fetch-frontend-exercise-nine.vercel.app/",
@@ -355,7 +465,7 @@
         "gitHub": "https://gitHub.com/willblake01/fetch-frontend-exercise"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "The Simpsons Memory Challenge",
         "description": "A memory game where you name as many Simpsons characters as you can, with forgiving answer matching, hints, and saved progress.",
         "url": "https://the-simpsons-memory-challenge.vercel.app/",
@@ -380,36 +490,6 @@
         ],
         "technologies": ["Typescript", "React", "MUI", "Next", "Vercel"],
         "gitHub": "https://gitHub.com/willblake01/the-simpsons-memory-challenge"
-      },
-      {
-        "id": 5,
-        "title": "Train Time",
-        "description": "A real-time scheduling application built with Firebase Realtime Database to synchronize train plans across users and sessions.",
-        "url": "https://train-time-rosy.vercel.app",
-        "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770242732/portfolio/projects/train-time.webp",
-        "contributions": [
-          {
-            "id": 1,
-            "text": "Owned end-to-end UI design and implementation for the scheduling experience"
-          },
-          {
-            "id": 2,
-            "text": "Architected real-time synchronization using Firebase Realtime Database"
-          },
-          {
-            "id": 3,
-            "text": "Established unit testing practices to support ongoing iteration"
-          }
-        ],
-        "technologies": [
-          "Typescript",
-          "React",
-          "MUI",
-          "Next",
-          "Vercel",
-          "Firebase RTD"
-        ],
-        "gitHub": "https://gitHub.com/willblake01/train-time"
       }
     ]
 }
