@@ -163,7 +163,7 @@
           {
             "id": 1,
             "label": "GraphQL API",
-            "text": "product, cart, and order queries and mutations with fine-grained authorization and Postgres persistence"
+            "text": "product, cart, order queries and mutations with fine-grained authorization and Postgres persistence"
           },
           {
             "id": 2,
