@@ -212,7 +212,7 @@
       {
         "id": 2,
         "title": "Train Time",
-        "description": "An Amtrak trip planner and live tracker. Browse departures for 500+ stations on any date, build multi-leg trips with connection checks, and follow each train's live status on travel day.",
+        "description": "An Amtrak trip planner and live tracker. Browse departures for 500+ stations on any date, build multi-leg trips with connection checks, follow each train's live status on travel day, and send your next train's status to linked devices like an LED strip.",
         "url": "https://train-time-rosy.vercel.app",
         "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770242732/portfolio/projects/train-time.webp",
         "sections": [
@@ -254,6 +254,11 @@
                 "text": "each leg shows live status for the exact run you're riding; future legs show as scheduled"
               },
               {
+                "id": "devices",
+                "label": "Linked devices",
+                "text": "pair a device such as an LED strip with a one-time code; a device API returns the next leg's countdown, live delay, and connection risk"
+              },
+              {
                 "id": "private",
                 "text": "Private trips for every visitor through anonymous sign-in, with no account required"
               }
@@ -290,7 +295,12 @@
               {
                 "id": "security",
                 "label": "Security",
-                "text": "per-user database rules, live status written only server-side with the Firebase Admin SDK, and a throttled, capped refresh endpoint"
+                "text": "per-user database rules, live status written only server-side with the Firebase Admin SDK, a throttled, capped refresh endpoint, and device tokens stored only as SHA-256 hashes with per-device rate limits"
+              },
+              {
+                "id": "serverless",
+                "label": "Serverless-safe data access",
+                "text": "device polling uses the Realtime Database REST API with ETag conditional writes, avoiding stale WebSocket connections on Vercel"
               },
               {
                 "id": "validation",
@@ -298,7 +308,7 @@
               },
               {
                 "id": "tests",
-                "text": "Jest unit tests covering GTFS conversion, time zones, live matching, and trip rules"
+                "text": "Jest unit tests covering GTFS conversion, time zones, live matching, trip rules, and device status"
               }
             ]
           }
@@ -322,7 +332,7 @@
       {
         "id": 3,
         "title": "Raspberry Pi NeoPixels",
-        "description": "A TypeScript effects engine for WS281x LED strips on a Raspberry Pi, with live data modes, a guided CLI, and a fully tested core.",
+        "description": "A TypeScript effects engine for WS281x LED strips on a Raspberry Pi, with live data modes (including a link to my Train Time app), a guided CLI, and a fully tested core.",
         "url": "",
         "image": "https://res.cloudinary.com/willblake01/image/upload/q_auto/f_auto/v1770245203/portfolio/projects/raspberry-pi-neopixels.webp",
         "sections": [
@@ -345,8 +355,13 @@
                 "text": "standard EPA/WHO color scales and NOAA geomagnetic storm levels, with pulsing alerts during storms"
               },
               {
+                "id": "train-time",
+                "label": "Train Time",
+                "text": "links to my Amtrak trip planner to count down to the next departure, turn amber when it's almost time, pulse red when it's time to leave, and warn when a connection is at risk"
+              },
+              {
                 "id": "location",
-                "text": "Location auto-detected by IP or entered by city"
+                "text": "Weather-based modes auto-detect location by IP or take a city"
               }
             ]
           },
@@ -425,6 +440,7 @@
           "Open-Meteo",
           "National Weather Service API",
           "NOAA Space Weather Prediction Center",
+          "Train Time API",
           "Jest",
           "breadboard prototyping"
         ],
