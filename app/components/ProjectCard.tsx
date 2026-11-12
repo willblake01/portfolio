@@ -134,12 +134,31 @@ const CardBody = ({ project }: ProjectCardProps) => (
   </>
 )
 
-const ProjectCard = ({ project }: ProjectCardProps) => (
+interface ProjectCardComponentProps extends ProjectCardProps {
+  /**
+   * true  → card stretches to the tallest card in its row (Experience, VR)
+   * false → card is only as tall as its content (Projects)
+   */
+  equalHeight?: boolean
+}
+
+const ProjectCard = ({
+  project,
+  equalHeight = false,
+}: ProjectCardComponentProps) => (
   <motion.div
     initial={{ opacity: 0, y: 40 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: '-15% 0px' }}
     transition={{ duration: 0.6, ease: 'easeOut' }}
+    // The motion wrapper is the flex item the row stretches. Don't give it an
+    // explicit height (that disables stretching); make it a flex container so
+    // the Card stretches to fill it. Or opt out for content-height cards.
+    style={
+      equalHeight
+        ? { display: 'flex', alignSelf: 'stretch' }
+        : { alignSelf: 'flex-start' }
+    }
   >
     <Card
       sx={{
@@ -148,6 +167,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
         width: '30rem',
         display: 'flex',
         flexDirection: 'column',
+        height: equalHeight ? undefined : 'max-content',
       }}
     >
       {project.url ? (
@@ -156,6 +176,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            flexGrow: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'stretch',
+            justifyContent: 'flex-start',
+          }}
         >
           <CardBody project={project} />
         </CardActionArea>

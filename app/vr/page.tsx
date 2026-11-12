@@ -20,7 +20,7 @@ const VR = () => (
         spacing={6}
       >
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard key={project.id} project={project} equalHeight />
         ))}
       </Grid2>
     </Box>

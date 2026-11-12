@@ -23,6 +23,7 @@ const ExperienceCard = ({ job }: ExperienceCardProps) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: '-15% 0px' }}
     transition={{ duration: 0.6, ease: 'easeOut' }}
+    style={{ display: 'flex', alignSelf: 'stretch' }}
   >
     <Card
       sx={{
